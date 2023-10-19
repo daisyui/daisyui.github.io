@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+>
+  <channel>
+    <title>
+      <![CDATA[ daisyUI Blog ]]>
+    </title>
+    <description>
+      <![CDATA[ Updates, ideas and resources ]]>
+    </description>
+    <link>https://daisyui.com/blog/</link>
+    <lastBuildDate>Thu, 19 Oct 2023 11:23:38 GMT</lastBuildDate>
+    <pubDate>Thu, 19 Oct 2023 11:23:38 GMT</pubDate>
+    <language>en-us</language>
+    <atom:link href="https://daisyui.com/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    
+        <item>
+          <title>
+            <![CDATA[ 9 essential Tailwind CSS plugins for developers ]]>
+          </title>
+          <description>
+            <![CDATA[ In this post we will take a look at the list of best Tailwind CSS plugins to use in your next project ]]>
+          </description>
+          <link>https://daisyui.com/blog/9-best-tailwind-css-plugins-for-developers/</link>
+          <pubDate>Thu, 12 Oct 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/9-best-tailwind-css-plugins-for-developers.jpg</image>
+          <image>https://daisyui.com/images/blog/9-best-tailwind-css-plugins-for-developers.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/9-best-tailwind-css-plugins-for-developers.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/9-best-tailwind-css-plugins-for-developers.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/9-best-tailwind-css-plugins-for-developers/</guid>
+        </item>
+      
+        <item>
+          <title>
+            <![CDATA[ Install Tailwind CSS and PostCSS and daisyUI with one command ]]>
+          </title>
+          <description>
+            <![CDATA[ It can be annoying to install, setup, config and import all the dependencies. But now, you can do it with a single command. ]]>
+          </description>
+          <link>https://daisyui.com/blog/npm-init-daisyui/</link>
+          <pubDate>Fri, 06 Oct 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/npm-init-daisyui.jpg</image>
+          <image>https://daisyui.com/images/blog/npm-init-daisyui.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/npm-init-daisyui.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/npm-init-daisyui.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/npm-init-daisyui/</guid>
+        </item>
+      
+        <item>
+          <title>
+            <![CDATA[ My Journey to build daisyUI: Why Tailwind CSS was not enough? ]]>
+          </title>
+          <description>
+            <![CDATA[ In search of the most efficient way to style a website there's a lot to explore. In this post I'll share my journey to build daisyUI, a component library on top of Tailwind CSS. ]]>
+          </description>
+          <link>https://daisyui.com/blog/my-journey-to-build-daisyui/</link>
+          <pubDate>Wed, 04 Oct 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/my-journey-to-build-daisyui.jpg</image>
+          <image>https://daisyui.com/images/blog/my-journey-to-build-daisyui.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/my-journey-to-build-daisyui.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/my-journey-to-build-daisyui.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/my-journey-to-build-daisyui/</guid>
+        </item>
+      
+        <item>
+          <title>
+            <![CDATA[ How to use Headless UI and daisyUI together? ]]>
+          </title>
+          <description>
+            <![CDATA[ What is Headless UI and why it is suggested to use it with daisyUI? ]]>
+          </description>
+          <link>https://daisyui.com/blog/how-to-use-headless-ui-and-daisyui/</link>
+          <pubDate>Thu, 28 Sep 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/headless-ui.jpg</image>
+          <image>https://daisyui.com/images/blog/headless-ui.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/headless-ui.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/headless-ui.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/how-to-use-headless-ui-and-daisyui/</guid>
+        </item>
+      
+        <item>
+          <title>
+            <![CDATA[ How to install daisyUI and Tailwind CSS in Next.js ]]>
+          </title>
+          <description>
+            <![CDATA[ In this article, we will learn how to use daisyUI component library in Next.js. ]]>
+          </description>
+          <link>https://daisyui.com/blog/install-daisyui-and-tailwindcss-in-nextjs/</link>
+          <pubDate>Fri, 22 Sep 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/daisyui-nextjs-component-library.jpg</image>
+          <image>https://daisyui.com/images/blog/daisyui-nextjs-component-library.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/daisyui-nextjs-component-library.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/daisyui-nextjs-component-library.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/install-daisyui-and-tailwindcss-in-nextjs/</guid>
+        </item>
+      
+        <item>
+          <title>
+            <![CDATA[ How to add a new color to daisyUI themes ]]>
+          </title>
+          <description>
+            <![CDATA[ Do you want to add new color names to daisyUI color palette? Here is how you can do it. ]]>
+          </description>
+          <link>https://daisyui.com/blog/how-to-add-new-colors-to-daisyui/</link>
+          <pubDate>Mon, 18 Sep 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/how-to-add-new-colors-to-daisyui.jpg</image>
+          <image>https://daisyui.com/images/blog/how-to-add-new-colors-to-daisyui.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/how-to-add-new-colors-to-daisyui.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/how-to-add-new-colors-to-daisyui.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/how-to-add-new-colors-to-daisyui/</guid>
+        </item>
+      
+        <item>
+          <title>
+            <![CDATA[ The most common mistake when using Tailwind CSS (and how to fix it) ]]>
+          </title>
+          <description>
+            <![CDATA[ While working on daisyUI, I see a lot of people making this mistake when using Tailwind CSS. ]]>
+          </description>
+          <link>https://daisyui.com/blog/most-common-mistake-when-using-tailwind-css/</link>
+          <pubDate>Thu, 14 Sep 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/tailwind-mistake.jpg</image>
+          <image>https://daisyui.com/images/blog/tailwind-mistake.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/tailwind-mistake.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/tailwind-mistake.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/most-common-mistake-when-using-tailwind-css/</guid>
+        </item>
+      
+        <item>
+          <title>
+            <![CDATA[ Mary UI: Laravel blade components made with daisyUI ]]>
+          </title>
+          <description>
+            <![CDATA[ Mary UI is a collection of Laravel blade components made for Livewire 3 and styled around daisyUI and Tailwind CSS ]]>
+          </description>
+          <link>https://daisyui.com/blog/mary-ui/</link>
+          <pubDate>Wed, 13 Sep 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/mary-ui.jpg</image>
+          <image>https://daisyui.com/images/blog/mary-ui.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/mary-ui.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/mary-ui.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/mary-ui/</guid>
+        </item>
+      
+        <item>
+          <title>
+            <![CDATA[ All about daisyUI color system and comparing it to Tailwind CSS color names ]]>
+          </title>
+          <description>
+            <![CDATA[ Why use semantic color names instead of Tailwind CSS color shades? Accessing to all color shades or using a color system... Which one is better? ]]>
+          </description>
+          <link>https://daisyui.com/blog/daisyui-colors-and-themes/</link>
+          <pubDate>Mon, 11 Sep 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/semantic-colors.jpg</image>
+          <image>https://daisyui.com/images/blog/semantic-colors.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/semantic-colors.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/semantic-colors.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/daisyui-colors-and-themes/</guid>
+        </item>
+      
+        <item>
+          <title>
+            <![CDATA[ daisyUI vs. Tailwind UI ]]>
+          </title>
+          <description>
+            <![CDATA[ Which one is better? Which one should I use? Comparing Tailwind CSS component libraries daisyUI and Tailwind UI. ]]>
+          </description>
+          <link>https://daisyui.com/blog/daisyui-vs-tailwindui/</link>
+          <pubDate>Sun, 10 Sep 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/daisyui-vs-tailwindui.jpg</image>
+          <image>https://daisyui.com/images/blog/daisyui-vs-tailwindui.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/daisyui-vs-tailwindui.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/daisyui-vs-tailwindui.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/daisyui-vs-tailwindui/</guid>
+        </item>
+      
+        <item>
+          <title>
+            <![CDATA[ What is daisyUI? (and other questions I get asked a lot) ]]>
+          </title>
+          <description>
+            <![CDATA[ Is daisyUI against the Tailwind CSS philosophy? Are we going full circle? Why not just use Bootstrap? Here I answer some of the most common questions I get asked about daisyUI. ]]>
+          </description>
+          <link>https://daisyui.com/blog/what-is-daisyui/</link>
+          <pubDate>Sun, 10 Sep 2023 00:00:00 GMT</pubDate>
+          <image>https://daisyui.com/images/blog/daisyui-stars.jpg</image>
+          <image>https://daisyui.com/images/blog/daisyui-stars.jpg</image>
+          <media:content url="https://daisyui.com/images/blog/daisyui-stars.jpg" medium="image" type="image/jpg" />
+          <enclosure url="https://daisyui.com/images/blog/daisyui-stars.jpg" type="image/jpeg" />
+          <guid isPermaLink="false">https://daisyui.com/blog/what-is-daisyui/</guid>
+        </item>
+      
+  </channel>
+</rss>
