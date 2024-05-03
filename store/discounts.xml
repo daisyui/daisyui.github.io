@@ -15,12 +15,24 @@ xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01
       <![CDATA[ Professional templates made by daisyUI ]]>
     </description>
     <link>https://daisyui.com/store/</link>
-    <lastBuildDate>Sun, 28 Apr 2024 22:48:21 GMT</lastBuildDate>
-    <pubDate>Sun, 28 Apr 2024 22:48:21 GMT</pubDate>
+    <lastBuildDate>Fri, 03 May 2024 01:51:45 GMT</lastBuildDate>
+    <pubDate>Fri, 03 May 2024 01:51:45 GMT</pubDate>
     <language>en-us</language>
     <atom:link href="https://daisyui.com/store/rss.xml" rel="self" type="application/rss+xml"/>
     
     
+        <item>
+          <title>
+            <![CDATA[ 🎁 Discord 1000 members celebration discount (valid until 5 May) ]]>
+          </title>
+          <description>
+            <![CDATA[ New discount available: Use "DISCORD1000" code at checkout to get 25% discount. Valid until 5 May ]]>
+          </description>
+          <link>https://daisyui.com/store/</link>
+          <pubDate>Thu, 02 May 2024 20:25:26 GMT</pubDate>
+          <guid isPermaLink="false">https://daisyui.com/store/</guid>
+        </item>
+      
         <item>
           <title>
             <![CDATA[ 🎁 Lunar New Year discount (valid until 11 February) ]]>
