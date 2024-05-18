@@ -65,7 +65,7 @@ jobs:
 
       - name: Install daisyUI ${{env.daisyuiversion}} version if production
         if: github.repository == 'saadeghi/daisyui'
-        run: cd src/docs && ${{ env.runtime }} i daisyui@${{env.daisyuiversion}}
+        run: cd src/docs && ${{ env.runtime }} i daisyui@${{env.daisyuiversion}} --legacy-peer-deps
 
       - name: Install daisyUI newest tag if staging
         if: github.repository == 'daisyui/daisyui.github.io'
