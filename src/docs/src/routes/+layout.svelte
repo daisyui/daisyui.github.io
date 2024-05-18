@@ -109,32 +109,34 @@
 </svelte:head>
 
 <div
-  class={`bg-base-100 drawer ${
-    data.pagesThatDontNeedSidebar.matchPattern($page.url.pathname) ? "" : "lg:drawer-open"
-  }`}>
+  class="{`bg-base-100 drawer ${
+    data.pagesThatDontNeedSidebar.matchPattern($page.url.pathname) ? '' : 'lg:drawer-open'
+  }`}">
   <input id="drawer" type="checkbox" class="drawer-toggle" bind:checked />
-  <div class={`drawer-content`} inert={checked || undefined}>
+  <div class="{`drawer-content`}" inert="{checked || undefined}">
     <Navbar
       {addScrollPaddingToNavbar}
       {removeScrollPaddingFromNavbar}
-      pages={data.pages}
-      themes={data.themes}
+      pages="{data.pages}"
+      themes="{data.themes}"
       showComponentsBtn="true"
-      hideLogoOnLargeScreen={data.pagesThatDontNeedSidebar.matchPattern($page.url.pathname)
+      hideLogoOnLargeScreen="{data.pagesThatDontNeedSidebar.matchPattern($page.url.pathname)
         ? false
-        : true}
-      hideSidebarButtonOnLargeScreen={data.pagesThatDontNeedSidebar.matchPattern($page.url.pathname)
+        : true}"
+      hideSidebarButtonOnLargeScreen="{data.pagesThatDontNeedSidebar.matchPattern(
+        $page.url.pathname
+      )
         ? false
-        : true}
+        : true}"
       showSearch="true"
       showVersion="true"
       showLanguage="true" />
     <div
-      class={`${
+      class="{`${
         data.pagesThatDontNeedSidebar.matchPattern($page.url.pathname)
-          ? ""
-          : "max-w-[100vw] px-6 pb-16 xl:pr-2"
-      }`}>
+          ? ''
+          : 'max-w-[100vw] px-6 pb-16 xl:pr-2'
+      }`}">
       <slot />
     </div>
     <div class="toast toast-center z-10 [@supports(color:oklch(0%_0_0))]:hidden">
@@ -154,18 +156,19 @@
   <div
     class="drawer-side z-40"
     style="scroll-behavior: smooth; scroll-padding-top: {navbarScrollPadding};"
-    bind:this={drawersidebar}
-    on:scroll={parseSidebarScroll}>
-    <label for="drawer" class="drawer-overlay" aria-label="Close menu" />
+    bind:this="{drawersidebar}"
+    on:scroll="{parseSidebarScroll}">
+    <label for="drawer" class="drawer-overlay" aria-label="Close menu"></label>
     <aside class="bg-base-100 min-h-screen w-80">
       <svelte:component
-        this={Sidebar}
-        pages={data.pages}
+        this="{Sidebar}"
+        pages="{data.pages}"
         {closeDrawer}
         {openDrawer}
         {drawerSidebarScrollY} />
       <div
-        class="bg-base-100 pointer-events-none sticky bottom-0 flex h-40 [mask-image:linear-gradient(transparent,#000000)]" />
+        class="bg-base-100 pointer-events-none sticky bottom-0 flex h-40 [mask-image:linear-gradient(transparent,#000000)]">
+      </div>
     </aside>
   </div>
 </div>

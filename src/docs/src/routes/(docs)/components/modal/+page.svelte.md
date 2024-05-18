@@ -57,7 +57,7 @@ data="{[
 ### Method 1: using dialog element <span class="badge badge-success">recommended</span>
 
 <Component title="Dialog modal" desc="opens on click using ID.showModal() method. can be closed using ID.close() method">
-<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<button class="btn" on:click={my_modal_1.showModal()}>open modal</button>
 <dialog id="my_modal_1" class="modal">
   <div class="modal-box">
     <h3 class="font-bold text-lg">Hello!</h3>
@@ -105,7 +105,7 @@ data="{[
 </Component>
 
 <Component title="Dialog modal, closes when clicked outside" desc="there is a second form with 'modal-backdrop' class and it covers the screen so we can close the modal when clicked outside">
-<button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+<button class="btn" on:click={my_modal_2.showModal()}>open modal</button>
 <dialog id="my_modal_2" class="modal">
   <div class="modal-box">
     <h3 class="font-bold text-lg">Hello!</h3>
@@ -144,7 +144,7 @@ data="{[
 </Component>
 
 <Component title="Dialog modal with a close button at corner">
-<button class="btn" onclick="my_modal_3.showModal()">open modal</button>
+<button class="btn" on:click={my_modal_3.showModal()}>open modal</button>
 <dialog id="my_modal_3" class="modal">
   <div class="modal-box">
     <form method="dialog">
@@ -185,7 +185,7 @@ data="{[
 </Component>
 
 <Component title="Dialog modal with custom width" desc="You can use any w-* and max-w-* utility class to customize the width">
-<button class="btn" onclick="my_modal_4.showModal()">open modal</button>
+<button class="btn" on:click={my_modal_4.showModal()}>open modal</button>
 <dialog id="my_modal_4" class="modal">
   <div class="modal-box w-11/12 max-w-5xl">
     <h3 class="font-bold text-lg">Hello!</h3>
@@ -233,7 +233,7 @@ data="{[
 </Component>
 
 <Component title="Responsive" desc="Modal goes bottom on mobile screen and goes middle on desktop">
-<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<button class="btn" on:click={my_modal_5.showModal()}>open modal</button>
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
     <h3 class="font-bold text-lg">Hello!</h3>

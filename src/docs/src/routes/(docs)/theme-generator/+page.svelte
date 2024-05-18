@@ -304,7 +304,7 @@
 <SEO
   title="daisyUI Theme Generator"
   desc="Tailwind CSS Theme Generator - Tailwind CSS daisyUI custom theme and custom colors"
-  img={`https://img.daisyui.com/images/theme-generator.jpg`} />
+  img="{`https://img.daisyui.com/images/theme-generator.jpg`}" />
 
 <div class="prose mb-10 pt-10">
   <h1><Translate text="daisyUI Theme Generator" /></h1>
@@ -340,10 +340,10 @@
               {#if !onlyRequiredColorNames}
                 <button
                   class="btn btn-xs btn-neutral btn-square"
-                  on:click={() => {
+                  on:click="{() => {
                     generateOptionalColors()
                     generateColors()
-                  }}>
+                  }}">
                   <svg
                     width="16"
                     height="16"
@@ -357,47 +357,53 @@
                       stroke="currentColor"
                       stroke-width="4"
                       stroke-linecap="round"
-                      stroke-linejoin="round" />
+                      stroke-linejoin="round">
+                    </path>
                     <path
                       d="M24 4C35.0457 4 44 12.9543 44 24C44 35.0457 35.0457 44 24 44V4Z"
                       fill="none"
                       stroke="currentColor"
                       stroke-width="4"
-                      stroke-linejoin="round" />
+                      stroke-linejoin="round">
+                    </path>
                     <path
                       d="M24 36H9"
                       stroke="currentColor"
                       stroke-width="4"
                       stroke-linecap="round"
-                      stroke-linejoin="round" />
+                      stroke-linejoin="round">
+                    </path>
                     <path
                       d="M24 28H5"
                       stroke="currentColor"
                       stroke-width="4"
                       stroke-linecap="round"
-                      stroke-linejoin="round" />
+                      stroke-linejoin="round">
+                    </path>
                     <path
                       d="M24 20H5"
                       stroke="currentColor"
                       stroke-width="4"
                       stroke-linecap="round"
-                      stroke-linejoin="round" />
+                      stroke-linejoin="round">
+                    </path>
                     <path
                       d="M24 12H9"
                       stroke="currentColor"
                       stroke-width="4"
                       stroke-linecap="round"
-                      stroke-linejoin="round" />
+                      stroke-linejoin="round">
+                    </path>
                   </svg>
                 </button>
               {/if}
             </div>
             <div
               class="tooltip tooltip-bottom tooltip-info"
-              data-tip={onlyRequiredColorNames ? "Show optional colors" : "Hide optional colors"}>
+              data-tip="{onlyRequiredColorNames ? 'Show optional colors' : 'Hide optional colors'}">
               <button
                 class="btn btn-xs btn-neutral btn-square"
-                on:click={() => (onlyRequiredColorNames = !onlyRequiredColorNames)}>
+                on:click="{() => (onlyRequiredColorNames = !onlyRequiredColorNames)}">
                 {#if !onlyRequiredColorNames}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -406,7 +412,8 @@
                     height="16px"
                     viewBox="0 0 24 24">
                     <path
-                      d="M7.41 18.59L8.83 20 12 16.83 15.17 20l1.41-1.41L12 14l-4.59 4.59zm9.18-13.18L15.17 4 12 7.17 8.83 4 7.41 5.41 12 10l4.59-4.59z" />
+                      d="M7.41 18.59L8.83 20 12 16.83 15.17 20l1.41-1.41L12 14l-4.59 4.59zm9.18-13.18L15.17 4 12 7.17 8.83 4 7.41 5.41 12 10l4.59-4.59z">
+                    </path>
                   </svg>
                 {/if}
                 {#if onlyRequiredColorNames}
@@ -417,13 +424,14 @@
                     height="16px"
                     viewBox="0 0 24 24">
                     <path
-                      d="M12 5.83L15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z" />
+                      d="M12 5.83L15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z">
+                    </path>
                   </svg>
                 {/if}
               </button>
             </div>
             <div class="tooltip tooltip-bottom tooltip-info" data-tip="Randomize">
-              <button class="btn btn-xs btn-neutral btn-square" on:click={() => randomize()}>
+              <button class="btn btn-xs btn-neutral btn-square" on:click="{() => randomize()}">
                 <svg
                   width="16"
                   height="16"
@@ -435,12 +443,13 @@
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
-                    stroke-linejoin="round" />
+                    stroke-linejoin="round">
+                  </path>
                 </svg>
               </button>
             </div>
             <div class="tooltip tooltip-bottom tooltip-info" data-tip="Reset">
-              <button class="btn btn-xs btn-neutral btn-square" on:click={() => resetColors()}>
+              <button class="btn btn-xs btn-neutral btn-square" on:click="{() => resetColors()}">
                 <svg
                   width="16px"
                   height="16px"
@@ -452,45 +461,47 @@
                     stroke="currentColor"
                     stroke-width="4"
                     stroke-linecap="round"
-                    stroke-linejoin="round" />
+                    stroke-linejoin="round">
+                  </path>
                   <path
                     d="M42 8V17H33"
                     stroke="currentColor"
                     stroke-width="4"
                     stroke-linecap="round"
-                    stroke-linejoin="round" />
+                    stroke-linejoin="round">
+                  </path>
                 </svg>
               </button>
             </div>
           </div>
           <pre><code class="text-neutral-content/30">{`module.exports = {`}</code>
-<code>{`    daisyui: {
-      themes: [
-        {
-          mytheme: {`}</code>
-{#each colors.filter((item) => !onlyRequiredColorNames || requiredColorNames.includes(item.name)) as color}
-              <code>          <span
+<code>{`  daisyui: {
+    themes: [
+      {
+        mytheme: {`}</code>
+{#each colors.filter((item) => !onlyRequiredColorNames || requiredColorNames.includes(item.name)) as color}<code>          <span
                   data-tip="Pick →"
-                  class:tooltip={colors.filter(
+                  class:tooltip="{colors.filter(
                     (item) => !onlyRequiredColorNames || requiredColorNames.includes(item.name)
-                  )[0] === color}
+                  )[0] === color}"
                   class="tooltip-open tooltip-accent tooltip-left align-middle"><span
-                    class="inline-block w-1" /><ColorPicker
-                    bind:value={color.value}
-                    on:set={() => generateColors(color.value)} /></span>"{color.name}": "<button
+                    class="inline-block h-5 w-5 overflow-hidden align-middle"><ColorPicker
+                      bind:value="{color.value}"
+                      on:set="{() =>
+                        generateColors(color.value)}" /></span></span>"{color.name}": "<button
                   class="hover:outline-neutral-content/20 focus:outline-neutral-content rounded-sm bg-black/20 px-1 hover:outline focus:outline"
                   contenteditable="true"
-                  bind:innerHTML={color.value}
-                  on:input={() => generateColors(color.value)}
-                  on:keyup={() => generateColors(color.value)}>{color.value}</button>",
+                  bind:innerHTML="{color.value}"
+                  on:input="{() => generateColors(color.value)}"
+                  on:keyup="{() => generateColors(color.value)}">{color.value}</button>",
 </code>{/each}<code>{`          },
-        },
-      ],
-    },`}</code>
-<code class="text-neutral-content/30">{`    plugins: [
-      require('daisyui'),
+      },
     ],
-    //...
+  },`}</code>
+<code class="text-neutral-content/30">{`  plugins: [
+    require('daisyui'),
+  ],
+  //...
   }
 `}</code></pre>
         </div>
@@ -503,7 +514,7 @@
       <div
         class="rounded-box bg-base-100 border-base-content/5 text-base-content not-prose grid gap-3 border p-6"
         data-theme="mytheme"
-        bind:this={wrapper}>
+        bind:this="{wrapper}">
         <!-- button -->
         <div class="grid grid-cols-2 gap-2 md:grid-cols-4">
           <button class="btn">Default</button>
@@ -581,21 +592,21 @@
             <div class="md:w-1/2">
               <!-- toggle -->
               <div>
-                <input type="checkbox" class="toggle" checked />
-                <input type="checkbox" class="toggle toggle-primary" checked />
-                <input type="checkbox" class="toggle toggle-secondary" checked />
-                <input type="checkbox" class="toggle toggle-accent" checked />
+                <input type="checkbox" class="toggle" checked="checked" />
+                <input type="checkbox" class="toggle toggle-primary" checked="checked" />
+                <input type="checkbox" class="toggle toggle-secondary" checked="checked" />
+                <input type="checkbox" class="toggle toggle-accent" checked="checked" />
               </div>
               <!-- checkbox -->
               <div>
-                <input type="checkbox" class="checkbox" checked />
-                <input type="checkbox" class="checkbox checkbox-primary" checked />
-                <input type="checkbox" class="checkbox checkbox-secondary" checked />
-                <input type="checkbox" class="checkbox checkbox-accent" checked />
+                <input type="checkbox" class="checkbox" checked="checked" />
+                <input type="checkbox" class="checkbox checkbox-primary" checked="checked" />
+                <input type="checkbox" class="checkbox checkbox-secondary" checked="checked" />
+                <input type="checkbox" class="checkbox checkbox-accent" checked="checked" />
               </div>
               <!-- radio -->
               <div>
-                <input type="radio" name="radio-1" class="radio" checked />
+                <input type="radio" name="radio-1" class="radio" checked="checked" />
                 <input type="radio" name="radio-1" class="radio radio-primary" />
                 <input type="radio" name="radio-1" class="radio radio-secondary" />
                 <input type="radio" name="radio-1" class="radio radio-accent" />
@@ -673,7 +684,8 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16" />
+                    d="M4 6h16M4 12h16M4 18h16">
+                  </path>
                 </svg>
               </button>
             </div>
@@ -714,7 +726,8 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
             </svg>
             <span>12 unread messages. Tap to see.</span>
           </div>
@@ -728,7 +741,8 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
             </svg>
             <span>New software update available.</span>
           </div>
@@ -742,7 +756,8 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
             </svg>
             <span>Your purchase has been confirmed!</span>
           </div>
@@ -756,7 +771,8 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+              </path>
             </svg>
             <span>Warning: Invalid email address!</span>
           </div>
@@ -770,7 +786,8 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
             </svg>
             <span>Error! Task failed successfully.</span>
           </div>

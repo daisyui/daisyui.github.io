@@ -23,7 +23,7 @@
   {#each data.articles as article}
     <a
       class="rounded-box hover:bg-base-200 group relative flex items-center justify-between overflow-hidden p-4 duration-300"
-      href={article.link}
+      href="{article.link}"
       target="_blank"
       rel="noopener noreferrer">
       <div>
@@ -42,13 +42,15 @@
           stroke="currentColor"
           stroke-width="4"
           stroke-linecap="butt"
-          stroke-linejoin="bevel" />
+          stroke-linejoin="bevel">
+        </path>
         <path
           d="M11.5439 36.4559L36.9997 11"
           stroke="currentColor"
           stroke-width="4"
           stroke-linecap="butt"
-          stroke-linejoin="bevel" />
+          stroke-linejoin="bevel">
+        </path>
       </svg>
     </a>
   {:else}

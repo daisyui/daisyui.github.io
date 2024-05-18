@@ -22,10 +22,10 @@
 <nav class="tabs not-prose tabs-lifted lg:tabs-lg my-10 flex-nowrap whitespace-nowrap">
   {#each tabs as tab}
     <a
-      href={`/components/${$page.url.pathname.split("/")[2]}/${tab.slug}`}
-      class={`tab gap-3 ${
-        $page.url.pathname.split("/")[3] === tab.slug.replace("/", "") ? "tab-active" : ""
-      }`}>
+      href="{`/components/${$page.url.pathname.split('/')[2]}/${tab.slug}`}"
+      class="{`tab gap-3 ${
+        $page.url.pathname.split('/')[3] === tab.slug.replace('/', '') ? 'tab-active' : ''
+      }`}">
       <span class="hidden lg:inline">{@html tab.icon}</span>
       {tab.title}
     </a>

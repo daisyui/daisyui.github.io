@@ -203,7 +203,7 @@ data="{[
 <Component title="Disabled and checked">
 <input type="checkbox" disabled="disabled" class="checkbox" checked="checked" />
 <pre slot="html" use:replace={{ to: $prefix }}>{
-`<input type="checkbox" class="$$checkbox" disabled checked />`
+`<input type="checkbox" class="$$checkbox" disabled checked="checked" />`
 }</pre>
 </Component>
 

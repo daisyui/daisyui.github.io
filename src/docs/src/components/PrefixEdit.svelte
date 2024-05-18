@@ -15,6 +15,6 @@
     name="prefix"
     type="text"
     placeholder="prefix–"
-    on:input={onPrefixInput}
-    value={$prefix} />
+    on:input="{onPrefixInput}"
+    value="{$prefix}" />
 </div>

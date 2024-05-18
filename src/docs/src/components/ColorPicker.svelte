@@ -244,21 +244,22 @@
 </script>
 
 <svelte:window
-  on:keydown={handleKeydown}
-  on:mousedown={() => (isMouseDown = true)}
-  on:mouseup={() => (isMouseDown = false)} />
+  on:keydown="{handleKeydown}"
+  on:mousedown="{() => (isMouseDown = true)}"
+  on:mouseup="{() => (isMouseDown = false)}" />
 
 <div class="wrapper">
-  <button on:click={(e) => toggleDropdown(e)}>
+  <button on:click="{(e) => toggleDropdown(e)}">
     <div style="display: flex;">
       <div
         style="background: {value}; width:{width}; height:{height}; border:1px solid hsla(0 0% 100% / .1)"
-        class="color-block" />
+        class="color-block">
+      </div>
     </div>
   </button>
 
   {#if ddActive}
-    <div class="values-dropdown" use:clickOutside on:click_outside={clickOutsideDropdown}>
+    <div class="values-dropdown" use:clickOutside on:click_outside="{clickOutsideDropdown}">
       <div
         class="values-dropdown-grid"
         style="grid-template-columns: repeat({values[0].length}, auto);">
@@ -266,15 +267,16 @@
           {#each val as innerValue, innerIndex}
             <button
               id="{id}-{index}-{innerIndex}"
-              class:active={innerValue == value}
+              class:active="{innerValue == value}"
               style="background: {innerValue}; width:{width}; height:{height};"
-              on:click={() => {
+              on:click="{() => {
                 changeValue(innerValue)
-              }}
-              on:mousemove={() => {
+              }}"
+              on:mousemove="{() => {
                 isMouseDown ? changeValue(innerValue) : null
-              }}
-              class="color-block" />
+              }}"
+              class="color-block">
+            </button>
           {/each}
         {/each}
       </div>

@@ -29,11 +29,11 @@
   <span class="text-base-content/50 text-xs">Supported on</span>
   {#each Object.entries(data) as [browser, version]}
     <div class="inline-flex items-center gap-1 lg:gap-2">
-      <div class="tooltip" data-tip={browsers[browser].name}>
+      <div class="tooltip" data-tip="{browsers[browser].name}">
         <span
-          class={version && version <= browsers[browser].safeversion
-            ? "text-success"
-            : "text-error"}>
+          class="{version && version <= browsers[browser].safeversion
+            ? 'text-success'
+            : 'text-error'}">
           {@html browsers[browser].icon}
         </span>
       </div>

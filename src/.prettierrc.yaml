@@ -9,6 +9,7 @@ bracketSameLine: true
 quoteProps: "consistent"
 bracketSpacing: true
 endOfLine: "lf"
-plugins: 
+svelteStrictMode: true
+plugins:
   - "prettier-plugin-svelte"
   - "prettier-plugin-tailwindcss"

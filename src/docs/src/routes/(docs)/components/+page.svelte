@@ -19,21 +19,21 @@
       {#each components as { slug, title, desc }}
         <a
           class="card card-compact hover:bg-base-200 transition-all duration-200 hover:-translate-y-1"
-          href={`${$page.url.pathname.replace(/\/$/, "")}/${slug}`}>
+          href="{`${$page.url.pathname.replace(/\/$/, '')}/${slug}`}">
           <figure class="px-4 pt-4">
             <img
               loading="lazy"
-              src={`https://img.daisyui.com/images/components/${slug}.jpg`}
+              src="{`https://img.daisyui.com/images/components/${slug}.jpg`}"
               class="border-base-content bg-base-300 rounded-lg border border-opacity-5"
-              alt={title} />
+              alt="{title}" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title"><Translate text={title} /></h2>
-            <p class="text-xs opacity-60"><Translate text={desc || ""} /></p>
+            <h2 class="card-title"><Translate text="{title}" /></h2>
+            <p class="text-xs opacity-60"><Translate text="{desc || ''}" /></p>
           </div>
         </a>
       {/each}
     </div>
   </div>
-  <Ads slot="carbon2" />
+  <Ads adslot="carbon2" />
 </div>

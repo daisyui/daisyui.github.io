@@ -53,14 +53,14 @@
   export let removeScrollPaddingFromNavbar = undefined
 </script>
 
-<svelte:window on:keydown={handleKeydown} />
+<svelte:window on:keydown="{handleKeydown}" />
 
 <!-- svelte-ignore a11y-label-has-associated-control -->
-<label class={`searchbox relative mx-3 w-full`} bind:this={seachboxEl}>
+<label class="{`searchbox relative mx-3 w-full`}" bind:this="{seachboxEl}">
   <svg
-    class={`pointer-events-none absolute z-10 my-3.5 ms-4 stroke-current opacity-60 ${
-      $page.url.pathname == "/" ? "text-current" : "text-base-content"
-    }`}
+    class="{`pointer-events-none absolute z-10 my-3.5 ms-4 stroke-current opacity-60 ${
+      $page.url.pathname == '/' ? 'text-current' : 'text-base-content'
+    }`}"
     width="16"
     height="16"
     xmlns="http://www.w3.org/2000/svg"
@@ -70,27 +70,28 @@
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
-      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z">
+    </path>
   </svg>
   <Typeahead
-    placeholder={$t("Search") + "…"}
-    limit={8}
+    placeholder="{$t('Search') + '…'}"
+    limit="{8}"
     label="Search"
-    data={searchIndex}
-    extract={(item) => (item.tags ? item.tags : item.name)}
+    data="{searchIndex}"
+    extract="{(item) => (item.tags ? item.tags : item.name)}"
     inputAfterSelect="clear"
-    on:select={onSelect}
-    on:focus={removeScrollPaddingFromNavbar}
-    on:blur={addScrollPaddingToNavbar}
+    on:select="{onSelect}"
+    on:focus="{removeScrollPaddingFromNavbar}"
+    on:blur="{addScrollPaddingToNavbar}"
     let:result>
     <div class="py-1 text-sm font-normal">
       {searchIndex[result.index].name}
     </div>
   </Typeahead>
   <div
-    class={`pointer-events-none absolute end-10 top-2.5 gap-1 opacity-50 rtl:flex-row-reverse ${
-      $page.url.pathname == "/" ? "hidden" : "hidden lg:flex"
-    }`}>
+    class="{`pointer-events-none absolute end-10 top-2.5 gap-1 opacity-50 rtl:flex-row-reverse ${
+      $page.url.pathname == '/' ? 'hidden' : 'hidden lg:flex'
+    }`}">
     {#if ["macos"].includes(os)}
       <kbd class="kbd kbd-sm">⌘</kbd>
       <kbd class="kbd kbd-sm">K</kbd>
