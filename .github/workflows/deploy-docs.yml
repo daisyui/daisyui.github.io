@@ -69,7 +69,7 @@ jobs:
 
       - name: Install daisyUI newest tag if staging
         if: github.repository == 'daisyui/daisyui.github.io'
-        run: cd src/docs && ${{ env.runtime }} i daisyui@$([[ $(npm view daisyui version) > $(npm view daisyui dist-tags.alpha) ]] --legacy-peer-deps && echo "${{env.daisyuiversion}}" || echo "alpha")
+        run: cd src/docs && ${{ env.runtime }} i daisyui@$([[ $(npm view daisyui version) > $(npm view daisyui dist-tags.alpha) ]] && echo "${{env.daisyuiversion}}" || echo "alpha") --legacy-peer-deps
 
       - name: Set daisyUI version in env file if staging
         if: github.repository == 'daisyui/daisyui.github.io'
