@@ -115,7 +115,7 @@
               class="tooltip tooltip-accent">
               <button
                 class="btn btn-sm cursor-copy rounded-full font-mono font-light"
-                on:click="{() => copyText('npm i -D daisyui@latest')}">
+                onclick="{() => copyText('npm i -D daisyui@latest')}">
                 <pre><code>npm i -D daisyui</code></pre>
               </button>
             </div>
@@ -311,19 +311,19 @@
                   )}px)`}">
                   <div class="tabs tabs-lifted">
                     <button
-                      on:click="{() => (activeMenuItemOnHeroMockup = 1)}"
+                      onclick="{() => (activeMenuItemOnHeroMockup = 1)}"
                       class:tab-active="{activeMenuItemOnHeroMockup === 1}"
                       class="tab tab-border-none whitespace-nowrap text-xs">
                       {$t("Features")}
                     </button>
                     <button
-                      on:click="{() => (activeMenuItemOnHeroMockup = 2)}"
+                      onclick="{() => (activeMenuItemOnHeroMockup = 2)}"
                       class:tab-active="{activeMenuItemOnHeroMockup === 2}"
                       class="tab tab-border-none whitespace-nowrap text-xs">
                       {$t("Links")}
                     </button>
                     <button
-                      on:click="{() => (activeMenuItemOnHeroMockup = 3)}"
+                      onclick="{() => (activeMenuItemOnHeroMockup = 3)}"
                       class:tab-active="{activeMenuItemOnHeroMockup === 3}"
                       class="tab tab-border-none whitespace-nowrap text-xs">
                       {$t("Message")}
