@@ -1,0 +1,1 @@
+import{z as f}from"./runtime.Bwmma5tW.js";function v(a,d,o,i){d.addEventListener("input",()=>{i(d[a])}),f(()=>{var n=o();if(d[a]!==n)if(n===null){var r=d[a];i(r)}else d[a]=n+""})}function c(a,d,o,i,n,r){var s=()=>{r(i[a])};i.addEventListener(d,s),f(()=>{i[a]=n()}),f(()=>{if(i===document.body||i===window||i===document)return()=>{i.removeEventListener(d,s)}})}export{v as a,c as b};

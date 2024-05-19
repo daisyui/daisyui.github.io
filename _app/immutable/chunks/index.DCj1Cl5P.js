@@ -1,1 +1,0 @@
-import{B as s,D as o}from"./props.BH0qENYe.js";const a=s,t=o;export{a as b,t as d};

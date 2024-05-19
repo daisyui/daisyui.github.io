@@ -1,1 +1,0 @@
-import{j as S,r as h,k as q,q as u,S as x}from"./runtime.DncqhcmG.js";function k(r,f){var t;var i=r&&((t=r[x])==null?void 0:t.t);return r===f||i===f}function b(r,f,i,t){S(()=>{var a,s;return h(()=>{a=s,s=[],q(()=>{r!==i(...s)&&(f(r,...s),a&&k(i(...a),r)&&f(null,...a))})}),()=>{u(()=>{s&&k(i(...s),r)&&f(null,...s)})}})}export{b};
