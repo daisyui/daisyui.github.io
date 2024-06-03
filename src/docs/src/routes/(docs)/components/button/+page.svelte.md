@@ -47,11 +47,11 @@ data="{[
 ]}"
 />
 
-<Component title="Button">
+<Component title="Button" html={`<button class="$$btn">Button</button>`}>
 <button class="btn">Button</button>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+{#snippet html()}<pre use:replace={{ to: $prefix }}>{
 `<button class="$$btn">Button</button>`
-}</pre>
+}</pre>{/snippet}
 </Component>
 
 <Component title="Buttons with brand colors">
