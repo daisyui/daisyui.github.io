@@ -1,1 +1,0 @@
-import{y as c,l as n,z as i,T as o}from"./runtime.Bwmma5tW.js";function m(e,a,f){c(()=>{var r=n(()=>a(e,f==null?void 0:f())||{});if(f&&(r!=null&&r.update)){var s=!1;i(()=>{var t=f();o(t),s&&r.update(t)}),s=!0}if(r!=null&&r.destroy)return()=>r.destroy()})}export{m as a};
