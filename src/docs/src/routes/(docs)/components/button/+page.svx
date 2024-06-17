@@ -47,7 +47,7 @@ data="{[
 ]}"
 />
 
-<Component title="Button" html={`<button class="$$btn">Button</button>`}>
+<Component title="Button">
 <button class="btn">Button</button>
 {#snippet html()}<pre use:replace={{ to: $prefix }}>{
 `<button class="$$btn">Button</button>`

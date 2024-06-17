@@ -1,11 +1,12 @@
 import { mdsvex } from "mdsvex"
+import { sveltePreprocess } from "svelte-preprocess"
 import adapter from "@sveltejs/adapter-static"
-import preprocess from "svelte-preprocess"
+// import preprocess from "svelte-preprocess"
 import headingSlugs from "rehype-slug"
 import linkHeadings from "rehype-autolink-headings"
 import rehypeExternalLinks from "rehype-external-links"
 import remarkGithub from "remark-github"
-import { highlight } from "svelte-preprocess-highlight"
+// import { highlight } from "svelte-preprocess-highlight"
 
 const rehypePlugins = [
   headingSlugs,
@@ -35,12 +36,12 @@ const rehypePlugins = [
 const remarkPlugins = [[remarkGithub, { repository: "https://github.com/saadeghi/daisyui" }]]
 
 export default {
-  extensions: [".svelte", ".svelte.md", ".md"],
+  extensions: [".svelte", ".svx"],
 
   preprocess: [
-    highlight(),
+    // highlight(),
     mdsvex({
-      extensions: [".svelte.md", ".md"],
+      extensions: [".svx"],
       rehypePlugins: rehypePlugins,
       remarkPlugins: remarkPlugins,
       layout: {
@@ -49,11 +50,10 @@ export default {
         _: "src/lib/mdsvex.svelte",
       },
     }),
-    preprocess({
+    sveltePreprocess({
       postcss: true,
     }),
   ],
-
   kit: {
     adapter: adapter({
       pages: "build",
