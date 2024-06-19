@@ -1,10 +1,8 @@
 <script>
   import { onMount } from "svelte"
   import Translate from "$components/Translate.svelte"
-  import { htmlToJsx, prefixClassNames } from "$lib/actions"
+  import { htmlToJsx, prefixClassNames } from "$lib/actions.svelte.js"
   import { t } from "$lib/i18n"
-  import { prefix } from '$lib/stores';
-
   let {
     title = undefined,
     desc = undefined,
@@ -129,10 +127,10 @@
 
     {#if onMount && showContent == "html"}
       <div class="grid">
-        <div class="hidden" bind:this="{htmlSlot}" use:prefixClassNames={$prefix}>
+        <div class="hidden" bind:this="{htmlSlot}" use:prefixClassNames>
           <pre>{@render html()}</pre>
         </div>
-        <div class="code-wrapper col-start-1 row-start-1" use:prefixClassNames={$prefix}>
+        <div class="code-wrapper col-start-1 row-start-1" use:prefixClassNames>
           {@render html()}
         </div>
         <div class="col-start-1 row-start-1 flex items-start justify-end p-2 rtl:justify-start">
@@ -169,16 +167,16 @@
     {#if onMount && showContent == "jsx"}
       <div class="grid">
         <div class="hidden" bind:this="{jsxSlot}">
-          <pre use:htmlToJsx use:prefixClassNames={$prefix}>
-          {#if jsx}
-            {@render jsx()}
-          {:else}
-            {@render html()}
-          {/if}
-        </pre>
+          <pre use:htmlToJsx use:prefixClassNames>
+            {#if jsx}
+              {@render jsx()}
+            {:else}
+              {@render html()}
+            {/if}
+          </pre>
         </div>
         <div class="code-wrapper col-start-1 row-start-1">
-          <div use:htmlToJsx use:prefixClassNames={$prefix}>
+          <div use:htmlToJsx use:prefixClassNames>
             {#if jsx}
               {@render jsx()}
             {:else}

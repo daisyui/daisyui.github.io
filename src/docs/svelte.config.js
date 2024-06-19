@@ -35,12 +35,12 @@ const rehypePlugins = [
 const remarkPlugins = [[remarkGithub, { repository: "https://github.com/saadeghi/daisyui" }]]
 
 export default {
-  extensions: [".svelte", ".svx"],
+  extensions: [".svelte", ".svx", ".md"],
 
   preprocess: [
     // highlight(),
     mdsvex({
-      extensions: [".svx"],
+      extensions: [".svx", ".md"],
       rehypePlugins: rehypePlugins,
       remarkPlugins: remarkPlugins,
       layout: {

@@ -10,7 +10,7 @@ layout: components
   import ClassTable from "$components/ClassTable.svelte"
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
-  import { prefix } from '$lib/stores';
+  
   
 </script>
 

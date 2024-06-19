@@ -1,17 +1,22 @@
-import { readEnv } from "$lib/util"
-const root = readEnv("VITE_ROOT")
+import { prefix } from "$lib/stores"
 
-export function prefixClassNames(node, replacement = "") {
+export function prefixClassNames(node) {
   const originalContent = node.innerHTML ?? ""
+  let prefixValue
+  const unsubscribe = prefix.subscribe((value) => {
+    prefixValue = value
+    update()
+  })
 
   function update() {
-    node.innerHTML = originalContent.replaceAll("$$", replacement)
+    node.innerHTML = originalContent.replaceAll("$$", prefixValue)
   }
 
   update()
 
   return {
     update,
+    destroy: unsubscribe, // Unsubscribe when the component is destroyed
   }
 }
 
