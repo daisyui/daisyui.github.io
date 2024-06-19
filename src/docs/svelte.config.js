@@ -6,7 +6,6 @@ import headingSlugs from "rehype-slug"
 import linkHeadings from "rehype-autolink-headings"
 import rehypeExternalLinks from "rehype-external-links"
 import remarkGithub from "remark-github"
-// import { highlight } from "svelte-preprocess-highlight"
 
 const rehypePlugins = [
   headingSlugs,

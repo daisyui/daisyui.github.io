@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -28,7 +28,7 @@ data="{[
   <div class="grid w-32 h-20 rounded bg-accent text-accent-content place-content-center">2</div> 
   <div class="grid w-32 h-20 rounded bg-secondary text-secondary-content place-content-center">3</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div>
   <div class="grid w-32 h-20 rounded bg-primary text-primary-content place-content-center">1</div> 
   <div class="grid w-32 h-20 rounded bg-accent text-accent-content place-content-center">2</div> 
@@ -43,7 +43,7 @@ data="{[
   <div class="grid w-32 h-20 rounded bg-accent text-accent-content place-content-center">2</div> 
   <div class="grid w-32 h-20 rounded bg-secondary text-secondary-content place-content-center">3</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stack">
   <div class="grid w-32 h-20 rounded bg-primary text-primary-content place-content-center">1</div> 
   <div class="grid w-32 h-20 rounded bg-accent text-accent-content place-content-center">2</div> 
@@ -58,7 +58,7 @@ data="{[
   <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Tailwind CSS example 2" class="rounded w-28" />
   <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Tailwind CSS example 3" class="rounded w-28" />
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stack">
   <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" class="rounded" />
   <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" class="rounded" />
@@ -79,7 +79,7 @@ data="{[
     <div class="card-body">C</div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stack">
   <div class="text-center border border-base-content $$card w-36 bg-base-100">
     <div class="$$card-body">A</div>
@@ -106,7 +106,7 @@ data="{[
     <div class="card-body">C</div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stack">
   <div class="text-center shadow-md w-36 $$card bg-base-200">
     <div class="$$card-body">A</div>
@@ -142,7 +142,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stack">
   <div class="$$card shadow-md bg-primary text-primary-content">
     <div class="$$card-body">

@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -39,21 +39,21 @@ data="{[
 
 <Component title="File input">
 <input type="file" class="file-input w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" class="$$file-input w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="File input with border">
 <input type="file" class="file-input file-input-bordered w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" class="$$file-input $$file-input-bordered w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Ghost (no background)">
 <input type="file" class="file-input file-input-ghost w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" class="$$file-input $$file-input-ghost w-full max-w-xs" />`
 }</pre>
 </Component>
@@ -70,7 +70,7 @@ data="{[
     <span class="label-text-alt">Alt label</span>
   </div>
 </label>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<label class="$$form-control w-full max-w-xs">
   <div class="$$label">
     <span class="$$label-text">Pick a file</span>
@@ -87,49 +87,49 @@ data="{[
 
 <Component title="Primary color">
 <input type="file" class="file-input file-input-bordered file-input-primary w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" class="$$file-input $$file-input-bordered $$file-input-primary w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Secondary color">
 <input type="file" class="file-input file-input-bordered file-input-secondary w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" class="$$file-input $$file-input-bordered $$file-input-secondary w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Accent color">
 <input type="file" class="file-input file-input-bordered file-input-accent w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" class="$$file-input $$file-input-bordered $$file-input-accent w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Info color">
 <input type="file" class="file-input file-input-bordered file-input-info w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" class="$$file-input $$file-input-bordered $$file-input-info w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Success color">
 <input type="file" class="file-input file-input-bordered file-input-success w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" class="$$file-input $$file-input-bordered $$file-input-success w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Warning color">
 <input type="file" class="file-input file-input-bordered file-input-warning w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" class="$$file-input $$file-input-bordered $$file-input-warning w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Error color">
 <input type="file" class="file-input file-input-bordered file-input-error w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" class="$$file-input $$file-input-bordered $$file-input-error w-full max-w-xs" />`
 }</pre>
 </Component>
@@ -141,7 +141,7 @@ data="{[
   <input type="file" class="file-input file-input-bordered file-input-md w-full max-w-xs" />
   <input type="file" class="file-input file-input-bordered file-input-lg w-full max-w-xs" />
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `
 <!-- xs -->
 <input type="file" class="$$file-input $$file-input-bordered $$file-input-xs w-full max-w-xs" />
@@ -156,7 +156,7 @@ data="{[
 
 <Component title="Disabled">
 <input type="file" placeholder="You can't touch this" class="file-input file-input-bordered w-full max-w-xs" disabled />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="file" placeholder="You can't touch this" class="$$file-input $$file-input-bordered w-full max-w-xs" disabled />`
 }</pre>
 </Component>

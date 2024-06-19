@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -39,21 +39,21 @@ data="{[
 
 <Component title="Textarea">
 <textarea class="textarea" placeholder="Bio"></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea" placeholder="Bio"></textarea>`
 }</pre>
 </Component>
 
 <Component title="Textarea with border">
 <textarea class="textarea textarea-bordered" placeholder="Bio"></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea $$textarea-bordered" placeholder="Bio"></textarea>`
 }</pre>
 </Component>
 
 <Component title="Ghost (no background)">
 <textarea class="textarea textarea-ghost" placeholder="Bio"></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea $$textarea-ghost" placeholder="Bio"></textarea>`
 }</pre>
 </Component>
@@ -70,7 +70,7 @@ data="{[
     <span class="label-text-alt">Alt label</span>
   </div>
 </label>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<label class="$$form-control">
   <div class="$$label">
     <span class="$$label-text">Your bio</span>
@@ -87,49 +87,49 @@ data="{[
 
 <Component title="Primary color">
 <textarea class="textarea textarea-primary" placeholder="Bio"></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea $$textarea-primary" placeholder="Bio"></textarea>`
 }</pre>
 </Component>
 
 <Component title="Secondary color">
 <textarea class="textarea textarea-secondary" placeholder="Bio"></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea $$textarea-secondary" placeholder="Bio"></textarea>`
 }</pre>
 </Component>
 
 <Component title="Accent color">
 <textarea class="textarea textarea-accent" placeholder="Bio"></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea $$textarea-accent" placeholder="Bio"></textarea>`
 }</pre>
 </Component>
 
 <Component title="Info color">
 <textarea class="textarea textarea-info" placeholder="Bio"></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea $$textarea-info" placeholder="Bio"></textarea>`
 }</pre>
 </Component>
 
 <Component title="Success color">
 <textarea class="textarea textarea-success" placeholder="Bio"></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea $$textarea-success" placeholder="Bio"></textarea>`
 }</pre>
 </Component>
 
 <Component title="Warning color">
 <textarea class="textarea textarea-warning" placeholder="Bio"></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea $$textarea-warning" placeholder="Bio"></textarea>`
 }</pre>
 </Component>
 
 <Component title="Error color">
 <textarea class="textarea textarea-error" placeholder="Bio"></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea $$textarea-error" placeholder="Bio"></textarea>`
 }</pre>
 </Component>
@@ -142,7 +142,7 @@ data="{[
   <textarea placeholder="Bio" class="textarea textarea-bordered textarea-lg w-full max-w-xs" ></textarea>
 </div>
 
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `
 <!-- xs -->
 <textarea placeholder="Bio" class="$$textarea $$textarea-bordered $$textarea-xs w-full max-w-xs" ></textarea>
@@ -157,7 +157,7 @@ data="{[
 
 <Component title="Disabled">
 <textarea class="textarea" placeholder="Bio" disabled></textarea>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<textarea class="$$textarea" placeholder="Bio" disabled></textarea>`
 }</pre>
 </Component>

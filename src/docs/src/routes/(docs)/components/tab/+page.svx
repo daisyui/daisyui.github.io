@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -39,7 +39,7 @@ data="{[
   <button role="tab" class="tab tab-active">Tab 2</button>
   <button role="tab" class="tab">Tab 3</button>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div role="tablist" class="$$tabs">
   <a role="tab" class="$$tab">Tab 1</a>
   <a role="tab" class="$$tab $$tab-active">Tab 2</a>
@@ -54,7 +54,7 @@ data="{[
   <button role="tab" class="tab tab-active">Tab 2</button>
   <button role="tab" class="tab">Tab 3</button>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div role="tablist" class="$$tabs $$tabs-bordered">
   <a role="tab" class="$$tab">Tab 1</a>
   <a role="tab" class="$$tab $$tab-active">Tab 2</a>
@@ -69,7 +69,7 @@ data="{[
   <button role="tab" class="tab tab-active">Tab 2</button>
   <button role="tab" class="tab">Tab 3</button>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div role="tablist" class="$$tabs $$tabs-lifted">
   <a role="tab" class="$$tab">Tab 1</a>
   <a role="tab" class="$$tab $$tab-active">Tab 2</a>
@@ -84,7 +84,7 @@ data="{[
   <button role="tab" class="tab tab-active">Tab 2</button>
   <button role="tab" class="tab">Tab 3</button>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div role="tablist" class="$$tabs $$tabs-boxed">
   <a role="tab" class="$$tab">Tab 1</a>
   <a role="tab" class="$$tab $$tab-active">Tab 2</a>
@@ -116,7 +116,7 @@ data="{[
     <button role="tab" class="tab">Large</button>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<!-- xs -->
 <div role="tablist" class="$$tabs $$tabs-lifted $$tabs-xs">
   <a role="tab" class="$$tab">Tiny</a>
@@ -156,7 +156,7 @@ data="{[
   <div role="tabpanel" class="tab-content p-10">Tab content 3</div>
 </div>
 
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div role="tablist" class="$$tabs $$tabs-bordered">
   <input type="radio" name="my_tabs_1" role="tab" class="$$tab" aria-label="Tab 1" />
   <div role="tabpanel" class="$$tab-content p-10">Tab content 1</div>
@@ -182,7 +182,7 @@ data="{[
   <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 pe-32">Tab content 3</div>
 </div>
 
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div role="tablist" class="$$tabs $$tabs-lifted">
   <input type="radio" name="my_tabs_2" role="tab" class="$$tab" aria-label="Tab 1" />
   <div role="tabpanel" class="$$tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 1</div>
@@ -202,7 +202,7 @@ data="{[
   <button role="tab" class="tab tab-active [--tab-bg:yellow] [--tab-border-color:orange] text-primary">Tab 2</button>
   <button role="tab" class="tab">Tab 3</button>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div role="tablist" class="$$tabs $$tabs-lifted">
   <a role="tab" class="$$tab">Tab 1</a>
   <a role="tab" class="$$tab $$tab-active [--tab-bg:yellow] [--tab-border-color:orange] text-primary">Tab 2</a>

@@ -12,7 +12,7 @@ layout: components
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import Translate from "$components/Translate.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -82,7 +82,7 @@ data="{[
     <div class="timeline-end timeline-box">Apple Watch</div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline">
   <li>
     <div class="$$timeline-start">1984</div>
@@ -172,7 +172,7 @@ data="{[
     <div class="timeline-end timeline-box">Apple Watch</div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline">
   <li>
     <div class="$$timeline-middle">
@@ -257,7 +257,7 @@ data="{[
     </div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline">
   <li>
     <div class="$$timeline-start $$timeline-box">First Macintosh computer</div>
@@ -342,7 +342,7 @@ data="{[
     </div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline">
   <li>
     <div class="$$timeline-start $$timeline-box">First Macintosh computer</div>
@@ -427,7 +427,7 @@ data="{[
     </div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline">
   <li>
     <div class="$$timeline-start $$timeline-box">First Macintosh computer</div>
@@ -497,7 +497,7 @@ data="{[
     <div class="timeline-start timeline-box">Apple Watch</div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline">
   <li>
     <div class="$$timeline-start $$timeline-box">First Macintosh computer</div>
@@ -572,7 +572,7 @@ data="{[
     <div class="timeline-end timeline-box">Apple Watch</div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline $$timeline-vertical">
   <li>
     <div class="$$timeline-start">1984</div>
@@ -662,7 +662,7 @@ data="{[
     <div class="timeline-end timeline-box">Apple Watch</div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline $$timeline-vertical">
   <li>
     <div class="$$timeline-middle">
@@ -747,7 +747,7 @@ data="{[
     </div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline $$timeline-vertical">
   <li>
     <div class="$$timeline-start $$timeline-box">First Macintosh computer</div>
@@ -832,7 +832,7 @@ data="{[
     </div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline $$timeline-vertical">
   <li>
     <div class="$$timeline-start $$timeline-box">First Macintosh computer</div>
@@ -917,7 +917,7 @@ data="{[
     </div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline $$timeline-vertical">
   <li>
     <div class="$$timeline-start $$timeline-box">First Macintosh computer</div>
@@ -987,7 +987,7 @@ data="{[
     <div class="timeline-start timeline-box">Apple Watch</div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline $$timeline-vertical">
   <li>
     <div class="$$timeline-start $$timeline-box">First Macintosh computer</div>
@@ -1062,7 +1062,7 @@ data="{[
     <div class="timeline-end timeline-box">Apple Watch</div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline $$timeline-vertical lg:$$timeline-horizontal">
   <li>
     <div class="$$timeline-start">1984</div>
@@ -1172,7 +1172,7 @@ data="{[
     </div>
   </li>
 </ul>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<ul class="$$timeline $$timeline-snap-icon max-md:$$timeline-compact $$timeline-vertical">
   <li>
     <div class="$$timeline-middle">

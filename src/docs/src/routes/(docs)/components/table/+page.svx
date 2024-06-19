@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -62,7 +62,7 @@ data="{[
     </tbody>
   </table>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="overflow-x-auto">
   <table class="$$table">
     <!-- head -->
@@ -135,7 +135,7 @@ data="{[
     </tbody>
   </table>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="overflow-x-auto">
   <table class="$$table">
     <!-- head -->
@@ -208,7 +208,7 @@ data="{[
     </tbody>
   </table>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="overflow-x-auto">
   <table class="$$table">
     <!-- head -->
@@ -281,7 +281,7 @@ data="{[
     </tbody>
   </table>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="overflow-x-auto">
   <table class="$$table $$table-zebra">
     <!-- head -->
@@ -466,7 +466,7 @@ data="{[
     </tfoot>
   </table>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="overflow-x-auto">
   <table class="$$table">
     <!-- head -->
@@ -830,7 +830,7 @@ data="{[
     </tfoot>
   </table>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="overflow-x-auto">
   <table class="$$table $$table-xs">
     <thead>
@@ -1205,7 +1205,7 @@ data="{[
   </tbody>
   </table>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="overflow-x-auto h-96">
   <table class="$$table $$table-pin-rows">
   <thead>
@@ -1602,7 +1602,7 @@ data="{[
     </tfoot>
   </table>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="overflow-x-auto">
   <table class="$$table $$table-xs $$table-pin-rows $$table-pin-cols">
     <thead>

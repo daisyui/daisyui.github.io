@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -38,7 +38,7 @@ data="{[
     <div class="stat-desc">21% more than last month</div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stats shadow">
   
   <div class="$$stat">
@@ -82,7 +82,7 @@ data="{[
     <div class="stat-desc text-secondary">31 tasks remaining</div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stats shadow">
   
   <div class="$$stat">
@@ -147,7 +147,7 @@ data="{[
     <div class="stat-desc">↘︎ 90 (14%)</div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stats shadow">
   
   <div class="$$stat">
@@ -199,7 +199,7 @@ data="{[
     <div class="stat-desc">↘︎ 90 (14%)</div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stats shadow">
   
   <div class="$$stat place-items-center">
@@ -242,7 +242,7 @@ data="{[
     <div class="stat-desc">↘︎ 90 (14%)</div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stats $$stats-vertical shadow">
   
   <div class="$$stat">
@@ -285,7 +285,7 @@ data="{[
     <div class="stat-desc">↘︎ 90 (14%)</div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stats $$stats-vertical lg:$$stats-horizontal shadow">
   
   <div class="$$stat">
@@ -328,7 +328,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$stats bg-primary text-primary-content">
   
   <div class="$$stat">

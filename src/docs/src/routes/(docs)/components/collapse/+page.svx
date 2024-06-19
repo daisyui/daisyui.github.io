@@ -12,7 +12,7 @@ layout: components
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import Translate from "$components/Translate.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -43,7 +43,7 @@ data="{[
     <p>tabindex="0" attribute is necessary to make the div focusable</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div tabindex="0" class="$$collapse bg-base-200"> 
   <div class="$$collapse-title text-xl font-medium">
     Focus me to see content
@@ -65,7 +65,7 @@ data="{[
     <p>hello</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$collapse bg-base-200">
   <input type="checkbox" /> 
   <div class="$$collapse-title text-xl font-medium">
@@ -85,7 +85,7 @@ data="{[
     <p>content</p>
   </div>
 </details>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<details class="$$collapse bg-base-200">
   <summary class="$$collapse-title text-xl font-medium">Click to open/close</summary>
   <div class="$$collapse-content"> 
@@ -109,7 +109,7 @@ data="{[
     <p>tabindex="0" attribute is necessary to make the div focusable</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div tabindex="0" class="$$collapse border border-base-300 bg-base-200"> 
   <div class="$$collapse-title text-xl font-medium">
     Focus me to see content
@@ -130,7 +130,7 @@ data="{[
     <p>tabindex="0" attribute is necessary to make the div focusable</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div tabindex="0" class="$$collapse $$collapse-arrow border border-base-300 bg-base-200">
   <div class="$$collapse-title text-xl font-medium">
     Focus me to see content
@@ -151,7 +151,7 @@ data="{[
     <p>tabindex="0" attribute is necessary to make the div focusable</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div tabindex="0" class="$$collapse $$collapse-plus border border-base-300 bg-base-200">
   <div class="$$collapse-title text-xl font-medium">
     Focus me to see content
@@ -172,7 +172,7 @@ data="{[
     <p>tabindex="0" attribute is necessary to make the div focusable</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div tabindex="0" class="$$collapse $$collapse-open border border-base-300 bg-base-200"> 
   <div class="$$collapse-title text-xl font-medium">
     I have collapse-open class
@@ -193,7 +193,7 @@ data="{[
     <p>tabindex="0" attribute is necessary to make the div focusable</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div tabindex="0" class="$$collapse $$collapse-close border border-base-300 bg-base-200"> 
   <div class="$$collapse-title text-xl font-medium">
     I have collapse-close class
@@ -214,7 +214,7 @@ data="{[
     <p>tabindex="0" attribute is necessary to make the div focusable</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div tabindex="0" class="collapse bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content">
   <div class="$$collapse-title">
     Focus me to see content
@@ -236,7 +236,7 @@ data="{[
     <p>hello</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="collapse bg-base-200">
   <input type="checkbox" class="peer" /> 
   <div class="$$collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">

@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <BrowserSupport data="{{
@@ -42,7 +42,7 @@ data="{[
   </div>
   <div class="diff-resizer"></div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$diff aspect-[16/9]">
   <div class="$$diff-item-1">
     <img alt="daisy" src="https://img.daisyui.com/images/stock/photo-1560717789-0ac7c58ac90a.jpg" />
@@ -65,7 +65,7 @@ data="{[
   </div>
   <div class="diff-resizer"></div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$diff aspect-[16/9]">
   <div class="$$diff-item-1">
     <div class="bg-primary text-primary-content text-9xl font-black grid place-content-center">DAISY</div>

@@ -12,7 +12,7 @@ layout: components
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import Translate from "$components/Translate.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -67,7 +67,7 @@ data="{[
     <p>hello</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$collapse bg-base-200">
   <input type="radio" name="my-accordion-1" checked="checked" /> 
   <div class="$$collapse-title text-xl font-medium">
@@ -126,7 +126,7 @@ data="{[
     <p>hello</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$collapse $$collapse-arrow bg-base-200">
   <input type="radio" name="my-accordion-2" checked="checked" /> 
   <div class="$$collapse-title text-xl font-medium">
@@ -185,7 +185,7 @@ data="{[
     <p>hello</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$collapse $$collapse-plus bg-base-200">
   <input type="radio" name="my-accordion-3" checked="checked" /> 
   <div class="$$collapse-title text-xl font-medium">
@@ -246,7 +246,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$join $$join-vertical w-full">
   <div class="$$collapse $$collapse-arrow $$join-item border border-base-300">
     <input type="radio" name="my-accordion-4" checked="checked" /> 

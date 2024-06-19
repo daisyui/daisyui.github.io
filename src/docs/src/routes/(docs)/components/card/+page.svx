@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -41,7 +41,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card w-96 bg-base-100 shadow-xl">
   <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
   <div class="$$card-body">
@@ -66,7 +66,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card $$card-compact w-96 bg-base-100 shadow-xl">
   <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
   <div class="$$card-body">
@@ -95,7 +95,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card w-96 bg-base-100 shadow-xl">
   <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
   <div class="$$card-body">
@@ -121,7 +121,7 @@ data="{[
   </div>
   <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card w-96 bg-base-100 shadow-xl">
   <div class="$$card-body">
     <h2 class="$$card-title">Shoes!</h2>
@@ -145,7 +145,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card w-96 bg-base-100 shadow-xl">
   <figure class="px-10 pt-10">
     <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
@@ -172,7 +172,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card w-96 bg-base-100 shadow-xl image-full">
   <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
   <div class="$$card-body">
@@ -196,7 +196,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card w-96 bg-base-100 shadow-xl">
   <div class="$$card-body">
     <h2 class="$$card-title">Card title!</h2>
@@ -219,7 +219,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card w-96 bg-primary text-primary-content">
   <div class="$$card-body">
     <h2 class="$$card-title">Card title!</h2>
@@ -243,7 +243,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card w-96 bg-neutral text-neutral-content">
   <div class="$$card-body items-center text-center">
     <h2 class="$$card-title">Cookies!</h2>
@@ -268,7 +268,7 @@ data="{[
     <p>We are using cookies for no reason.</p>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card w-96 bg-base-100 shadow-xl">
   <div class="$$card-body">
     <div class="$$card-actions justify-end">
@@ -293,7 +293,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card w-96 glass">
   <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
   <div class="$$card-body">
@@ -318,7 +318,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card $$card-side bg-base-100 shadow-xl">
   <figure><img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
   <div class="$$card-body">
@@ -343,7 +343,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$card lg:$$card-side bg-base-100 shadow-xl">
   <figure><img src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album"/></figure>
   <div class="$$card-body">

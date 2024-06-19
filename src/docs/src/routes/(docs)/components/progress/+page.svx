@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -37,7 +37,7 @@ data="{[
   <progress class="progress w-56" value="70" max="100"></progress>
   <progress class="progress w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<progress class="$$progress w-56" value="0" max="100"></progress>
 <progress class="$$progress w-56" value="10" max="100"></progress>
 <progress class="$$progress w-56" value="40" max="100"></progress>
@@ -54,7 +54,7 @@ data="{[
   <progress class="progress progress-primary w-56" value="70" max="100"></progress>
   <progress class="progress progress-primary w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<progress class="$$progress $$progress-primary w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-primary w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-primary w-56" value="40" max="100"></progress>
@@ -71,7 +71,7 @@ data="{[
   <progress class="progress progress-secondary w-56" value="70" max="100"></progress>
   <progress class="progress progress-secondary w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<progress class="$$progress $$progress-secondary w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-secondary w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-secondary w-56" value="40" max="100"></progress>
@@ -88,7 +88,7 @@ data="{[
   <progress class="progress progress-accent w-56" value="70" max="100"></progress>
   <progress class="progress progress-accent w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<progress class="$$progress $$progress-accent w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-accent w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-accent w-56" value="40" max="100"></progress>
@@ -105,7 +105,7 @@ data="{[
   <progress class="progress progress-success w-56" value="70" max="100"></progress>
   <progress class="progress progress-success w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<progress class="$$progress $$progress-success w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-success w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-success w-56" value="40" max="100"></progress>
@@ -122,7 +122,7 @@ data="{[
   <progress class="progress progress-info w-56" value="70" max="100"></progress>
   <progress class="progress progress-info w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<progress class="$$progress $$progress-info w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-info w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-info w-56" value="40" max="100"></progress>
@@ -139,7 +139,7 @@ data="{[
   <progress class="progress progress-warning w-56" value="70" max="100"></progress>
   <progress class="progress progress-warning w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<progress class="$$progress $$progress-warning w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-warning w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-warning w-56" value="40" max="100"></progress>
@@ -156,7 +156,7 @@ data="{[
   <progress class="progress progress-error w-56" value="70" max="100"></progress>
   <progress class="progress progress-error w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<progress class="$$progress $$progress-error w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-error w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-error w-56" value="40" max="100"></progress>
@@ -167,7 +167,7 @@ data="{[
 
 <Component title="Indeterminate (without value)">
 <progress class="progress w-56"></progress>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<progress class="progress w-56"></progress>`
 }</pre>
 </Component>

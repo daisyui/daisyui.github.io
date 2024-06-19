@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -34,7 +34,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$hero min-h-screen bg-base-200">
   <div class="$$hero-content text-center">
     <div class="max-w-md">
@@ -58,7 +58,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$hero min-h-screen bg-base-200">
   <div class="$$hero-content flex-col lg:flex-row">
     <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
@@ -83,7 +83,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$hero min-h-screen bg-base-200">
   <div class="$$hero-content flex-col lg:flex-row-reverse">
     <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
@@ -128,7 +128,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$hero min-h-screen bg-base-200">
   <div class="$$hero-content flex-col lg:flex-row-reverse">
     <div class="text-center lg:text-left">
@@ -173,7 +173,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$hero min-h-screen" style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
   <div class="$$hero-overlay bg-opacity-60"></div>
   <div class="$$hero-content text-center text-neutral-content">
@@ -185,7 +185,7 @@ data="{[
   </div>
 </div>`
 }</pre>
-<pre slot="jsx" use:replace={{ to: $prefix }}>{
+<pre slot="jsx">{
 `<div class="$$hero min-h-screen" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
   <div class="$$hero-overlay bg-opacity-60"></div>
   <div class="$$hero-content text-center text-neutral-content">

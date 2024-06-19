@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -26,7 +26,7 @@ data="{[
 <div class="border mockup-window border-base-300 w-full">
   <div class="flex justify-center px-4 py-16 border-t border-base-300">Hello!</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$mockup-window border border-base-300">
   <div class="flex justify-center px-4 py-16 border-t border-base-300">Hello!</div>
 </div>`
@@ -37,7 +37,7 @@ data="{[
 <div class="border mockup-window bg-base-300 w-full">
   <div class="flex justify-center px-4 py-16 bg-base-200">Hello!</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$mockup-window border bg-base-300">
   <div class="flex justify-center px-4 py-16 bg-base-200">Hello!</div>
 </div>`

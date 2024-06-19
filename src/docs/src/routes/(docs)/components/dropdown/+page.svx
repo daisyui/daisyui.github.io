@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -40,7 +40,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </details>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<details class="$$dropdown">
   <summary class="m-1 btn">open or close</summary>
   <ul class="p-2 shadow $$menu $$dropdown-content z-[1] bg-base-100 $$rounded-box w-52">
@@ -71,7 +71,7 @@ data="{[
     </ul>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -92,7 +92,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -111,7 +111,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-top">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -130,7 +130,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-top $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -149,7 +149,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-bottom">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -168,7 +168,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-bottom $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -187,7 +187,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-left">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -206,7 +206,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-left $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -225,7 +225,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-right">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -244,7 +244,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-right $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -265,7 +265,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-hover">
   <div tabindex="0" role="button" class="$$btn m-1">Hover</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -286,7 +286,7 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown $$dropdown-open">
   <div tabindex="0" role="button" class="$$btn m-1">Button</div>
   <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -309,7 +309,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$dropdown">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
   <div tabindex="0" class="$$dropdown-content z-[1] $$card $$card-compact w-64 p-2 shadow bg-primary text-primary-content">
@@ -340,7 +340,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$navbar bg-base-300 rounded-box">
   <div class="flex-1 px-2 lg:flex-none">
     <a class="text-lg font-bold">daisyUI</a>
@@ -376,7 +376,7 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `A normal text and a helper dropdown
 <div class="$$dropdown $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn $$btn-circle $$btn-ghost $$btn-xs text-info">

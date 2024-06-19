@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -31,7 +31,7 @@ data="{[
   <button class="btn join-item">Button</button>
   <button class="btn join-item">Button</button>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$join">
   <button class="$$btn $$join-item">Button</button>
   <button class="$$btn $$join-item">Button</button>
@@ -46,7 +46,7 @@ data="{[
   <button class="btn join-item">Button</button>
   <button class="btn join-item">Button</button>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$join $$join-vertical">
   <button class="$$btn $$join-item">Button</button>
   <button class="$$btn $$join-item">Button</button>
@@ -61,7 +61,7 @@ data="{[
   <button class="btn join-item">Button</button>
   <button class="btn join-item">Button</button>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$join $$join-vertical lg:$$join-horizontal">
   <button class="$$btn $$join-item">Button</button>
   <button class="$$btn $$join-item">Button</button>
@@ -88,7 +88,7 @@ data="{[
     <button class="btn join-item">Search</button>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$join">
   <div>
     <div>
@@ -114,7 +114,7 @@ data="{[
   <input class="input input-bordered join-item w-36 lg:w-52" placeholder="Email"/>
   <button class="btn join-item rounded-r-full">Subscribe</button>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$join">
   <input class="$$input $$input-bordered $$join-item" placeholder="Email"/>
   <button class="$$btn $$join-item rounded-r-full">Subscribe</button>
@@ -128,7 +128,7 @@ data="{[
   <input class="join-item btn" type="radio" name="options" aria-label="Radio 2" />
   <input class="join-item btn" type="radio" name="options" aria-label="Radio 3" />
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$join">
   <input class="$$join-item $$btn" type="radio" name="options" aria-label="Radio 1" />
   <input class="$$join-item $$btn" type="radio" name="options" aria-label="Radio 2" />

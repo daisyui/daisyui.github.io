@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -40,7 +40,7 @@ data="{[
   <div class="divider">OR</div>
   <div class="grid h-20 card bg-base-300 rounded-box place-items-center">content</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="flex flex-col w-full border-opacity-50">
   <div class="grid h-20 card bg-base-300 rounded-box place-items-center">content</div>
   <div class="$$divider">OR</div>
@@ -55,7 +55,7 @@ data="{[
   <div class="divider divider-horizontal">OR</div>
   <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">content</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="flex w-full">
   <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">content</div>
   <div class="$$divider $$divider-horizontal">OR</div>
@@ -70,7 +70,7 @@ data="{[
   <div class="divider"></div> 
   <div class="grid h-20 card bg-base-300 rounded-box place-items-center">content</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="flex flex-col w-full">
   <div class="grid h-20 card bg-base-300 rounded-box place-items-center">content</div> 
   <div class="$$divider"></div> 
@@ -85,7 +85,7 @@ data="{[
   <div class="divider lg:divider-horizontal">OR</div> 
   <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">content</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="flex flex-col w-full lg:flex-row">
   <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">content</div> 
   <div class="$$divider lg:$$divider-horizontal">OR</div> 
@@ -106,7 +106,7 @@ data="{[
   <div class="divider divider-info">Info</div>
   <div class="divider divider-error">Error</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="flex flex-col w-full">
   <div class="$$divider">Default</div>
   <div class="$$divider $$divider-neutral">Neutral</div>
@@ -127,7 +127,7 @@ data="{[
   <div class="divider">Default</div>
   <div class="divider divider-end">End</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="flex flex-col w-full">
   <div class="$$divider $$divider-start">Start</div>
   <div class="$$divider">Default</div>
@@ -142,7 +142,7 @@ data="{[
   <div class="divider divider-horizontal">Default</div>
   <div class="divider divider-horizontal divider-end">End</div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="flex w-full">
   <div class="$$divider $$divider-start">Start</div>
   <div class="$$divider">Default</div>

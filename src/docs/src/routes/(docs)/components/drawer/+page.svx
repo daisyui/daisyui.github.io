@@ -12,7 +12,7 @@ layout: components
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import Translate from "$components/Translate.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -67,7 +67,7 @@ data="{[
     </ul>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$drawer">
   <input id="my-drawer" type="checkbox" class="$$drawer-toggle" />
   <div class="$$drawer-content">
@@ -102,7 +102,7 @@ data="{[
     </ul>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$drawer lg:$$drawer-open">
   <input id="my-drawer-2" type="checkbox" class="$$drawer-toggle" />
   <div class="$$drawer-content flex flex-col items-center justify-center">
@@ -151,7 +151,7 @@ data="{[
     </ul>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$drawer">
   <input id="my-drawer-3" type="checkbox" class="$$drawer-toggle" /> 
   <div class="$$drawer-content flex flex-col">
@@ -200,7 +200,7 @@ data="{[
     </ul>
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$drawer $$drawer-end">
   <input id="my-drawer-4" type="checkbox" class="$$drawer-toggle" />
   <div class="$$drawer-content">

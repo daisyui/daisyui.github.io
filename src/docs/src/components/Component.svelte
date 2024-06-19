@@ -1,43 +1,22 @@
 <script>
   import { onMount } from "svelte"
   import Translate from "$components/Translate.svelte"
-  import { htmlToJsx, linkProcess } from "$lib/actions"
+  import { htmlToJsx, prefixClassNames } from "$lib/actions"
   import { t } from "$lib/i18n"
+  import { prefix } from '$lib/stores';
 
-// 	import { getHighlighter } from 'shiki'
-// 	const highlighter = getHighlighter({
-// 		themes: ['poimandres'],
-// 		langs: ['javascript', 'typescript', 'svelte'],
-// 	})
-//   const code = highlighter.codeToHtml('const a = 1', {
-//   lang: 'javascript',
-//   theme: 'nord'
-// })
-
-
-
-
-
-  // import Prism from "./Prism.svelte"
-  // import Prism from 'svelte-prism'
+  let {
+    title = undefined,
+    desc = undefined,
+    bg = undefined,
+    classes = undefined,
+    responsive = false,
+    children,
+    html,
+    jsx
+  } = $props();
   
-//   import Prism from 'prismjs';
-// import 'prism-svelte';
-
-  // import {HighlightSvelte} from "svelte-highlight";
-  // import xml from "svelte-highlight/languages/xml";
-  // import onedark from "svelte-highlight/styles/onedark";
-
-
-  // let Prism = $state()
-  // onMount(async () => {
-  //   Prism = (await import("./Prism.svelte")).default
-  // })
-
-
-  // Declaring state using $state
-  let { children, html, jsx, title, desc, bg, classes, responsive } = $props()
-  let wrapper
+  let wrapper = $state()
   let showContent = $state("preview")
   let htmlSlot = $state()
   let jsxSlot = $state()
@@ -56,15 +35,29 @@
     return txt.value
   }
 
-  // Using $derived for computed state
-  const titleStr = $derived(() =>
-    title
-      ? title
-          .replace(/[ ]/g, "-") // replace spaces with -
-          .replace(/[^A-Za-z0-9-]/g, "") // replace all non-alphanumeric chars
-          .toLowerCase()
-      : ""
-  )
+  const stripSyntaxHighlighterTags = (html) => {
+    // Create a temporary element to parse the HTML
+    const tempElement = document.createElement('div');
+    tempElement.innerHTML = html;
+
+    // Find the code elements and extract their text content
+    const codeElement = tempElement.querySelector('code');
+    let codeHtml = codeElement ? codeElement.textContent : '';
+
+    // Decode HTML entities
+    const textArea = document.createElement('textarea');
+    textArea.innerHTML = codeHtml;
+    const decodedHtml = textArea.value;
+
+    return decodedHtml;
+}
+
+  let titleStr = $derived(title
+    ? title
+        .replace(/[ ]/g, "-") // replace spaces with -
+        .replace(/[^A-Za-z0-9-]/g, "") // replace all non-alphanumeric chars
+        .toLowerCase()
+    : "");
 
   onMount(() => {
     if (document.getElementById(location.hash.slice(1)) && location.hash.slice(1) == titleStr) {
@@ -72,9 +65,7 @@
     }
   })
 </script>
-<!-- <svelte:head>
-  {@html onedark}
-</svelte:head> -->
+
 <div
   class="component-preview not-prose text-base-content my-6 lg:my-12"
   id="{titleStr}"
@@ -90,6 +81,9 @@
       {$t(desc)}
     </div>
   {/if}
+  <!-- {#if html}
+    {@render html()}
+  {/if} -->
   <div class="grid">
     <div class="tabs tabs-lifted z-10 -mb-[var(--tab-border)] justify-self-start">
       <button
@@ -135,31 +129,11 @@
 
     {#if onMount && showContent == "html"}
       <div class="grid">
-        <div class="hidden" bind:this="{htmlSlot}">
-          <pre use:linkProcess>{@render html()}</pre>
+        <div class="hidden" bind:this="{htmlSlot}" use:prefixClassNames={$prefix}>
+          <pre>{@render html()}</pre>
         </div>
-        <div class="code-wrapper col-start-1 row-start-1">
-          <pre data-language="typescript">
-            {`
-              const sum = (a: number, b: number) => a + b;
-            
-              const difference = (a: number, b: number) => a - b;
-            `}
-            </pre>
-          <!-- <Prism language="html" source="{"xx"}" /> -->
-          <!-- {#await highlighter then highlighter}
-            {code}
-          {/await} -->
-<!-- {Prism.highlight(`source`, Prism.languages.svelte, 'svelte')} -->
-          <!-- <Prism language="html"> -->
-          <!-- <svelte:component this="{Prism}" language="html"> -->
-            <!-- {html}
-            <HighlightSvelte language={xml} code={html} /> -->
-            <!-- <div use:linkProcess> -->
-              {@render html()}
-            <!-- </div> -->
-          <!-- </svelte:component> -->
-          <!-- </Prism> -->
+        <div class="code-wrapper col-start-1 row-start-1" use:prefixClassNames={$prefix}>
+          {@render html()}
         </div>
         <div class="col-start-1 row-start-1 flex items-start justify-end p-2 rtl:justify-start">
           <div
@@ -167,7 +141,7 @@
             class="tooltip tooltip-left tooltip-accent">
             <button
               class="btn btn-square btn-sm btn-neutral"
-              onclick="{() => copyText(decodeHtml(htmlSlot.firstChild.innerHTML))}">
+              onclick="{() => copyText(stripSyntaxHighlighterTags(htmlSlot.firstChild.innerHTML))}">
               {#if isClipboardButtonPressed}
                 <svg
                   class="h-5 w-5 fill-current"
@@ -195,22 +169,22 @@
     {#if onMount && showContent == "jsx"}
       <div class="grid">
         <div class="hidden" bind:this="{jsxSlot}">
-          {#if jsx()}
-            <pre use:htmlToJsx use:linkProcess>{@render jsx()}</pre>
+          <pre use:htmlToJsx use:prefixClassNames={$prefix}>
+          {#if jsx}
+            {@render jsx()}
           {:else}
-            <pre use:htmlToJsx use:linkProcess>{@render html()}</pre>
+            {@render html()}
           {/if}
+        </pre>
         </div>
         <div class="code-wrapper col-start-1 row-start-1">
-          <!-- <svelte:component this="{Prism}" language="svelte"> -->
-            <div use:htmlToJsx use:linkProcess>
-              {#if jsx()}
-                {@render jsx()}
-              {:else}
-                {@render html()}
-              {/if}
-            </div>
-          <!-- </svelte:component> -->
+          <div use:htmlToJsx use:prefixClassNames={$prefix}>
+            {#if jsx}
+              {@render jsx()}
+            {:else}
+              {@render html()}
+            {/if}
+          </div>
         </div>
         <div class="col-start-1 row-start-1 flex items-start justify-end p-2 rtl:justify-start">
           <div
@@ -218,7 +192,7 @@
             class="tooltip tooltip-left tooltip-accent">
             <button
               class="btn btn-square btn-sm btn-neutral"
-              onclick="{() => copyText(decodeHtml(jsxSlot.firstChild.innerHTML))}">
+              onclick="{() => copyText(stripSyntaxHighlighterTags(jsxSlot.firstChild.innerHTML))}">
               {#if isClipboardButtonPressed}
                 <svg
                   class="h-5 w-5 fill-current"

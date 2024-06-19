@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -38,7 +38,7 @@ data="{[
 
 <Component title="Badge">
 <span class="badge">Badge</span>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<span class="$$badge">Badge</span>`
 }</pre>
 </Component>
@@ -50,7 +50,7 @@ data="{[
 <div class="badge badge-secondary">secondary</div>
 <div class="badge badge-accent">accent</div>
 <div class="badge badge-ghost">ghost</div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$badge">default</div>
 <div class="$$badge $$badge-neutral">neutral</div>
 <div class="$$badge $$badge-primary">primary</div>
@@ -65,7 +65,7 @@ data="{[
 <div class="badge badge-primary badge-outline">primary</div>
 <div class="badge badge-secondary badge-outline">secondary</div>
 <div class="badge badge-accent badge-outline">accent</div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$badge $$badge-outline">default</div>
 <div class="$$badge $$badge-primary $$badge-outline">primary</div>
 <div class="$$badge $$badge-secondary $$badge-outline">secondary</div>
@@ -78,7 +78,7 @@ data="{[
 <div class="badge badge-md">987,654</div>
 <div class="badge badge-sm">987,654</div>
 <div class="badge badge-xs">987,654</div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$badge $$badge-lg">987,654</div>
 <div class="$$badge $$badge-md">987,654</div>
 <div class="$$badge $$badge-sm">987,654</div>
@@ -91,7 +91,7 @@ data="{[
 <div class="badge badge-primary badge-md"></div>
 <div class="badge badge-primary badge-sm"></div>
 <div class="badge badge-primary badge-xs"></div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$badge $$badge-primary $$badge-lg"></div>
 <div class="$$badge $$badge-primary $$badge-md"></div>
 <div class="$$badge $$badge-primary $$badge-sm"></div>
@@ -116,7 +116,7 @@ data="{[
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
   error
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="$$badge $$badge-info gap-2">
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
   info
@@ -153,7 +153,7 @@ data="{[
   Heading
   <span class="badge badge-xs">NEW</span>
 </h5>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<h2 class="text-xl">
   Heading
   <span class="badge badge-lg">NEW</span>
@@ -182,7 +182,7 @@ data="{[
   Inbox
   <div class="badge badge-secondary">+99</div>
 </button>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<button class="$$btn">
   Inbox
   <div class="$$badge">+99</div>

@@ -11,7 +11,7 @@ layout: components
   import ComponentPageTabs from "$components/ComponentPageTabs.svelte"
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 </script>
 
 <!-- <ComponentPageTabs/> -->
@@ -39,14 +39,14 @@ data="{[
 
 <Component title="Text input">
 <input type="text" placeholder="Type here" class="input w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="Type here" class="$$input w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Text input with border">
 <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="Type here" class="$$input $$input-bordered w-full max-w-xs" />`
 }</pre>
 </Component>
@@ -70,7 +70,7 @@ data="{[
     <input type="password" class="grow" value="password" />
   </label>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<label class="input input-bordered flex items-center gap-2">
   <input type="text" class="grow" placeholder="Search" />
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
@@ -110,7 +110,7 @@ data="{[
     <span class="badge badge-info">Optional</span>
   </label>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<label class="input input-bordered flex items-center gap-2">
   Name
   <input type="text" class="grow" placeholder="Daisy" />
@@ -133,7 +133,7 @@ data="{[
 
 <Component title="Ghost (no background)">
 <input type="text" placeholder="Type here" class="input input-ghost w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="Type here" class="$$input $$input-ghost w-full max-w-xs" />`
 }</pre>
 </Component>
@@ -150,7 +150,7 @@ data="{[
     <span class="label-text-alt">Bottom Right label</span>
   </div>
 </label>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<label class="$$form-control w-full max-w-xs">
   <div class="$$label">
     <span class="$$label-text">What is your name?</span>
@@ -167,49 +167,49 @@ data="{[
 
 <Component title="Primary color">
 <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="Type here" class="$$input $$input-bordered $$input-primary w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Secondary color">
 <input type="text" placeholder="Type here" class="input input-bordered input-secondary w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="Type here" class="$$input $$input-bordered $$input-secondary w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Accent color">
 <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="Type here" class="$$input $$input-bordered $$input-accent w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Info color">
 <input type="text" placeholder="Type here" class="input input-bordered input-info w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="Type here" class="$$input $$input-bordered $$input-info w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Success color">
 <input type="text" placeholder="Type here" class="input input-bordered input-success w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="Type here" class="$$input $$input-bordered $$input-success w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Warning color">
 <input type="text" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="Type here" class="$$input $$input-bordered $$input-warning w-full max-w-xs" />`
 }</pre>
 </Component>
 
 <Component title="Error color">
 <input type="text" placeholder="Type here" class="input input-bordered input-error w-full max-w-xs" />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="Type here" class="$$input $$input-bordered $$input-error w-full max-w-xs" />`
 }</pre>
 </Component>
@@ -221,7 +221,7 @@ data="{[
   <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" />
   <input type="text" placeholder="Type here" class="input input-bordered input-lg w-full max-w-xs" />
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `
 <!-- xs -->
 <input type="text" placeholder="Type here" class="$$input $$input-bordered $$input-xs w-full max-w-xs" />
@@ -236,7 +236,7 @@ data="{[
 
 <Component title="Disabled">
 <input type="text" placeholder="You can't touch this" class="input input-bordered w-full max-w-xs" disabled />
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<input type="text" placeholder="You can't touch this" class="$$input $$input-bordered w-full max-w-xs" disabled />`
 }</pre>
 </Component>

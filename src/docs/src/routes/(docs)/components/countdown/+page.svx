@@ -12,7 +12,7 @@ layout: components
   import BrowserSupport from "$components/BrowserSupport.svelte"
   import Translate from "$components/Translate.svelte"
   import { prefix } from '$lib/stores';
-  import { replace } from '$lib/actions';
+  
 
   import { onMount } from "svelte"
   let counter = 59
@@ -44,12 +44,12 @@ data="{[
 <span class="countdown">
   <span style="--value:{counter};"></span>
 </span>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<span class="$$countdown">
   <span style="--value:${counter};"></span>
 </span>`
 }</pre>
-<pre slot="jsx" use:replace={{ to: $prefix }}>{
+<pre slot="jsx">{
 `<span class="$$countdown">
   <span style={{"--value":${counter}}}></span>
 </span>`
@@ -60,12 +60,12 @@ data="{[
 <span class="countdown font-mono text-6xl">
   <span style="--value:{counter};"></span>
 </span>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<span class="$$countdown font-mono text-6xl">
   <span style="--value:${counter};"></span>
 </span>`
 }</pre>
-<pre slot="jsx" use:replace={{ to: $prefix }}>{
+<pre slot="jsx">{
 `<span class="$$countdown font-mono text-6xl">
   <span style={{"--value":${counter}}}></span>
 </span>`
@@ -78,14 +78,14 @@ data="{[
   <span style="--value:24;"></span>m
   <span style="--value:{counter};"></span>s
 </span>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<span class="$$countdown font-mono text-2xl">
   <span style="--value:10;"></span>h
   <span style="--value:24;"></span>m
   <span style="--value:${counter};"></span>s
 </span>`
 }</pre>
-<pre slot="jsx" use:replace={{ to: $prefix }}>{
+<pre slot="jsx">{
 `<span class="$$countdown font-mono text-2xl">
   <span style={{"--value":10}}></span>h
   <span style={{"--value":24}}></span>m
@@ -100,14 +100,14 @@ data="{[
   <span style="--value:24;"></span>:
   <span style="--value:{counter};"></span>
 </span>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<span class="$$countdown font-mono text-2xl">
   <span style="--value:10;"></span>:
   <span style="--value:24;"></span>:
   <span style="--value:${counter};"></span>
 </span>`
 }</pre>
-<pre slot="jsx" use:replace={{ to: $prefix }}>{
+<pre slot="jsx">{
 `<span class="$$countdown font-mono text-2xl">
   <span style={{"--value":10}}></span>:
   <span style={{"--value":24}}></span>:
@@ -143,7 +143,7 @@ data="{[
     sec
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="flex gap-5">
   <div>
     <span class="$$countdown font-mono text-4xl">
@@ -171,7 +171,7 @@ data="{[
   </div>
 </div>`
 }</pre>
-<pre slot="jsx" use:replace={{ to: $prefix }}>{
+<pre slot="jsx">{
 `<div class="flex gap-5">
   <div>
     <span class="$$countdown font-mono text-4xl">
@@ -228,7 +228,7 @@ data="{[
     sec
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
   <div class="flex flex-col">
     <span class="$$countdown font-mono text-5xl">
@@ -256,7 +256,7 @@ data="{[
   </div>
 </div>`
 }</pre>
-<pre slot="jsx" use:replace={{ to: $prefix }}>{
+<pre slot="jsx">{
 `<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
   <div class="flex flex-col">
     <span class="$$countdown font-mono text-5xl">
@@ -313,7 +313,7 @@ data="{[
     sec
   </div>
 </div>
-<pre slot="html" use:replace={{ to: $prefix }}>{
+<pre slot="html">{
 `<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
   <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
     <span class="$$countdown font-mono text-5xl">
@@ -341,7 +341,7 @@ data="{[
   </div>
 </div>`
 }</pre>
-<pre slot="jsx" use:replace={{ to: $prefix }}>{
+<pre slot="jsx">{
 `<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
   <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
     <span class="$$countdown font-mono text-5xl">
