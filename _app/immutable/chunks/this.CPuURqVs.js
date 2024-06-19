@@ -1,0 +1,1 @@
+import{z as h,A as k,n as u,B as x,c as A}from"./runtime.B_CB8D8f.js";function c(r,i){var t;var f=r&&((t=r[A])==null?void 0:t.t);return r===i||f===i}function S(r,i,f,t){h(()=>{var a,s;return k(()=>{a=s,s=[],u(()=>{r!==f(...s)&&(i(r,...s),a&&c(f(...a),r)&&i(null,...a))})}),()=>{x(()=>{s&&c(f(...s),r)&&i(null,...s)})}})}export{S as b};

@@ -1,0 +1,1 @@
+import{e as m,d as n,a as s,f as e}from"../chunks/disclose-version.CH1eVG6R.js";import{d as p}from"../chunks/misc.Dvafy4NX.js";/* empty css                                        *//* empty css                                    */function c(t,a){var o=m(),r=e(o);n(r,p(a),{},null),s(t,o)}export{c as component};
