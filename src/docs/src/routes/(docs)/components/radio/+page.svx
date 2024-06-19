@@ -37,82 +37,118 @@ data="{[
 <Component title="Radio">
 <input type="radio" name="radio-1" class="radio" checked="checked" />
 <input type="radio" name="radio-1" class="radio" />
-<pre slot="html">{
-`<input type="radio" name="radio-1" class="$$radio" checked="checked" />
-<input type="radio" name="radio-1" class="$$radio" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="radio" name="radio-1" class="$$radio" checked="checked" />
+<input type="radio" name="radio-1" class="$$radio" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Primary color">
 <input type="radio" name="radio-2" class="radio radio-primary" checked="checked" />
 <input type="radio" name="radio-2" class="radio radio-primary" />
-<pre slot="html">{
-`<input type="radio" name="radio-2" class="$$radio $$radio-primary" checked="checked" />
-<input type="radio" name="radio-2" class="$$radio $$radio-primary" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="radio" name="radio-2" class="$$radio $$radio-primary" checked="checked" />
+<input type="radio" name="radio-2" class="$$radio $$radio-primary" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Secondary color">
 <input type="radio" name="radio-3" class="radio radio-secondary" checked="checked" />
 <input type="radio" name="radio-3" class="radio radio-secondary" />
-<pre slot="html">{
-`<input type="radio" name="radio-3" class="$$radio $$radio-secondary" checked="checked" />
-<input type="radio" name="radio-3" class="$$radio $$radio-secondary" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="radio" name="radio-3" class="$$radio $$radio-secondary" checked="checked" />
+<input type="radio" name="radio-3" class="$$radio $$radio-secondary" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Accent color">
 <input type="radio" name="radio-4" class="radio radio-accent" checked="checked" />
 <input type="radio" name="radio-4" class="radio radio-accent" />
-<pre slot="html">{
-`<input type="radio" name="radio-4" class="$$radio $$radio-accent" checked="checked" />
-<input type="radio" name="radio-4" class="$$radio $$radio-accent" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="radio" name="radio-4" class="$$radio $$radio-accent" checked="checked" />
+<input type="radio" name="radio-4" class="$$radio $$radio-accent" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Success color">
 <input type="radio" name="radio-5" class="radio radio-success" checked="checked" />
 <input type="radio" name="radio-5" class="radio radio-success" />
-<pre slot="html">{
-`<input type="radio" name="radio-5" class="$$radio $$radio-success" checked="checked" />
-<input type="radio" name="radio-5" class="$$radio $$radio-success" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="radio" name="radio-5" class="$$radio $$radio-success" checked="checked" />
+<input type="radio" name="radio-5" class="$$radio $$radio-success" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Warning color">
 <input type="radio" name="radio-6" class="radio radio-warning" checked="checked" />
 <input type="radio" name="radio-6" class="radio radio-warning" />
-<pre slot="html">{
-`<input type="radio" name="radio-6" class="$$radio $$radio-warning" checked="checked" />
-<input type="radio" name="radio-6" class="$$radio $$radio-warning" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="radio" name="radio-6" class="$$radio $$radio-warning" checked="checked" />
+<input type="radio" name="radio-6" class="$$radio $$radio-warning" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Info color">
 <input type="radio" name="radio-7" class="radio radio-info" checked="checked" />
 <input type="radio" name="radio-7" class="radio radio-info" />
-<pre slot="html">{
-`<input type="radio" name="radio-7" class="$$radio $$radio-info" checked="checked" />
-<input type="radio" name="radio-7" class="$$radio $$radio-info" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="radio" name="radio-7" class="$$radio $$radio-info" checked="checked" />
+<input type="radio" name="radio-7" class="$$radio $$radio-info" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Error color">
 <input type="radio" name="radio-8" class="radio radio-error" checked="checked" />
 <input type="radio" name="radio-8" class="radio radio-error" />
-<pre slot="html">{
-`<input type="radio" name="radio-8" class="$$radio $$radio-error" checked="checked" />
-<input type="radio" name="radio-8" class="$$radio $$radio-error" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="radio" name="radio-8" class="$$radio $$radio-error" checked="checked" />
+<input type="radio" name="radio-8" class="$$radio $$radio-error" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Disabled">
 <input type="radio" name="radio-9" class="radio" disabled checked="checked" />
 <input type="radio" name="radio-9" class="radio" disabled />
-<pre slot="html">{
-`<input type="radio" name="radio-9" class="$$radio" disabled checked="checked" />
-<input type="radio" name="radio-9" class="$$radio" disabled />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="radio" name="radio-9" class="$$radio" disabled checked="checked" />
+<input type="radio" name="radio-9" class="$$radio" disabled />
+```
+
+{/snippet}
 </Component>
 
 <Component title="With label and form-control and custom colors!">
@@ -130,18 +166,22 @@ data="{[
     </label>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$form-control">
+{#snippet html()}
+
+```html
+<div class="$$form-control">
   <label class="$$label cursor-pointer">
-    <span class="$$label-text">Red pill</span> 
+    <span class="$$label-text">Red pill</span>
     <input type="radio" name="radio-10" class="$$radio checked:bg-red-500" checked="checked" />
   </label>
 </div>
 <div class="$$form-control">
   <label class="$$label cursor-pointer">
-    <span class="$$label-text">Blue pill</span> 
+    <span class="$$label-text">Blue pill</span>
     <input type="radio" name="radio-10" class="$$radio checked:bg-blue-500" checked="checked" />
   </label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>

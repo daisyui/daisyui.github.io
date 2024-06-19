@@ -37,9 +37,13 @@ data="{[
 
 <Component title="Checkbox">
 <input type="checkbox" checked="checked" class="checkbox" />
-<pre slot="html">{
-`<input type="checkbox" checked="checked" class="$$checkbox" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="checkbox" checked="checked" class="$$checkbox" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="With label and form-control">
@@ -49,14 +53,18 @@ data="{[
     <input type="checkbox" checked="checked" class="checkbox" />
   </label>
 </div>
-<pre slot="html">{
-`<div class="$$form-control">
+{#snippet html()}
+
+```html
+<div class="$$form-control">
   <label class="$$label cursor-pointer">
-    <span class="$$label-text">Remember me</span> 
+    <span class="$$label-text">Remember me</span>
     <input type="checkbox" checked="checked" class="$$checkbox" />
   </label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Primary color">
@@ -66,14 +74,18 @@ data="{[
     <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
   </label>
 </div>
-<pre slot="html">{
-`<div class="$$form-control">
+{#snippet html()}
+
+```html
+<div class="$$form-control">
   <label class="$$label cursor-pointer">
-    <span class="$$label-text">Remember me</span> 
+    <span class="$$label-text">Remember me</span>
     <input type="checkbox" checked="checked" class="$$checkbox checkbox-primary" />
   </label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Secondary color">
@@ -83,14 +95,18 @@ data="{[
     <input type="checkbox" checked="checked" class="checkbox checkbox-secondary" />
   </label>
 </div>
-<pre slot="html">{
-`<div class="$$form-control">
+{#snippet html()}
+
+```html
+<div class="$$form-control">
   <label class="$$cursor-pointer $$label">
     <span class="$$label-text">Remember me</span>
     <input type="checkbox" checked="checked" class="$$checkbox $$checkbox-secondary" />
   </label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Accent color">
@@ -100,14 +116,18 @@ data="{[
     <input type="checkbox" checked="checked" class="checkbox checkbox-accent" />
   </label>
 </div>
-<pre slot="html">{
-`<div class="$$form-control">
+{#snippet html()}
+
+```html
+<div class="$$form-control">
   <label class="$$cursor-pointer $$label">
     <span class="$$label-text">Remember me</span>
     <input type="checkbox" checked="checked" class="$$checkbox $$checkbox-accent" />
   </label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Success color">
@@ -117,14 +137,18 @@ data="{[
     <input type="checkbox" checked="checked" class="checkbox checkbox-success" />
   </label>
 </div>
-<pre slot="html">{
-`<div class="$$form-control">
+{#snippet html()}
+
+```html
+<div class="$$form-control">
   <label class="$$cursor-pointer $$label">
     <span class="$$label-text">Remember me</span>
     <input type="checkbox" checked="checked" class="$$checkbox $$checkbox-success" />
   </label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Warning color">
@@ -134,14 +158,18 @@ data="{[
     <input type="checkbox" checked="checked" class="checkbox checkbox-warning" />
   </label>
 </div>
-<pre slot="html">{
-`<div class="$$form-control">
+{#snippet html()}
+
+```html
+<div class="$$form-control">
   <label class="$$cursor-pointer $$label">
     <span class="$$label-text">Remember me</span>
     <input type="checkbox" checked="checked" class="$$checkbox $$checkbox-warning" />
   </label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Info color">
@@ -151,14 +179,18 @@ data="{[
     <input type="checkbox" checked="checked" class="checkbox checkbox-info" />
   </label>
 </div>
-<pre slot="html">{
-`<div class="$$form-control">
+{#snippet html()}
+
+```html
+<div class="$$form-control">
   <label class="$$cursor-pointer $$label">
     <span class="$$label-text">Remember me</span>
     <input type="checkbox" checked="checked" class="$$checkbox $$checkbox-info" />
   </label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Error color">
@@ -168,14 +200,18 @@ data="{[
     <input type="checkbox" checked="checked" class="checkbox checkbox-error" />
   </label>
 </div>
-<pre slot="html">{
-`<div class="$$form-control">
+{#snippet html()}
+
+```html
+<div class="$$form-control">
   <label class="$$cursor-pointer $$label">
     <span class="$$label-text">Remember me</span>
     <input type="checkbox" checked="checked" class="$$checkbox $$checkbox-error" />
   </label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Sizes">
@@ -185,44 +221,70 @@ data="{[
   <input type="checkbox" checked="checked" class="checkbox checkbox-md" /> 
   <input type="checkbox" checked="checked" class="checkbox checkbox-lg" />
 </div>
-<pre slot="html">{
-`<input type="checkbox" checked="checked" class="$$checkbox $$checkbox-xs" /> 
-<input type="checkbox" checked="checked" class="$$checkbox $$checkbox-sm" /> 
-<input type="checkbox" checked="checked" class="$$checkbox $$checkbox-md" /> 
-<input type="checkbox" checked="checked" class="$$checkbox $$checkbox-lg" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="checkbox" checked="checked" class="$$checkbox $$checkbox-xs" />
+<input type="checkbox" checked="checked" class="$$checkbox $$checkbox-sm" />
+<input type="checkbox" checked="checked" class="$$checkbox $$checkbox-md" />
+<input type="checkbox" checked="checked" class="$$checkbox $$checkbox-lg" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Disabled">
 <input type="checkbox" disabled="disabled" class="checkbox" />
-<pre slot="html">{
-`<input type="checkbox" class="$$checkbox" disabled />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="checkbox" class="$$checkbox" disabled />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Disabled and checked">
 <input type="checkbox" disabled="disabled" class="checkbox" checked="checked" />
-<pre slot="html">{
-`<input type="checkbox" class="$$checkbox" disabled checked="checked" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="checkbox" class="$$checkbox" disabled checked="checked" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Indeterminate">
 <input type="checkbox" class="checkbox" bind:indeterminate on:click|preventDefault={()=>{}} />
-<pre slot="html">{
-`<!-- You can make a checkbox indeterminate using JS -->
+{#snippet html()}
+
+```html
+<!-- You can make a checkbox indeterminate using JS -->
 <script>
   document.getElementById("my-checkbox").indeterminate = true
 </script>
-<input type="checkbox" class="$$checkbox" id="my-checkbox" />`
-}</pre>
+<input type="checkbox" class="$$checkbox" id="my-checkbox" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Checkbox with custom colors">
 <input type="checkbox" checked="checked" class="checkbox border-orange-400 checked:border-indigo-800 [--chkbg:theme(colors.indigo.600)] [--chkfg:orange]" />
 <input type="checkbox" checked="checked" class="checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))]" />
-<pre slot="html">{
-`<input type="checkbox" checked="checked" class="$$checkbox border-orange-400 checked:border-indigo-800 [--chkbg:theme(colors.indigo.600)] [--chkfg:orange]" />
-<input type="checkbox" checked="checked" class="$$checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))]" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input
+  type="checkbox"
+  checked="checked"
+  class="$$checkbox border-orange-400 [--chkbg:theme(colors.indigo.600)] [--chkfg:orange] checked:border-indigo-800" />
+<input
+  type="checkbox"
+  checked="checked"
+  class="$$checkbox [--chkbg:oklch(var(--a))] [--chkfg:oklch(var(--p))]" />
+```
+
+{/snippet}
 </Component>

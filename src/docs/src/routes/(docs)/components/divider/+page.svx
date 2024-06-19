@@ -40,13 +40,17 @@ data="{[
   <div class="divider">OR</div>
   <div class="grid h-20 card bg-base-300 rounded-box place-items-center">content</div>
 </div>
-<pre slot="html">{
-`<div class="flex flex-col w-full border-opacity-50">
-  <div class="grid h-20 card bg-base-300 rounded-box place-items-center">content</div>
+{#snippet html()}
+
+```html
+<div class="flex w-full flex-col border-opacity-50">
+  <div class="card bg-base-300 rounded-box grid h-20 place-items-center">content</div>
   <div class="$$divider">OR</div>
-  <div class="grid h-20 card bg-base-300 rounded-box place-items-center">content</div>
-</div>`
-}</pre>
+  <div class="card bg-base-300 rounded-box grid h-20 place-items-center">content</div>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Divider horizontal">
@@ -55,13 +59,17 @@ data="{[
   <div class="divider divider-horizontal">OR</div>
   <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">content</div>
 </div>
-<pre slot="html">{
-`<div class="flex w-full">
-  <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">content</div>
+{#snippet html()}
+
+```html
+<div class="flex w-full">
+  <div class="card bg-base-300 rounded-box grid h-20 flex-grow place-items-center">content</div>
   <div class="$$divider $$divider-horizontal">OR</div>
-  <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">content</div>
-</div>`
-}</pre>
+  <div class="card bg-base-300 rounded-box grid h-20 flex-grow place-items-center">content</div>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Divider with no text">
@@ -70,13 +78,17 @@ data="{[
   <div class="divider"></div> 
   <div class="grid h-20 card bg-base-300 rounded-box place-items-center">content</div>
 </div>
-<pre slot="html">{
-`<div class="flex flex-col w-full">
-  <div class="grid h-20 card bg-base-300 rounded-box place-items-center">content</div> 
-  <div class="$$divider"></div> 
-  <div class="grid h-20 card bg-base-300 rounded-box place-items-center">content</div>
-</div>`
-}</pre>
+{#snippet html()}
+
+```html
+<div class="flex w-full flex-col">
+  <div class="card bg-base-300 rounded-box grid h-20 place-items-center">content</div>
+  <div class="$$divider"></div>
+  <div class="card bg-base-300 rounded-box grid h-20 place-items-center">content</div>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="responsive (lg:divider-horizontal)">
@@ -85,13 +97,17 @@ data="{[
   <div class="divider lg:divider-horizontal">OR</div> 
   <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">content</div>
 </div>
-<pre slot="html">{
-`<div class="flex flex-col w-full lg:flex-row">
-  <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">content</div> 
-  <div class="$$divider lg:$$divider-horizontal">OR</div> 
-  <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">content</div>
-</div>`
-}</pre>
+{#snippet html()}
+
+```html
+<div class="flex w-full flex-col lg:flex-row">
+  <div class="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">content</div>
+  <div class="$$divider lg:$$divider-horizontal">OR</div>
+  <div class="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">content</div>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Divider with colors">
@@ -106,8 +122,10 @@ data="{[
   <div class="divider divider-info">Info</div>
   <div class="divider divider-error">Error</div>
 </div>
-<pre slot="html">{
-`<div class="flex flex-col w-full">
+{#snippet html()}
+
+```html
+<div class="flex w-full flex-col">
   <div class="$$divider">Default</div>
   <div class="$$divider $$divider-neutral">Neutral</div>
   <div class="$$divider $$divider-primary">Primary</div>
@@ -117,8 +135,10 @@ data="{[
   <div class="$$divider $$divider-warning">Warning</div>
   <div class="$$divider $$divider-info">Info</div>
   <div class="$$divider $$divider-error">Error</div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Divider in different positions">
@@ -127,13 +147,17 @@ data="{[
   <div class="divider">Default</div>
   <div class="divider divider-end">End</div>
 </div>
-<pre slot="html">{
-`<div class="flex flex-col w-full">
+{#snippet html()}
+
+```html
+<div class="flex w-full flex-col">
   <div class="$$divider $$divider-start">Start</div>
   <div class="$$divider">Default</div>
   <div class="$$divider $$divider-end">End</div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Divider in different positions (horizontal)">
@@ -142,11 +166,15 @@ data="{[
   <div class="divider divider-horizontal">Default</div>
   <div class="divider divider-horizontal divider-end">End</div>
 </div>
-<pre slot="html">{
-`<div class="flex w-full">
+{#snippet html()}
+
+```html
+<div class="flex w-full">
   <div class="$$divider $$divider-start">Start</div>
   <div class="$$divider">Default</div>
   <div class="$$divider $$divider-end">End</div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>

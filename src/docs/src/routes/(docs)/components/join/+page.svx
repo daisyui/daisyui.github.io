@@ -31,13 +31,17 @@ data="{[
   <button class="btn join-item">Button</button>
   <button class="btn join-item">Button</button>
 </div>
-<pre slot="html">{
-`<div class="$$join">
+{#snippet html()}
+
+```html
+<div class="$$join">
   <button class="$$btn $$join-item">Button</button>
   <button class="$$btn $$join-item">Button</button>
   <button class="$$btn $$join-item">Button</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Group items vertically">
@@ -46,13 +50,17 @@ data="{[
   <button class="btn join-item">Button</button>
   <button class="btn join-item">Button</button>
 </div>
-<pre slot="html">{
-`<div class="$$join $$join-vertical">
+{#snippet html()}
+
+```html
+<div class="$$join $$join-vertical">
   <button class="$$btn $$join-item">Button</button>
   <button class="$$btn $$join-item">Button</button>
   <button class="$$btn $$join-item">Button</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Responsive: it's vertical on small screen and horizontal on large screen">
@@ -61,13 +69,17 @@ data="{[
   <button class="btn join-item">Button</button>
   <button class="btn join-item">Button</button>
 </div>
-<pre slot="html">{
-`<div class="$$join $$join-vertical lg:$$join-horizontal">
+{#snippet html()}
+
+```html
+<div class="$$join $$join-vertical lg:$$join-horizontal">
   <button class="$$btn $$join-item">Button</button>
   <button class="$$btn $$join-item">Button</button>
   <button class="$$btn $$join-item">Button</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="With extra elements in the group" desc="Even if join-item is not a direct child of the group, it still gets the style">
@@ -88,11 +100,13 @@ data="{[
     <button class="btn join-item">Search</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$join">
+{#snippet html()}
+
+```html
+<div class="$$join">
   <div>
     <div>
-      <input class="$$input $$input-bordered $$join-item" placeholder="Search"/>
+      <input class="$$input $$input-bordered $$join-item" placeholder="Search" />
     </div>
   </div>
   <select class="$$select $$select-bordered $$join-item">
@@ -102,11 +116,13 @@ data="{[
     <option>Action</option>
   </select>
   <div class="$$indicator">
-    <span class="$$indicator-item $$badge $$badge-secondary">new</span> 
+    <span class="$$indicator-item $$badge $$badge-secondary">new</span>
     <button class="$$btn $$join-item">Search</button>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Custom border radius">
@@ -114,12 +130,16 @@ data="{[
   <input class="input input-bordered join-item w-36 lg:w-52" placeholder="Email"/>
   <button class="btn join-item rounded-r-full">Subscribe</button>
 </div>
-<pre slot="html">{
-`<div class="$$join">
-  <input class="$$input $$input-bordered $$join-item" placeholder="Email"/>
+{#snippet html()}
+
+```html
+<div class="$$join">
+  <input class="$$input $$input-bordered $$join-item" placeholder="Email" />
   <button class="$$btn $$join-item rounded-r-full">Subscribe</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Join radio inputs with btn style">
@@ -128,11 +148,15 @@ data="{[
   <input class="join-item btn" type="radio" name="options" aria-label="Radio 2" />
   <input class="join-item btn" type="radio" name="options" aria-label="Radio 3" />
 </div>
-<pre slot="html">{
-`<div class="$$join">
+{#snippet html()}
+
+```html
+<div class="$$join">
   <input class="$$join-item $$btn" type="radio" name="options" aria-label="Radio 1" />
   <input class="$$join-item $$btn" type="radio" name="options" aria-label="Radio 2" />
   <input class="$$join-item $$btn" type="radio" name="options" aria-label="Radio 3" />
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>

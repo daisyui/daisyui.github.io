@@ -37,9 +37,13 @@ data="{[
 
 <Component title="Toggle">
 <input type="checkbox" class="toggle" checked="checked" />
-<pre slot="html">{
-`<input type="checkbox" class="$$toggle" checked="checked" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="checkbox" class="$$toggle" checked="checked" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="With label and form-control">
@@ -49,14 +53,18 @@ data="{[
     <input type="checkbox" class="toggle" checked="checked" />
   </label>
 </div>
-<pre slot="html">{
-`<div class="$$form-control">
+{#snippet html()}
+
+```html
+<div class="$$form-control">
   <label class="$$label cursor-pointer">
-    <span class="$$label-text">Remember me</span> 
+    <span class="$$label-text">Remember me</span>
     <input type="checkbox" class="$$toggle" checked="checked" />
   </label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Checkboxes with brand colors">
@@ -80,28 +88,32 @@ data="{[
     </label>
   </div>
 </div>
-<pre slot="html">{
-`<div class="flex flex-col">
+{#snippet html()}
+
+```html
+<div class="flex flex-col">
   <div class="form-control w-52">
-    <label class="cursor-pointer label">
-      <span class="label-text">Remember me</span> 
+    <label class="label cursor-pointer">
+      <span class="label-text">Remember me</span>
       <input type="checkbox" class="$$toggle $$toggle-primary" checked="checked" />
     </label>
   </div>
   <div class="form-control w-52">
-    <label class="cursor-pointer label">
-      <span class="label-text">Remember me</span> 
+    <label class="label cursor-pointer">
+      <span class="label-text">Remember me</span>
       <input type="checkbox" class="$$toggle $$toggle-secondary" checked="checked" />
     </label>
   </div>
   <div class="form-control w-52">
-    <label class="cursor-pointer label">
-      <span class="label-text">Remember me</span> 
+    <label class="label cursor-pointer">
+      <span class="label-text">Remember me</span>
       <input type="checkbox" class="$$toggle $$toggle-accent" checked="checked" />
     </label>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Checkboxes with state colors">
@@ -111,12 +123,16 @@ data="{[
   <input type="checkbox" class="toggle toggle-info" checked="checked" />
   <input type="checkbox" class="toggle toggle-error" checked="checked" />
 </div>
-<pre slot="html">{
-`<input type="checkbox" class="$$toggle $$toggle-success" checked="checked" />
+{#snippet html()}
+
+```html
+<input type="checkbox" class="$$toggle $$toggle-success" checked="checked" />
 <input type="checkbox" class="$$toggle $$toggle-warning" checked="checked" />
 <input type="checkbox" class="$$toggle $$toggle-info" checked="checked" />
-<input type="checkbox" class="$$toggle $$toggle-error" checked="checked" />`
-}</pre>
+<input type="checkbox" class="$$toggle $$toggle-error" checked="checked" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Sizes">
@@ -126,42 +142,65 @@ data="{[
   <input type="checkbox" class="toggle toggle-md" checked="checked" />
   <input type="checkbox" class="toggle toggle-lg" checked="checked" />
 </div>
-<pre slot="html">{
-`<input type="checkbox" class="$$toggle $$toggle-xs" checked="checked" />
+{#snippet html()}
+
+```html
+<input type="checkbox" class="$$toggle $$toggle-xs" checked="checked" />
 <input type="checkbox" class="$$toggle $$toggle-sm" checked="checked" />
 <input type="checkbox" class="$$toggle $$toggle-md" checked="checked" />
-<input type="checkbox" class="$$toggle $$toggle-lg" checked="checked" />`
-}</pre>
+<input type="checkbox" class="$$toggle $$toggle-lg" checked="checked" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Disabled">
 <input type="checkbox" class="toggle" disabled />
-<pre slot="html">{
-`<input type="checkbox" class="$$toggle" disabled />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="checkbox" class="$$toggle" disabled />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Disabled and checked">
 <input type="checkbox" class="toggle" disabled checked="checked" />
-<pre slot="html">{
-`<input type="checkbox" class="$$toggle" disabled checked="checked" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input type="checkbox" class="$$toggle" disabled checked="checked" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Indeterminate">
 <input type="checkbox" class="toggle" bind:indeterminate on:click|preventDefault={()=>{}} />
-<pre slot="html">{
-`<!-- You can make a toggle indeterminate using JS -->
+{#snippet html()}
+
+```html
+<!-- You can make a toggle indeterminate using JS -->
 <script>
   document.getElementById("my-toggle").indeterminate = true
 </script>
-<input type="checkbox" class="$$toggle" id="my-toggle" />`
-}</pre>
+<input type="checkbox" class="$$toggle" id="my-toggle" />
+```
+
+{/snippet}
 </Component>
 
 <Component title="Toggle with custom color">
 <input type="checkbox" class="toggle [--tglbg:yellow] bg-blue-500 hover:bg-blue-700 border-blue-500" checked="checked" />
-<pre slot="html">{
-`<input type="checkbox" class="$$toggle [--tglbg:yellow] bg-blue-500 hover:bg-blue-700 border-blue-500" checked="checked" />`
-}</pre>
+{#snippet html()}
+
+```html
+<input
+  type="checkbox"
+  class="$$toggle border-blue-500 bg-blue-500 [--tglbg:yellow] hover:bg-blue-700"
+  checked="checked" />
+```
+
+{/snippet}
 </Component>

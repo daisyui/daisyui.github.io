@@ -44,11 +44,16 @@ data="{[
 <span class="countdown">
   <span style="--value:{counter};"></span>
 </span>
-<pre slot="html">{
-`<span class="$$countdown">
+{#snippet html()}
+
+```html
+<span class="$$countdown">
   <span style="--value:${counter};"></span>
-</span>`
-}</pre>
+</span>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `<span class="$$countdown">
   <span style={{"--value":${counter}}}></span>
@@ -60,11 +65,16 @@ data="{[
 <span class="countdown font-mono text-6xl">
   <span style="--value:{counter};"></span>
 </span>
-<pre slot="html">{
-`<span class="$$countdown font-mono text-6xl">
+{#snippet html()}
+
+```html
+<span class="$$countdown font-mono text-6xl">
   <span style="--value:${counter};"></span>
-</span>`
-}</pre>
+</span>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `<span class="$$countdown font-mono text-6xl">
   <span style={{"--value":${counter}}}></span>
@@ -78,13 +88,21 @@ data="{[
   <span style="--value:24;"></span>m
   <span style="--value:{counter};"></span>s
 </span>
-<pre slot="html">{
-`<span class="$$countdown font-mono text-2xl">
-  <span style="--value:10;"></span>h
-  <span style="--value:24;"></span>m
-  <span style="--value:${counter};"></span>s
-</span>`
-}</pre>
+{#snippet html()}
+
+```html
+<span class="$$countdown font-mono text-2xl">
+  <span style="--value:10;"></span>
+  h
+  <span style="--value:24;"></span>
+  m
+  <span style="--value:${counter};"></span>
+  s
+</span>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `<span class="$$countdown font-mono text-2xl">
   <span style={{"--value":10}}></span>h
@@ -100,13 +118,20 @@ data="{[
   <span style="--value:24;"></span>:
   <span style="--value:{counter};"></span>
 </span>
-<pre slot="html">{
-`<span class="$$countdown font-mono text-2xl">
-  <span style="--value:10;"></span>:
-  <span style="--value:24;"></span>:
+{#snippet html()}
+
+```html
+<span class="$$countdown font-mono text-2xl">
+  <span style="--value:10;"></span>
+  :
+  <span style="--value:24;"></span>
+  :
   <span style="--value:${counter};"></span>
-</span>`
-}</pre>
+</span>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `<span class="$$countdown font-mono text-2xl">
   <span style={{"--value":10}}></span>:
@@ -143,34 +168,39 @@ data="{[
     sec
   </div>
 </div>
-<pre slot="html">{
-`<div class="flex gap-5">
+{#snippet html()}
+
+```html
+<div class="flex gap-5">
   <div>
     <span class="$$countdown font-mono text-4xl">
       <span style="--value:15;"></span>
     </span>
     days
-  </div> 
+  </div>
   <div>
     <span class="$$countdown font-mono text-4xl">
       <span style="--value:10;"></span>
     </span>
     hours
-  </div> 
+  </div>
   <div>
     <span class="$$countdown font-mono text-4xl">
       <span style="--value:24;"></span>
     </span>
     min
-  </div> 
+  </div>
   <div>
     <span class="$$countdown font-mono text-4xl">
       <span style="--value:${counter};"></span>
     </span>
     sec
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `<div class="flex gap-5">
   <div>
@@ -228,34 +258,39 @@ data="{[
     sec
   </div>
 </div>
-<pre slot="html">{
-`<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+{#snippet html()}
+
+```html
+<div class="grid auto-cols-max grid-flow-col gap-5 text-center">
   <div class="flex flex-col">
     <span class="$$countdown font-mono text-5xl">
       <span style="--value:15;"></span>
     </span>
     days
-  </div> 
+  </div>
   <div class="flex flex-col">
     <span class="$$countdown font-mono text-5xl">
       <span style="--value:10;"></span>
     </span>
     hours
-  </div> 
+  </div>
   <div class="flex flex-col">
     <span class="$$countdown font-mono text-5xl">
       <span style="--value:24;"></span>
     </span>
     min
-  </div> 
+  </div>
   <div class="flex flex-col">
     <span class="$$countdown font-mono text-5xl">
       <span style="--value:${counter};"></span>
     </span>
     sec
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
   <div class="flex flex-col">
@@ -313,34 +348,39 @@ data="{[
     sec
   </div>
 </div>
-<pre slot="html">{
-`<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+{#snippet html()}
+
+```html
+<div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
     <span class="$$countdown font-mono text-5xl">
       <span style="--value:15;"></span>
     </span>
     days
-  </div> 
-  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+  </div>
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
     <span class="$$countdown font-mono text-5xl">
       <span style="--value:10;"></span>
     </span>
     hours
-  </div> 
-  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+  </div>
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
     <span class="$$countdown font-mono text-5xl">
       <span style="--value:24;"></span>
     </span>
     min
-  </div> 
-  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+  </div>
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
     <span class="$$countdown font-mono text-5xl">
       <span style="--value:${counter};"></span>
     </span>
     sec
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
   <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">

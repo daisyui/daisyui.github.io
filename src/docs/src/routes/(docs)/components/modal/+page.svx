@@ -70,12 +70,14 @@ data="{[
     </div>
   </div>
 </dialog>
-<pre slot="html">{
-`<!-- Open the modal using ID.showModal() method -->
+{#snippet html()}
+
+```html
+<!-- Open the modal using ID.showModal() method -->
 <button class="$$btn" onclick="my_modal_1.showModal()">open modal</button>
 <dialog id="my_modal_1" class="$$modal">
   <div class="$$modal-box">
-    <h3 class="font-bold text-lg">Hello!</h3>
+    <h3 class="text-lg font-bold">Hello!</h3>
     <p class="py-4">Press ESC key or click the button below to close</p>
     <div class="$$modal-action">
       <form method="dialog">
@@ -84,8 +86,11 @@ data="{[
       </form>
     </div>
   </div>
-</dialog>`
-}</pre>
+</dialog>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `{/* Open the modal using document.getElementById('ID').showModal() method */}
 <button className="$$btn" onClick={()=>document.getElementById('my_modal_1').showModal()}>open modal</button>
@@ -115,19 +120,24 @@ data="{[
     <button>close</button>
   </form>
 </dialog>
-<pre slot="html">{
-`<!-- Open the modal using ID.showModal() method -->
+{#snippet html()}
+
+```html
+<!-- Open the modal using ID.showModal() method -->
 <button class="$$btn" onclick="my_modal_2.showModal()">open modal</button>
 <dialog id="my_modal_2" class="$$modal">
   <div class="$$modal-box">
-    <h3 class="font-bold text-lg">Hello!</h3>
+    <h3 class="text-lg font-bold">Hello!</h3>
     <p class="py-4">Press ESC key or click outside to close</p>
   </div>
   <form method="dialog" class="$$modal-backdrop">
     <button>close</button>
   </form>
-</dialog>`
-}</pre>
+</dialog>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `{/* Open the modal using document.getElementById('ID').showModal() method */}
 <button className="$$btn" onClick={()=>document.getElementById('my_modal_2').showModal()}>open modal</button>
@@ -155,19 +165,24 @@ data="{[
     <p class="py-4">Press ESC key or click on ✕ button to close</p>
   </div>
 </dialog>
-<pre slot="html">{
-`<!-- You can open the modal using ID.showModal() method -->
+{#snippet html()}
+
+```html
+<!-- You can open the modal using ID.showModal() method -->
 <button class="$$btn" onclick="my_modal_3.showModal()">open modal</button>
 <dialog id="my_modal_3" class="$$modal">
   <div class="$$modal-box">
     <form method="dialog">
       <button class="$$btn $$btn-sm $$btn-circle $$btn-ghost absolute right-2 top-2">✕</button>
     </form>
-    <h3 class="font-bold text-lg">Hello!</h3>
+    <h3 class="text-lg font-bold">Hello!</h3>
     <p class="py-4">Press ESC key or click on ✕ button to close</p>
   </div>
-</dialog>`
-}</pre>
+</dialog>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `{/* You can open the modal using document.getElementById('ID').showModal() method */}
 <button className="$$btn" onClick={()=>document.getElementById('my_modal_3').showModal()}>open modal</button>
@@ -198,12 +213,14 @@ data="{[
     </div>
   </div>
 </dialog>
-<pre slot="html">{
-`<!-- You can open the modal using ID.showModal() method -->
+{#snippet html()}
+
+```html
+<!-- You can open the modal using ID.showModal() method -->
 <button class="$$btn" onclick="my_modal_4.showModal()">open modal</button>
 <dialog id="my_modal_4" class="$$modal">
   <div class="$$modal-box w-11/12 max-w-5xl">
-    <h3 class="font-bold text-lg">Hello!</h3>
+    <h3 class="text-lg font-bold">Hello!</h3>
     <p class="py-4">Click the button below to close</p>
     <div class="$$modal-action">
       <form method="dialog">
@@ -212,8 +229,11 @@ data="{[
       </form>
     </div>
   </div>
-</dialog>`
-}</pre>
+</dialog>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `{/* You can open the modal using document.getElementById('ID').showModal() method */}
 <button className="$$btn" onClick={()=>document.getElementById('my_modal_4').showModal()}>open modal</button>
@@ -246,12 +266,14 @@ data="{[
     </div>
   </div>
 </dialog>
-<pre slot="html">{
-`<!-- Open the modal using ID.showModal() method -->
+{#snippet html()}
+
+```html
+<!-- Open the modal using ID.showModal() method -->
 <button class="$$btn" onclick="my_modal_5.showModal()">open modal</button>
 <dialog id="my_modal_5" class="$$modal $$modal-bottom sm:$$modal-middle">
   <div class="$$modal-box">
-    <h3 class="font-bold text-lg">Hello!</h3>
+    <h3 class="text-lg font-bold">Hello!</h3>
     <p class="py-4">Press ESC key or click the button below to close</p>
     <div class="$$modal-action">
       <form method="dialog">
@@ -260,8 +282,11 @@ data="{[
       </form>
     </div>
   </div>
-</dialog>`
-}</pre>
+</dialog>
+```
+
+{/snippet}
+
 <pre slot="jsx">{
 `{/* Open the modal using document.getElementById('ID').showModal() method */}
 <button className="$$btn" onClick={()=>document.getElementById('my_modal_5').showModal()}>open modal</button>
@@ -285,29 +310,35 @@ data="{[
 <Component title="Modal using label + hidden checkbox">
 <label for="my_modal_6" class="btn">open modal</label>
 
-<pre slot="html">{
-`<!-- The button to open modal -->
+{#snippet html()}
+
+```html
+<!-- The button to open modal -->
 <label for="my_modal_6" class="$$btn">open modal</label>
 
 <!-- Put this part before </body> tag -->
 <input type="checkbox" id="my_modal_6" class="$$modal-toggle" />
 <div class="$$modal" role="dialog">
   <div class="$$modal-box">
-    <h3 class="font-bold text-lg">Hello!</h3>
+    <h3 class="text-lg font-bold">Hello!</h3>
     <p class="py-4">This modal works with a hidden checkbox!</p>
     <div class="$$modal-action">
       <label for="my_modal_6" class="$$btn">Close!</label>
     </div>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Modal that closes when clicked outside" desc="Modal works with a hidden checkbox and labels can toggle the checkbox so we can use another label tag with 'modal-backdrop' class that covers the screen so we can close the modal when clicked outside">
 <label for="my_modal_7" class="btn">open modal</label>
 
-<pre slot="html">{
-`<!-- The button to open modal -->
+{#snippet html()}
+
+```html
+<!-- The button to open modal -->
 <label for="my_modal_7" class="$$btn">open modal</label>
 
 <!-- Put this part before </body> tag -->
@@ -318,27 +349,33 @@ data="{[
     <p class="py-4">This modal works with a hidden checkbox!</p>
   </div>
   <label class="$$modal-backdrop" for="my_modal_7">Close</label>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 ### Method 3: using anchor links <span class="badge badge-warning">legacy</span>
 
 <Component title="Modal using anchor link" desc="Anchor links might not work well on some SPA frameworks so if there are problems, use the first example">
 <a href="#my_modal_8" class="btn" rel="external">open modal</a>
-<pre slot="html">{
-`<!-- The button to open modal -->
+{#snippet html()}
+
+```html
+<!-- The button to open modal -->
 <a href="#my_modal_8" class="$$btn">open modal</a>
 
 <!-- Put this part before </body> tag -->
 <div class="$$modal" role="dialog" id="my_modal_8">
   <div class="$$modal-box">
-    <h3 class="font-bold text-lg">Hello!</h3>
+    <h3 class="text-lg font-bold">Hello!</h3>
     <p class="py-4">This modal works with anchor links</p>
     <div class="$$modal-action">
-     <a href="#" class="$$btn">Yay!</a>
+      <a href="#" class="$$btn">Yay!</a>
     </div>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>

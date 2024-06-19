@@ -67,25 +67,27 @@ data="{[
     </ul>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$drawer">
+{#snippet html()}
+
+```html
+<div class="$$drawer">
   <input id="my-drawer" type="checkbox" class="$$drawer-toggle" />
   <div class="$$drawer-content">
     <!-- Page content here -->
     <label for="my-drawer" class="$$btn $$btn-primary $$drawer-button">Open drawer</label>
-
-  </div> 
+  </div>
   <div class="$$drawer-side">
     <label for="my-drawer" aria-label="close sidebar" class="$$drawer-overlay"></label>
-    <ul class="$$menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+    <ul class="$$menu bg-base-200 text-base-content min-h-full w-80 p-4">
       <!-- Sidebar content here -->
       <li><a>Sidebar Item 1</a></li>
       <li><a>Sidebar Item 2</a></li>
-      
     </ul>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Responsive" desc="Sidebar is always visible on large screen, can be toggled on small screen because of lg:drawer-open class">
@@ -102,25 +104,29 @@ data="{[
     </ul>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$drawer lg:$$drawer-open">
+{#snippet html()}
+
+```html
+<div class="$$drawer lg:$$drawer-open">
   <input id="my-drawer-2" type="checkbox" class="$$drawer-toggle" />
   <div class="$$drawer-content flex flex-col items-center justify-center">
     <!-- Page content here -->
-    <label for="my-drawer-2" class="$$btn $$btn-primary $$drawer-button lg:hidden">Open drawer</label>
-  
-  </div> 
+    <label for="my-drawer-2" class="$$btn $$btn-primary $$drawer-button lg:hidden">
+      Open drawer
+    </label>
+  </div>
   <div class="$$drawer-side">
-    <label for="my-drawer-2" aria-label="close sidebar" class="$$drawer-overlay"></label> 
-    <ul class="$$menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+    <label for="my-drawer-2" aria-label="close sidebar" class="$$drawer-overlay"></label>
+    <ul class="$$menu bg-base-200 text-base-content min-h-full w-80 p-4">
       <!-- Sidebar content here -->
       <li><a>Sidebar Item 1</a></li>
       <li><a>Sidebar Item 2</a></li>
     </ul>
-  
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Navbar menu for desktop + sidebar drawer for mobile" desc="Change screen size to show/hide menu">
@@ -151,19 +157,31 @@ data="{[
     </ul>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$drawer">
-  <input id="my-drawer-3" type="checkbox" class="$$drawer-toggle" /> 
+{#snippet html()}
+
+```html
+<div class="$$drawer">
+  <input id="my-drawer-3" type="checkbox" class="$$drawer-toggle" />
   <div class="$$drawer-content flex flex-col">
     <!-- Navbar -->
-    <div class="w-full $$navbar bg-base-300">
+    <div class="$$navbar bg-base-300 w-full">
       <div class="flex-none lg:hidden">
         <label for="my-drawer-3" aria-label="open sidebar" class="$$btn $$btn-square $$btn-ghost">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block h-6 w-6 stroke-current">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
         </label>
-      </div> 
-      <div class="flex-1 px-2 mx-2">Navbar Title</div>
-      <div class="flex-none hidden lg:block">
+      </div>
+      <div class="mx-2 flex-1 px-2">Navbar Title</div>
+      <div class="hidden flex-none lg:block">
         <ul class="$$menu $$menu-horizontal">
           <!-- Navbar menu content here -->
           <li><a>Navbar Item 1</a></li>
@@ -173,17 +191,19 @@ data="{[
     </div>
     <!-- Page content here -->
     Content
-  </div> 
+  </div>
   <div class="$$drawer-side">
-    <label for="my-drawer-3" aria-label="close sidebar" class="$$drawer-overlay"></label> 
-    <ul class="$$menu p-4 w-80 min-h-full bg-base-200">
+    <label for="my-drawer-3" aria-label="close sidebar" class="$$drawer-overlay"></label>
+    <ul class="$$menu bg-base-200 min-h-full w-80 p-4">
       <!-- Sidebar content here -->
       <li><a>Sidebar Item 1</a></li>
       <li><a>Sidebar Item 2</a></li>
     </ul>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Drawer that opens from right side of page">
@@ -200,24 +220,25 @@ data="{[
     </ul>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$drawer $$drawer-end">
+{#snippet html()}
+
+```html
+<div class="$$drawer $$drawer-end">
   <input id="my-drawer-4" type="checkbox" class="$$drawer-toggle" />
   <div class="$$drawer-content">
     <!-- Page content here -->
     <label for="my-drawer-4" class="$$drawer-button $$btn $$btn-primary">Open drawer</label>
-
-  </div> 
+  </div>
   <div class="$$drawer-side">
     <label for="my-drawer-4" aria-label="close sidebar" class="$$drawer-overlay"></label>
-    <ul class="$$menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+    <ul class="$$menu bg-base-200 text-base-content min-h-full w-80 p-4">
       <!-- Sidebar content here -->
       <li><a>Sidebar Item 1</a></li>
       <li><a>Sidebar Item 2</a></li>
-
     </ul>
-
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>

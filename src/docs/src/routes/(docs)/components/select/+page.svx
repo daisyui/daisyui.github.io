@@ -46,16 +46,20 @@ data="{[
   <option>Lisa</option>
   <option>Maggie</option>
 </select>
-<pre slot="html">{
-`<select class="$$select w-full max-w-xs">
+{#snippet html()}
+
+```html
+<select class="$$select w-full max-w-xs">
   <option disabled selected>Pick your favorite Simpson</option>
   <option>Homer</option>
   <option>Marge</option>
   <option>Bart</option>
   <option>Lisa</option>
   <option>Maggie</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Select with border">
@@ -64,13 +68,17 @@ data="{[
   <option>Han Solo</option>
   <option>Greedo</option>
 </select>
-<pre slot="html">{
-`<select class="$$select $$select-bordered w-full max-w-xs">
+{#snippet html()}
+
+```html
+<select class="$$select $$select-bordered w-full max-w-xs">
   <option disabled selected>Who shot first?</option>
   <option>Han Solo</option>
   <option>Greedo</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Ghost (no background)">
@@ -80,14 +88,18 @@ data="{[
   <option>Vue</option>
   <option>React</option>
 </select>
-<pre slot="html">{
-`<select class="$$select $$select-ghost w-full max-w-xs">
+{#snippet html()}
+
+```html
+<select class="$$select $$select-ghost w-full max-w-xs">
   <option disabled selected>Pick the best JS framework</option>
   <option>Svelte</option>
   <option>Vue</option>
   <option>React</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="With form-control and labels">
@@ -109,8 +121,10 @@ data="{[
     <span class="label-text-alt">Alt label</span>
   </div>
 </label>
-<pre slot="html">{
-`<label class="$$form-control w-full max-w-xs">
+{#snippet html()}
+
+```html
+<label class="$$form-control w-full max-w-xs">
   <div class="$$label">
     <span class="$$label-text">Pick the best fantasy franchise</span>
     <span class="$$label-text-alt">Alt label</span>
@@ -127,8 +141,10 @@ data="{[
     <span class="$$label-text-alt">Alt label</span>
     <span class="$$label-text-alt">Alt label</span>
   </div>
-</label>`
-}</pre>
+</label>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Primary color">
@@ -139,15 +155,19 @@ data="{[
   <option>Breaking Bad</option>
   <option>Walking Dead</option>
 </select>
-<pre slot="html">{
-`<select class="$$select $$select-primary w-full max-w-xs">
+{#snippet html()}
+
+```html
+<select class="$$select $$select-primary w-full max-w-xs">
   <option disabled selected>What is the best TV show?</option>
   <option>Game of Thrones</option>
   <option>Lost</option>
   <option>Breaking Bad</option>
   <option>Walking Dead</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Secondary color">
@@ -162,8 +182,10 @@ data="{[
   <option>JavaScript</option>
   <option>Python</option>
 </select>
-<pre slot="html">{
-`<select class="$$select $$select-secondary w-full max-w-xs">
+{#snippet html()}
+
+```html
+<select class="$$select $$select-secondary w-full max-w-xs">
   <option disabled selected>Pick your favorite language</option>
   <option>Java</option>
   <option>Go</option>
@@ -173,8 +195,10 @@ data="{[
   <option>Rust</option>
   <option>JavaScript</option>
   <option>Python</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Accent color">
@@ -184,14 +208,18 @@ data="{[
   <option>Dark mode</option>
   <option>Light mode</option>
 </select>
-<pre slot="html">{
-`<select class="$$select $$select-accent w-full max-w-xs">
+{#snippet html()}
+
+```html
+<select class="$$select $$select-accent w-full max-w-xs">
   <option disabled selected>Dark mode or light mode?</option>
   <option>Auto</option>
   <option>Dark mode</option>
   <option>Light mode</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Info color">
@@ -201,14 +229,18 @@ data="{[
   <option>Japanese</option>
   <option>Italian</option>
 </select>
-<pre slot="html">{
-`<select class="$$select $$select-info w-full max-w-xs">
+{#snippet html()}
+
+```html
+<select class="$$select $$select-info w-full max-w-xs">
   <option disabled selected>Select language</option>
   <option>English</option>
   <option>Japanese</option>
   <option>Italian</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Success color">
@@ -222,8 +254,10 @@ data="{[
   <option>Fullmetal Alchemist</option>
   <option>Jojo's Bizarre Adventure</option>
 </select>
-<pre slot="html">{
-`<select class="$$select $$select-success w-full max-w-xs">
+{#snippet html()}
+
+```html
+<select class="$$select $$select-success w-full max-w-xs">
   <option disabled selected>Pick your favorite anime</option>
   <option>One Piece</option>
   <option>Naruto</option>
@@ -232,8 +266,10 @@ data="{[
   <option>Bleach</option>
   <option>Fullmetal Alchemist</option>
   <option>Jojo's Bizarre Adventure</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Warning color">
@@ -245,16 +281,20 @@ data="{[
   <option>Margherita</option>
   <option>Hawaiian</option>
 </select>
-<pre slot="html">{
-`<select class="$$select $$select-warning w-full max-w-xs">
+{#snippet html()}
+
+```html
+<select class="$$select $$select-warning w-full max-w-xs">
   <option disabled selected>Pick a pizza</option>
   <option>Cheese</option>
   <option>Veggie</option>
   <option>Pepperoni</option>
   <option>Margherita</option>
   <option>Hawaiian</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Error color">
@@ -265,15 +305,19 @@ data="{[
   <option>Netlify CMS</option>
   <option>Sanity</option>
 </select>
-<pre slot="html">{
-`<select class="$$select $$select-error w-full max-w-xs">
+{#snippet html()}
+
+```html
+<select class="$$select $$select-error w-full max-w-xs">
   <option disabled selected>What is the best headless CMS</option>
   <option>Strapi</option>
   <option>Ghost</option>
   <option>Netlify CMS</option>
   <option>Sanity</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Sizes">
@@ -303,8 +347,10 @@ data="{[
     <option>Tiny Tomato</option>
   </select>
 </div>
-<pre slot="html">{
-`<!-- lg -->
+{#snippet html()}
+
+```html
+<!-- lg -->
 <select class="$$select $$select-bordered $$select-lg w-full max-w-xs">
   <option disabled selected>Large</option>
   <option>Large Apple</option>
@@ -331,17 +377,23 @@ data="{[
   <option>Tiny Apple</option>
   <option>Tiny Orange</option>
   <option>Tiny Tomato</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Disabled">
 <select class="select w-full max-w-xs" disabled>
   <option>You can't touch this</option>
 </select>
-<pre slot="html">{
-`<select class="$$select w-full max-w-xs" disabled>
+{#snippet html()}
+
+```html
+<select class="$$select w-full max-w-xs" disabled>
   <option>You can't touch this</option>
-</select>`
-}</pre>
+</select>
+```
+
+{/snippet}
 </Component>

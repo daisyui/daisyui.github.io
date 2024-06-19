@@ -40,15 +40,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </details>
-<pre slot="html">{
-`<details class="$$dropdown">
-  <summary class="m-1 btn">open or close</summary>
-  <ul class="p-2 shadow $$menu $$dropdown-content z-[1] bg-base-100 $$rounded-box w-52">
+{#snippet html()}
+
+```html
+<details class="$$dropdown">
+  <summary class="btn m-1">open or close</summary>
+  <ul class="$$menu $$dropdown-content bg-base-100 $$rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</details>`
-}</pre>
+</details>
+```
+
+{/snippet}
 </Component>
 
 ### Method 2: Using CSS focus
@@ -71,15 +75,19 @@ data="{[
     </ul>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown">
+{#snippet html()}
+
+```html
+<div class="$$dropdown">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 ### Positions
@@ -92,15 +100,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-end">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Dropdown top">
@@ -111,15 +123,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-top">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-top">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Dropdown top / aligns to end">
@@ -130,15 +146,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-top $$dropdown-end">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-top $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Dropdown bottom">
@@ -149,15 +169,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-bottom">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-bottom">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Dropdown bottom / aligns to end">
@@ -168,15 +192,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-bottom $$dropdown-end">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-bottom $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Dropdown left">
@@ -187,15 +215,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-left">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-left">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Dropdown left / aligns to end">
@@ -206,15 +238,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-left $$dropdown-end">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-left $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Dropdown right">
@@ -225,15 +261,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-right">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-right">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Dropdown right / aligns to end">
@@ -244,15 +284,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-right $$dropdown-end">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-right $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 ### Open on hover
@@ -265,15 +309,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-hover">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-hover">
   <div tabindex="0" role="button" class="$$btn m-1">Hover</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 ### Force open
@@ -286,15 +334,19 @@ data="{[
     <li><button>Item 2</button></li>
   </ul>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown $$dropdown-open">
+{#snippet html()}
+
+```html
+<div class="$$dropdown $$dropdown-open">
   <div tabindex="0" role="button" class="$$btn m-1">Button</div>
-  <ul tabindex="0" class="$$dropdown-content z-[1] $$menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="$$dropdown-content $$menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
     <li><a>Item 1</a></li>
     <li><a>Item 2</a></li>
   </ul>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 ### More examples
@@ -309,17 +361,23 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$dropdown">
+{#snippet html()}
+
+```html
+<div class="$$dropdown">
   <div tabindex="0" role="button" class="$$btn m-1">Click</div>
-  <div tabindex="0" class="$$dropdown-content z-[1] $$card $$card-compact w-64 p-2 shadow bg-primary text-primary-content">
+  <div
+    tabindex="0"
+    class="$$dropdown-content $$card $$card-compact bg-primary text-primary-content z-[1] w-64 p-2 shadow">
     <div class="$$card-body">
       <h3 class="$$card-title">Card title!</h3>
       <p>you can use any element as a dropdown.</p>
     </div>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Dropdown in navbar">
@@ -340,25 +398,31 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$navbar bg-base-300 rounded-box">
+{#snippet html()}
+
+```html
+<div class="$$navbar bg-base-300 rounded-box">
   <div class="flex-1 px-2 lg:flex-none">
     <a class="text-lg font-bold">daisyUI</a>
-  </div> 
-  <div class="flex justify-end flex-1 px-2">
+  </div>
+  <div class="flex flex-1 justify-end px-2">
     <div class="flex items-stretch">
       <a class="$$btn $$btn-ghost rounded-btn">Button</a>
       <div class="$$dropdown $$dropdown-end">
         <div tabindex="0" role="button" class="$$btn $$btn-ghost rounded-btn">Dropdown</div>
-        <ul tabindex="0" class="$$menu $$dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-          <li><a>Item 1</a></li> 
+        <ul
+          tabindex="0"
+          class="$$menu $$dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow">
+          <li><a>Item 1</a></li>
           <li><a>Item 2</a></li>
         </ul>
       </div>
     </div>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Helper dropdown">
@@ -376,18 +440,35 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html">{
-`A normal text and a helper dropdown
+{#snippet html()}
+
+```html
+A normal text and a helper dropdown
 <div class="$$dropdown $$dropdown-end">
   <div tabindex="0" role="button" class="$$btn $$btn-circle $$btn-ghost $$btn-xs text-info">
-    <svg tabindex="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    <svg
+      tabindex="0"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      class="h-4 w-4 stroke-current">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+    </svg>
   </div>
-  <div tabindex="0" class="$$card $$compact $$dropdown-content z-[1] shadow bg-base-100 rounded-box w-64">
+  <div
+    tabindex="0"
+    class="$$card $$compact $$dropdown-content bg-base-100 rounded-box z-[1] w-64 shadow">
     <div tabindex="0" class="$$card-body">
-      <h2 class="$$card-title">You needed more info?</h2> 
+      <h2 class="$$card-title">You needed more info?</h2>
       <p>Here is a description!</p>
     </div>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>

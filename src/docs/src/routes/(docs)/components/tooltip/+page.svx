@@ -40,11 +40,15 @@ data="{[
     <button class="btn">Hover me</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip" data-tip="hello">
+{#snippet html()}
+
+```html
+<div class="$$tooltip" data-tip="hello">
   <button class="$$btn">Hover me</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Force open">
@@ -53,11 +57,15 @@ data="{[
     <button class="btn">Force open</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open" data-tip="hello">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open" data-tip="hello">
   <button class="$$btn">Force open</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Top">
@@ -66,11 +74,15 @@ data="{[
     <button class="btn">Top</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-top" data-tip="hello">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-top" data-tip="hello">
   <button class="$$btn">Top</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Bottom">
@@ -79,11 +91,15 @@ data="{[
     <button class="btn">Bottom</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-bottom" data-tip="hello">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-bottom" data-tip="hello">
   <button class="$$btn">Bottom</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Left">
@@ -92,11 +108,15 @@ data="{[
     <button class="btn">Left</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-left" data-tip="hello">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-left" data-tip="hello">
   <button class="$$btn">Left</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Right">
@@ -105,11 +125,15 @@ data="{[
     <button class="btn">Right</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-right" data-tip="hello">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-right" data-tip="hello">
   <button class="$$btn">Right</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Primary color">
@@ -118,11 +142,15 @@ data="{[
     <button class="btn btn-primary">primary</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-primary" data-tip="primary">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-primary" data-tip="primary">
   <button class="$$btn $$btn-primary">primary</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Secondary color">
@@ -131,11 +159,15 @@ data="{[
     <button class="btn btn-secondary">secondary</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-secondary" data-tip="secondary">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-secondary" data-tip="secondary">
   <button class="$$btn $$btn-secondary">secondary</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Accent color">
@@ -144,11 +176,15 @@ data="{[
     <button class="btn btn-accent">accent</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-accent" data-tip="accent">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-accent" data-tip="accent">
   <button class="$$btn $$btn-accent">accent</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Info color">
@@ -157,11 +193,15 @@ data="{[
     <button class="btn btn-info">info</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-info" data-tip="info">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-info" data-tip="info">
   <button class="$$btn $$btn-info">info</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Success color">
@@ -170,11 +210,15 @@ data="{[
     <button class="btn btn-success">success</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-success" data-tip="success">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-success" data-tip="success">
   <button class="$$btn $$btn-success">success</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Warning color">
@@ -183,11 +227,15 @@ data="{[
     <button class="btn btn-warning">warning</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-warning" data-tip="warning">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-warning" data-tip="warning">
   <button class="$$btn $$btn-warning">warning</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Error color">
@@ -196,11 +244,15 @@ data="{[
     <button class="btn btn-error">error</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$tooltip $$tooltip-open $$tooltip-error" data-tip="error">
+{#snippet html()}
+
+```html
+<div class="$$tooltip $$tooltip-open $$tooltip-error" data-tip="error">
   <button class="$$btn $$btn-error">error</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Responsive tooltip. only show for large screen">
@@ -209,9 +261,13 @@ data="{[
     <button class="btn">Hover me</button>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$lg:tooltip" data-tip="hello">
+{#snippet html()}
+
+```html
+<div class="$$lg:tooltip" data-tip="hello">
   <button class="$$btn">Hover me</button>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>

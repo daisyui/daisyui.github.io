@@ -32,13 +32,17 @@ data="{[
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Tailwind-CSS-Avatar-component" />
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$avatar">
+{#snippet html()}
+
+```html
+<div class="$$avatar">
   <div class="w-24 rounded">
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Avatar in custom sizes">
@@ -62,28 +66,38 @@ data="{[
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Tailwind-CSS-Avatar-component" />
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$avatar">
+{#snippet html()}
+
+```html
+<div class="$$avatar">
   <div class="w-32 rounded">
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
   </div>
 </div>
 <div class="$$avatar">
   <div class="w-20 rounded">
-    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Tailwind-CSS-Avatar-component" />
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+      alt="Tailwind-CSS-Avatar-component" />
   </div>
 </div>
 <div class="$$avatar">
   <div class="w-16 rounded">
-    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Tailwind-CSS-Avatar-component" />
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+      alt="Tailwind-CSS-Avatar-component" />
   </div>
 </div>
 <div class="$$avatar">
   <div class="w-8 rounded">
-    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Tailwind-CSS-Avatar-component" />
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+      alt="Tailwind-CSS-Avatar-component" />
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Avatar rounded">
@@ -97,8 +111,10 @@ data="{[
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Tailwind-CSS-Avatar-component" />
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$avatar">
+{#snippet html()}
+
+```html
+<div class="$$avatar">
   <div class="w-24 rounded-xl">
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
   </div>
@@ -107,8 +123,10 @@ data="{[
   <div class="w-24 rounded-full">
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Avatar with mask">
@@ -127,23 +145,27 @@ data="{[
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Tailwind-CSS-Avatar-component" />
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$avatar">
-  <div class="w-24 $$mask $$mask-squircle">
+{#snippet html()}
+
+```html
+<div class="$$avatar">
+  <div class="$$mask $$mask-squircle w-24">
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
   </div>
 </div>
 <div class="$$avatar">
-  <div class="w-24 $$mask $$mask-hexagon">
+  <div class="$$mask $$mask-hexagon w-24">
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
   </div>
 </div>
 <div class="$$avatar">
-  <div class="w-24 $$mask $$mask-triangle">
+  <div class="$$mask $$mask-triangle w-24">
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Avatar group">
@@ -169,8 +191,10 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$avatar-group -space-x-6 rtl:space-x-reverse">
+{#snippet html()}
+
+```html
+<div class="$$avatar-group -space-x-6 rtl:space-x-reverse">
   <div class="$$avatar">
     <div class="w-12">
       <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
@@ -191,8 +215,10 @@ data="{[
       <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
     </div>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Avatar group with counter">
@@ -218,8 +244,10 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$avatar-group -space-x-6 rtl:space-x-reverse">
+{#snippet html()}
+
+```html
+<div class="$$avatar-group -space-x-6 rtl:space-x-reverse">
   <div class="$$avatar">
     <div class="w-12">
       <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
@@ -236,12 +264,14 @@ data="{[
     </div>
   </div>
   <div class="$$avatar $$placeholder">
-    <div class="w-12 bg-neutral text-neutral-content">
+    <div class="bg-neutral text-neutral-content w-12">
       <span>+99</span>
     </div>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Avatar with ring">
@@ -250,13 +280,17 @@ data="{[
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Tailwind-CSS-Avatar-component" />
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$avatar">
-  <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+{#snippet html()}
+
+```html
+<div class="$$avatar">
+  <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Avatar with presence indicator">
@@ -270,8 +304,10 @@ data="{[
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Tailwind-CSS-Avatar-component" />
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$avatar $$online">
+{#snippet html()}
+
+```html
+<div class="$$avatar $$online">
   <div class="w-24 rounded-full">
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
   </div>
@@ -280,8 +316,10 @@ data="{[
   <div class="w-24 rounded-full">
     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Avatar placeholder">
@@ -305,26 +343,30 @@ data="{[
     <span class="text-xs">UI</span>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$avatar $$placeholder">
-  <div class="bg-neutral text-neutral-content rounded-full w-24">
+{#snippet html()}
+
+```html
+<div class="$$avatar $$placeholder">
+  <div class="bg-neutral text-neutral-content w-24 rounded-full">
     <span class="text-3xl">D</span>
   </div>
-</div> 
+</div>
 <div class="$$avatar $$online $$placeholder">
-  <div class="bg-neutral text-neutral-content rounded-full w-16">
+  <div class="bg-neutral text-neutral-content w-16 rounded-full">
     <span class="text-xl">AI</span>
   </div>
-</div> 
+</div>
 <div class="$$avatar $$placeholder">
-  <div class="bg-neutral text-neutral-content rounded-full w-12">
+  <div class="bg-neutral text-neutral-content w-12 rounded-full">
     <span>SY</span>
   </div>
-</div> 
+</div>
 <div class="$$avatar $$placeholder">
-  <div class="bg-neutral text-neutral-content rounded-full w-8">
+  <div class="bg-neutral text-neutral-content w-8 rounded-full">
     <span class="text-xs">UI</span>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>

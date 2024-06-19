@@ -67,35 +67,33 @@ data="{[
     <p>hello</p>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$collapse bg-base-200">
-  <input type="radio" name="my-accordion-1" checked="checked" /> 
-  <div class="$$collapse-title text-xl font-medium">
-    Click to open this one and close others
-  </div>
-  <div class="$$collapse-content"> 
+{#snippet html()}
+
+```html
+<div class="$$collapse bg-base-200">
+  <input type="radio" name="my-accordion-1" checked="checked" />
+  <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="$$collapse-content">
     <p>hello</p>
   </div>
 </div>
 <div class="$$collapse bg-base-200">
-  <input type="radio" name="my-accordion-1" /> 
-  <div class="$$collapse-title text-xl font-medium">
-    Click to open this one and close others
-  </div>
-  <div class="$$collapse-content"> 
+  <input type="radio" name="my-accordion-1" />
+  <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="$$collapse-content">
     <p>hello</p>
   </div>
 </div>
 <div class="$$collapse bg-base-200">
-  <input type="radio" name="my-accordion-1" /> 
-  <div class="$$collapse-title text-xl font-medium">
-    Click to open this one and close others
-  </div>
-  <div class="$$collapse-content"> 
+  <input type="radio" name="my-accordion-1" />
+  <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="$$collapse-content">
     <p>hello</p>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Accordion with arrow icon">
@@ -126,35 +124,33 @@ data="{[
     <p>hello</p>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$collapse $$collapse-arrow bg-base-200">
-  <input type="radio" name="my-accordion-2" checked="checked" /> 
-  <div class="$$collapse-title text-xl font-medium">
-    Click to open this one and close others
-  </div>
-  <div class="$$collapse-content"> 
+{#snippet html()}
+
+```html
+<div class="$$collapse $$collapse-arrow bg-base-200">
+  <input type="radio" name="my-accordion-2" checked="checked" />
+  <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="$$collapse-content">
     <p>hello</p>
   </div>
 </div>
 <div class="$$collapse $$collapse-arrow bg-base-200">
-  <input type="radio" name="my-accordion-2" /> 
-  <div class="$$collapse-title text-xl font-medium">
-    Click to open this one and close others
-  </div>
-  <div class="$$collapse-content"> 
+  <input type="radio" name="my-accordion-2" />
+  <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="$$collapse-content">
     <p>hello</p>
   </div>
 </div>
 <div class="$$collapse $$collapse-arrow bg-base-200">
-  <input type="radio" name="my-accordion-2" /> 
-  <div class="$$collapse-title text-xl font-medium">
-    Click to open this one and close others
-  </div>
-  <div class="$$collapse-content"> 
+  <input type="radio" name="my-accordion-2" />
+  <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="$$collapse-content">
     <p>hello</p>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Accordion with plus/minus icon">
@@ -185,35 +181,33 @@ data="{[
     <p>hello</p>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$collapse $$collapse-plus bg-base-200">
-  <input type="radio" name="my-accordion-3" checked="checked" /> 
-  <div class="$$collapse-title text-xl font-medium">
-    Click to open this one and close others
-  </div>
-  <div class="$$collapse-content"> 
+{#snippet html()}
+
+```html
+<div class="$$collapse $$collapse-plus bg-base-200">
+  <input type="radio" name="my-accordion-3" checked="checked" />
+  <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="$$collapse-content">
     <p>hello</p>
   </div>
 </div>
 <div class="$$collapse $$collapse-plus bg-base-200">
-  <input type="radio" name="my-accordion-3" /> 
-  <div class="$$collapse-title text-xl font-medium">
-    Click to open this one and close others
-  </div>
-  <div class="$$collapse-content"> 
+  <input type="radio" name="my-accordion-3" />
+  <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="$$collapse-content">
     <p>hello</p>
   </div>
 </div>
 <div class="$$collapse $$collapse-plus bg-base-200">
-  <input type="radio" name="my-accordion-3" /> 
-  <div class="$$collapse-title text-xl font-medium">
-    Click to open this one and close others
-  </div>
-  <div class="$$collapse-content"> 
+  <input type="radio" name="my-accordion-3" />
+  <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="$$collapse-content">
     <p>hello</p>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Using Accordion and Join together" desc="to join the items together and handle border radius automatically">
@@ -246,35 +240,33 @@ data="{[
     </div>
   </div>
 </div>
-<pre slot="html">{
-`<div class="$$join $$join-vertical w-full">
-  <div class="$$collapse $$collapse-arrow $$join-item border border-base-300">
-    <input type="radio" name="my-accordion-4" checked="checked" /> 
-    <div class="$$collapse-title text-xl font-medium">
-      Click to open this one and close others
-    </div>
-    <div class="$$collapse-content"> 
+{#snippet html()}
+
+```html
+<div class="$$join $$join-vertical w-full">
+  <div class="$$collapse $$collapse-arrow $$join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" checked="checked" />
+    <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+    <div class="$$collapse-content">
       <p>hello</p>
     </div>
   </div>
-  <div class="$$collapse $$collapse-arrow $$join-item border border-base-300">
-    <input type="radio" name="my-accordion-4" /> 
-    <div class="$$collapse-title text-xl font-medium">
-      Click to open this one and close others
-    </div>
-    <div class="$$collapse-content"> 
+  <div class="$$collapse $$collapse-arrow $$join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" />
+    <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+    <div class="$$collapse-content">
       <p>hello</p>
     </div>
   </div>
-  <div class="$$collapse $$collapse-arrow $$join-item border border-base-300">
-    <input type="radio" name="my-accordion-4" /> 
-    <div class="$$collapse-title text-xl font-medium">
-      Click to open this one and close others
-    </div>
-    <div class="$$collapse-content"> 
+  <div class="$$collapse $$collapse-arrow $$join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" />
+    <div class="$$collapse-title text-xl font-medium">Click to open this one and close others</div>
+    <div class="$$collapse-content">
       <p>hello</p>
     </div>
   </div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>

@@ -37,13 +37,17 @@ data="{[
   <progress class="progress w-56" value="70" max="100"></progress>
   <progress class="progress w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html">{
-`<progress class="$$progress w-56" value="0" max="100"></progress>
+{#snippet html()}
+
+```html
+<progress class="$$progress w-56" value="0" max="100"></progress>
 <progress class="$$progress w-56" value="10" max="100"></progress>
 <progress class="$$progress w-56" value="40" max="100"></progress>
 <progress class="$$progress w-56" value="70" max="100"></progress>
-<progress class="$$progress w-56" value="100" max="100"></progress>`
-}</pre>
+<progress class="$$progress w-56" value="100" max="100"></progress>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Primary color">
@@ -54,13 +58,17 @@ data="{[
   <progress class="progress progress-primary w-56" value="70" max="100"></progress>
   <progress class="progress progress-primary w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html">{
-`<progress class="$$progress $$progress-primary w-56" value="0" max="100"></progress>
+{#snippet html()}
+
+```html
+<progress class="$$progress $$progress-primary w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-primary w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-primary w-56" value="40" max="100"></progress>
 <progress class="$$progress $$progress-primary w-56" value="70" max="100"></progress>
-<progress class="$$progress $$progress-primary w-56" value="100" max="100"></progress>`
-}</pre>
+<progress class="$$progress $$progress-primary w-56" value="100" max="100"></progress>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Secondary color">
@@ -71,13 +79,17 @@ data="{[
   <progress class="progress progress-secondary w-56" value="70" max="100"></progress>
   <progress class="progress progress-secondary w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html">{
-`<progress class="$$progress $$progress-secondary w-56" value="0" max="100"></progress>
+{#snippet html()}
+
+```html
+<progress class="$$progress $$progress-secondary w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-secondary w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-secondary w-56" value="40" max="100"></progress>
 <progress class="$$progress $$progress-secondary w-56" value="70" max="100"></progress>
-<progress class="$$progress $$progress-secondary w-56" value="100" max="100"></progress>`
-}</pre>
+<progress class="$$progress $$progress-secondary w-56" value="100" max="100"></progress>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Accent color">
@@ -88,13 +100,17 @@ data="{[
   <progress class="progress progress-accent w-56" value="70" max="100"></progress>
   <progress class="progress progress-accent w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html">{
-`<progress class="$$progress $$progress-accent w-56" value="0" max="100"></progress>
+{#snippet html()}
+
+```html
+<progress class="$$progress $$progress-accent w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-accent w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-accent w-56" value="40" max="100"></progress>
 <progress class="$$progress $$progress-accent w-56" value="70" max="100"></progress>
-<progress class="$$progress $$progress-accent w-56" value="100" max="100"></progress>`
-}</pre>
+<progress class="$$progress $$progress-accent w-56" value="100" max="100"></progress>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Success color">
@@ -105,13 +121,17 @@ data="{[
   <progress class="progress progress-success w-56" value="70" max="100"></progress>
   <progress class="progress progress-success w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html">{
-`<progress class="$$progress $$progress-success w-56" value="0" max="100"></progress>
+{#snippet html()}
+
+```html
+<progress class="$$progress $$progress-success w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-success w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-success w-56" value="40" max="100"></progress>
 <progress class="$$progress $$progress-success w-56" value="70" max="100"></progress>
-<progress class="$$progress $$progress-success w-56" value="100" max="100"></progress>`
-}</pre>
+<progress class="$$progress $$progress-success w-56" value="100" max="100"></progress>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Info color">
@@ -122,13 +142,17 @@ data="{[
   <progress class="progress progress-info w-56" value="70" max="100"></progress>
   <progress class="progress progress-info w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html">{
-`<progress class="$$progress $$progress-info w-56" value="0" max="100"></progress>
+{#snippet html()}
+
+```html
+<progress class="$$progress $$progress-info w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-info w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-info w-56" value="40" max="100"></progress>
 <progress class="$$progress $$progress-info w-56" value="70" max="100"></progress>
-<progress class="$$progress $$progress-info w-56" value="100" max="100"></progress>`
-}</pre>
+<progress class="$$progress $$progress-info w-56" value="100" max="100"></progress>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Warning color">
@@ -139,13 +163,17 @@ data="{[
   <progress class="progress progress-warning w-56" value="70" max="100"></progress>
   <progress class="progress progress-warning w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html">{
-`<progress class="$$progress $$progress-warning w-56" value="0" max="100"></progress>
+{#snippet html()}
+
+```html
+<progress class="$$progress $$progress-warning w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-warning w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-warning w-56" value="40" max="100"></progress>
 <progress class="$$progress $$progress-warning w-56" value="70" max="100"></progress>
-<progress class="$$progress $$progress-warning w-56" value="100" max="100"></progress>`
-}</pre>
+<progress class="$$progress $$progress-warning w-56" value="100" max="100"></progress>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Error color">
@@ -156,18 +184,26 @@ data="{[
   <progress class="progress progress-error w-56" value="70" max="100"></progress>
   <progress class="progress progress-error w-56" value="100" max="100"></progress>
 </div>
-<pre slot="html">{
-`<progress class="$$progress $$progress-error w-56" value="0" max="100"></progress>
+{#snippet html()}
+
+```html
+<progress class="$$progress $$progress-error w-56" value="0" max="100"></progress>
 <progress class="$$progress $$progress-error w-56" value="10" max="100"></progress>
 <progress class="$$progress $$progress-error w-56" value="40" max="100"></progress>
 <progress class="$$progress $$progress-error w-56" value="70" max="100"></progress>
-<progress class="$$progress $$progress-error w-56" value="100" max="100"></progress>`
-}</pre>
+<progress class="$$progress $$progress-error w-56" value="100" max="100"></progress>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Indeterminate (without value)">
 <progress class="progress w-56"></progress>
-<pre slot="html">{
-`<progress class="progress w-56"></progress>`
-}</pre>
+{#snippet html()}
+
+```html
+<progress class="progress w-56"></progress>
+```
+
+{/snippet}
 </Component>

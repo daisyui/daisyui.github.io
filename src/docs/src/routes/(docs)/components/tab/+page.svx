@@ -39,13 +39,17 @@ data="{[
   <button role="tab" class="tab tab-active">Tab 2</button>
   <button role="tab" class="tab">Tab 3</button>
 </div>
-<pre slot="html">{
-`<div role="tablist" class="$$tabs">
+{#snippet html()}
+
+```html
+<div role="tablist" class="$$tabs">
   <a role="tab" class="$$tab">Tab 1</a>
   <a role="tab" class="$$tab $$tab-active">Tab 2</a>
   <a role="tab" class="$$tab">Tab 3</a>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Bordered">
@@ -54,13 +58,17 @@ data="{[
   <button role="tab" class="tab tab-active">Tab 2</button>
   <button role="tab" class="tab">Tab 3</button>
 </div>
-<pre slot="html">{
-`<div role="tablist" class="$$tabs $$tabs-bordered">
+{#snippet html()}
+
+```html
+<div role="tablist" class="$$tabs $$tabs-bordered">
   <a role="tab" class="$$tab">Tab 1</a>
   <a role="tab" class="$$tab $$tab-active">Tab 2</a>
   <a role="tab" class="$$tab">Tab 3</a>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Lifted">
@@ -69,13 +77,17 @@ data="{[
   <button role="tab" class="tab tab-active">Tab 2</button>
   <button role="tab" class="tab">Tab 3</button>
 </div>
-<pre slot="html">{
-`<div role="tablist" class="$$tabs $$tabs-lifted">
+{#snippet html()}
+
+```html
+<div role="tablist" class="$$tabs $$tabs-lifted">
   <a role="tab" class="$$tab">Tab 1</a>
   <a role="tab" class="$$tab $$tab-active">Tab 2</a>
   <a role="tab" class="$$tab">Tab 3</a>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Boxed">
@@ -84,13 +96,17 @@ data="{[
   <button role="tab" class="tab tab-active">Tab 2</button>
   <button role="tab" class="tab">Tab 3</button>
 </div>
-<pre slot="html">{
-`<div role="tablist" class="$$tabs $$tabs-boxed">
+{#snippet html()}
+
+```html
+<div role="tablist" class="$$tabs $$tabs-boxed">
   <a role="tab" class="$$tab">Tab 1</a>
   <a role="tab" class="$$tab $$tab-active">Tab 2</a>
   <a role="tab" class="$$tab">Tab 3</a>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Sizes">
@@ -116,8 +132,10 @@ data="{[
     <button role="tab" class="tab">Large</button>
   </div>
 </div>
-<pre slot="html">{
-`<!-- xs -->
+{#snippet html()}
+
+```html
+<!-- xs -->
 <div role="tablist" class="$$tabs $$tabs-lifted $$tabs-xs">
   <a role="tab" class="$$tab">Tiny</a>
   <a role="tab" class="$$tab $$tab-active">Tiny</a>
@@ -140,8 +158,10 @@ data="{[
   <a role="tab" class="$$tab">Large</a>
   <a role="tab" class="$$tab $$tab-active">Large</a>
   <a role="tab" class="$$tab">Large</a>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="radio tab bordered + tab content">
@@ -156,18 +176,28 @@ data="{[
   <div role="tabpanel" class="tab-content p-10">Tab content 3</div>
 </div>
 
-<pre slot="html">{
-`<div role="tablist" class="$$tabs $$tabs-bordered">
+{#snippet html()}
+
+```html
+<div role="tablist" class="$$tabs $$tabs-bordered">
   <input type="radio" name="my_tabs_1" role="tab" class="$$tab" aria-label="Tab 1" />
   <div role="tabpanel" class="$$tab-content p-10">Tab content 1</div>
 
-  <input type="radio" name="my_tabs_1" role="tab" class="$$tab" aria-label="Tab 2" checked="checked" />
+  <input
+    type="radio"
+    name="my_tabs_1"
+    role="tab"
+    class="$$tab"
+    aria-label="Tab 2"
+    checked="checked" />
   <div role="tabpanel" class="$$tab-content p-10">Tab content 2</div>
 
   <input type="radio" name="my_tabs_1" role="tab" class="$$tab" aria-label="Tab 3" />
   <div role="tabpanel" class="$$tab-content p-10">Tab content 3</div>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="radio tab lifted + tab content">
@@ -182,18 +212,34 @@ data="{[
   <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 pe-32">Tab content 3</div>
 </div>
 
-<pre slot="html">{
-`<div role="tablist" class="$$tabs $$tabs-lifted">
-  <input type="radio" name="my_tabs_2" role="tab" class="$$tab" aria-label="Tab 1" />
-  <div role="tabpanel" class="$$tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 1</div>
+{#snippet html()}
 
-  <input type="radio" name="my_tabs_2" role="tab" class="$$tab" aria-label="Tab 2" checked="checked" />
-  <div role="tabpanel" class="$$tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 2</div>
+```html
+<div role="tablist" class="$$tabs $$tabs-lifted">
+  <input type="radio" name="my_tabs_2" role="tab" class="$$tab" aria-label="Tab 1" />
+  <div role="tabpanel" class="$$tab-content bg-base-100 border-base-300 rounded-box p-6">
+    Tab content 1
+  </div>
+
+  <input
+    type="radio"
+    name="my_tabs_2"
+    role="tab"
+    class="$$tab"
+    aria-label="Tab 2"
+    checked="checked" />
+  <div role="tabpanel" class="$$tab-content bg-base-100 border-base-300 rounded-box p-6">
+    Tab content 2
+  </div>
 
   <input type="radio" name="my_tabs_2" role="tab" class="$$tab" aria-label="Tab 3" />
-  <div role="tabpanel" class="$$tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 3</div>
-</div>`
-}</pre>
+  <div role="tabpanel" class="$$tab-content bg-base-100 border-base-300 rounded-box p-6">
+    Tab content 3
+  </div>
+</div>
+```
+
+{/snippet}
 </Component>
 
 <Component title="Tabs with custom color">
@@ -202,11 +248,19 @@ data="{[
   <button role="tab" class="tab tab-active [--tab-bg:yellow] [--tab-border-color:orange] text-primary">Tab 2</button>
   <button role="tab" class="tab">Tab 3</button>
 </div>
-<pre slot="html">{
-`<div role="tablist" class="$$tabs $$tabs-lifted">
+{#snippet html()}
+
+```html
+<div role="tablist" class="$$tabs $$tabs-lifted">
   <a role="tab" class="$$tab">Tab 1</a>
-  <a role="tab" class="$$tab $$tab-active [--tab-bg:yellow] [--tab-border-color:orange] text-primary">Tab 2</a>
+  <a
+    role="tab"
+    class="$$tab $$tab-active text-primary [--tab-bg:yellow] [--tab-border-color:orange]">
+    Tab 2
+  </a>
   <a role="tab" class="$$tab">Tab 3</a>
-</div>`
-}</pre>
+</div>
+```
+
+{/snippet}
 </Component>
