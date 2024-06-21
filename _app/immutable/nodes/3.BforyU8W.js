@@ -1,0 +1,1 @@
+import{e as r,d as e,a as m,f as i}from"../chunks/disclose-version.JUz7N8OZ.js";/* empty css                                        *//* empty css                                    */function c(a,t){var o=r(),n=i(o);e(n,t.children,{},null),m(a,o)}export{c as component};
