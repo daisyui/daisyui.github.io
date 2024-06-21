@@ -1,1 +1,0 @@
-import{r as f}from"./runtime.-DT9cfFK.js";function v(a,d,o,i){d.addEventListener("input",()=>{i(d[a])}),f(()=>{var r=o();if(d[a]!==r)if(r===null){var n=d[a];i(n)}else d[a]=r+""})}function c(a,d,o,i,r,n){var s=()=>{n(i[a])};i.addEventListener(d,s),f(()=>{i[a]=r()}),f(()=>{if(i===document.body||i===window||i===document)return()=>{i.removeEventListener(d,s)}})}export{v as a,c as b};

@@ -1,1 +1,0 @@
-import{y as h,r as k,l as u,z as x,S as y}from"./runtime.-DT9cfFK.js";function S(r,f){var t;var i=r&&((t=r[y])==null?void 0:t.t);return r===f||i===f}function b(r,f,i,t){h(()=>{var a,s;return k(()=>{a=s,s=[],u(()=>{r!==i(...s)&&(f(r,...s),a&&S(i(...a),r)&&f(null,...a))})}),()=>{x(()=>{s&&S(i(...s),r)&&f(null,...s)})}})}export{b};
