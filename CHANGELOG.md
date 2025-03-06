@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 1.0.5 (2025-03-06)
+
+
+### Bug Fixes
+
+* test 1 ([51e41d8](https://github.com/daisyui/daisyui.github.io/commit/51e41d8c29f2a8bad135b97b2579adf5b721ea7e))
+
 ## 1.0.4 (2025-03-06)
 
 ## 1.0.3 (2025-03-06)
