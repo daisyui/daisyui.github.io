@@ -442,12 +442,6 @@
   "daisyUI adds a few base styles to your page.": "daisyUI afegeix alguns estils base a la teva pàgina.",
   "daisyUI provides a few useful utility classes and CSS variables to help you use the library more effectively.": "daisyUI proporciona algunes classes d'utilitat útils i variables CSS per ajudar-te a utilitzar la biblioteca de manera més eficaç.",
   "don't re-invent <br/>the wheel <br/>every time": "no reinventis <br/>la roda <br/>una vegada i una altra.",
-  "The most popular": "La biblioteca de components",
   "component library": "més popular",
-  "for Tailwind CSS": "de Tailwind CSS",
-  "Click to open this one and close others": "Fes clic per obrir aquest i tancar-ne d'altres",
-  "Make sure you're using unique IDs for each modal": "Assegura't que fas servir identificadors únics per a cada modal",
-  "Which element to attach the theme CSS variables to.": "A quin element adjuntar les variables CSS del tema.",
-  "Additional utility classes and CSS variables that daisyUI uses for components and themes": "Classes d'utilitat addicionals i variables CSS que daisyUI utilitza per a components i temes",
-  "These glass class to give elements a matte glass effect": "Aquestes classes glass donen als elements un efecte de vidre mat"
+  "for Tailwind CSS": "de Tailwind CSS"
 }
