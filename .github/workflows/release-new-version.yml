@@ -7,7 +7,6 @@ on:
         type: choice
         description: Release type
         options:
-          - "--prerelease alpha"
           - "--release-as patch"
           - "--release-as minor"
   push:
@@ -27,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 15
           clean: false
 
       - name: Setup Bun
@@ -42,8 +41,6 @@ jobs:
       - name: Run release command
         # if: github.repository == 'saadeghi/daisyui'
         run: |
-          git config --local user.email "pouya.saadeghi@gmail.com"
-          git config --local user.name "Pouya Saadeghi"
           cd packages/daisyui
           bunx commit-and-tag-version --infile ../../CHANGELOG.md ${{ inputs.release-type }}
 
@@ -53,10 +50,10 @@ jobs:
           version=$(grep -o '"version": *"[^"]*"' packages/daisyui/package.json | cut -d'"' -f4)
           echo version=$version >> $GITHUB_OUTPUT
 
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup .npmrc
         run: |
