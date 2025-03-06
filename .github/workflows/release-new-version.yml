@@ -33,9 +33,12 @@ jobs:
         run: |
           git fetch --tags --depth=1
           LAST_TAG=$(git describe --tags --abbrev=0 || echo "none")
+          echo "Last tag: $LAST_TAG"
           if [ "$LAST_TAG" != "none" ]; then
             git fetch --shallow-since=$(git log -1 --format=%ai $LAST_TAG)
           fi
+          echo "Commits since last tag:"
+          git log $LAST_TAG..HEAD --oneline
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
