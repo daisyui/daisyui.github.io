@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "astro": "5.1.10",
-    "daisyui": "workspace:*"
+    "daisyui": "5"
   },
   "dependencies": {
     "@astrojs/react": "4.2.0",
