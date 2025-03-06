@@ -17,6 +17,7 @@ on:
     paths:
       - "packages/daisyui/functions/**"
       - "packages/daisyui/src/**"
+      - "packages/docs/src/**"
 jobs:
   tests:
     timeout-minutes: 10

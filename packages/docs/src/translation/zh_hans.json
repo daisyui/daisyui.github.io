@@ -78,7 +78,6 @@
   "Preview": "预览",
   "homepage_h1": "更快、更清洁、更简单的 <br />Tailwind&nbsp;CSS 开发。",
   "homepage_h2": "daisyUI 一定会是你喜欢的 Tailwind CSS 插件 <br/>它提供了有用的组件类名 <br/>来帮助你编写更少的代码并且更快的构建应用程序。",
-  "don't re-invent <br/>the wheel <br/>every time": "无需每次都重复造轮子",
   "In a Tailwind CSS project, you need to write utility class names for every element. Thousands of class names just to style the most basic elements.": "在使用 Tailwind CSS 的项目中, 你需要为每一个元素编写实用类名，仅仅是为了美化最基本的元素，都需要成千上万的类名。",
   "instead of writing<br /> <span class='text-error'><span class='font-black'>100</span> class names</span>": "用 daisyUI 代替编写<br /> <span class='text-error'><span class='font-black'>100</span> 个类名</span>",
   "For every element, every page, every project,<br/>again and again": "对每个元素、每个页面、每个项目，<br/>一遍又一遍。",
@@ -441,5 +440,6 @@
   "Base style": "基础样式",
   "daisyUI base style": "daisyUI 基础样式",
   "daisyUI adds a few base styles to your page.": "daisyUI 为您的页面添加了一些基础样式。",
-  "daisyUI provides a few useful utility classes and CSS variables to help you use the library more effectively.": "daisyUI 提供了一些有用的实用类和 CSS 变量，以帮助您更有效地使用该库。"
+  "daisyUI provides a few useful utility classes and CSS variables to help you use the library more effectively.": "daisyUI 提供了一些有用的实用类和 CSS 变量，以帮助您更有效地使用该库。",
+  "don't re-invent <br/>the wheel <br/>every time": "无需每次都重复造轮子"
 }
