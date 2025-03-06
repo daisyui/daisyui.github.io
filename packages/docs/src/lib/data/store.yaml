@@ -231,7 +231,7 @@ productCustomAttributes:
     tech: [astro, react, nextjs, mdx]
     tags: [content, app]
     badge:
-      class: badge-info
+      class: badge-success
       icon: check
       text: Updated to daisyUI 5.0
   - id: 185227
