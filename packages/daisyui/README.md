@@ -15,7 +15,6 @@
 
 </div>
 
-
 # daisyUI 5
 
 ### 🌼 [Official website →](https://daisyui.com/)
