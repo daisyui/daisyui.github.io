@@ -43,7 +43,7 @@ jobs:
         run: |
           git config --local user.email "pouya.saadeghi@gmail.com"
           git config --local user.name "Pouya Saadeghi"
-          bunx commit-and-tag-version -- --release-as ${{ inputs.release-type }} --bumpFiles  --header --packageFiles packages/daisyui
+          bunx commit-and-tag-version -- --release-as ${{ inputs.release-type }} --bumpFiles  --header --packageFiles packages/daisyui/package.json
 
       - name: Read package version from package.json
         id: package-version
