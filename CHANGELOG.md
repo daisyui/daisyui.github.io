@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [5.0.3](///compare/v1.0.6...v5.0.3) (2025-03-06)
+
+
+### Bug Fixes
+
+* 3, 4, 5 76a0ba9
+
 ## 1.0.7 (2025-03-06)
 
 
