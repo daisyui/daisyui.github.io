@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [5.0.11-alpha.0](https://github.com/saadeghi/daisyui/compare/v5.0.10...v5.0.11-alpha.0) (2025-03-06)
+
 ## [5.0.10](https://github.com/saadeghi/daisyui/compare/v5.0.9...v5.0.10) (2025-03-06)
 
 
