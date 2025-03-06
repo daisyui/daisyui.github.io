@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [5.0.10](https://github.com/saadeghi/daisyui/compare/v5.0.9...v5.0.10) (2025-03-06)
+
+
+### Bug Fixes
+
+* [#3](https://github.com/saadeghi/daisyui/issues/3) ([7c3dac4](https://github.com/saadeghi/daisyui/commit/7c3dac4a837df546ed428e3ebe24b505e470c4a7))
+* [#4](https://github.com/saadeghi/daisyui/issues/4) ([6a08bb3](https://github.com/saadeghi/daisyui/commit/6a08bb356db5ad1e2bf0b77d18923099082ec006))
+
 ## 5.0.9 (2025-03-06)
 
 
