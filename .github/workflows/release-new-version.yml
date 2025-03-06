@@ -7,8 +7,8 @@ on:
         type: choice
         description: Release type
         options:
-          - "patch"
-          - "minor"
+          - "--release-as patch"
+          - "--release-as minor"
   push:
     branches:
       - master
@@ -44,7 +44,7 @@ jobs:
           git config --local user.email "pouya.saadeghi@gmail.com"
           git config --local user.name "Pouya Saadeghi"
           cd packages/daisyui
-          bunx commit-and-tag-version --infile ../../CHANGELOG.md --release-as ${{ inputs.release-type }}
+          bunx commit-and-tag-version --infile ../../CHANGELOG.md ${{ inputs.release-type }}
 
       - name: Read package version from package.json
         id: package-version
