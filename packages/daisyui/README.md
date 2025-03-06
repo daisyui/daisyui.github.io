@@ -20,7 +20,6 @@
 
 
 
-
 </div>
 
 # daisyUI 5
