@@ -7,6 +7,7 @@ on:
         type: choice
         description: Release type
         options:
+          - "--prerelease alpha"
           - "--release-as patch"
           - "--release-as minor"
   push:
@@ -26,7 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
           clean: false
 
       - name: Setup Bun
