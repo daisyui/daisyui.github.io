@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 10
+          fetch-depth: 15
           clean: false
 
       - name: Read package version from package.json
@@ -35,9 +35,9 @@ jobs:
         with:
           tag_name: v${{ steps.package-version.outputs.version }}
           body: |
-            🌼 Read changelog: https://daisyui.com/docs/changelog/  
+            🌼 Read changelog: https://daisyui.com/docs/changelog/
 
-            📦 Install this update:  
+            📦 Install this update:
             ```bash
             npm i -D daisyui@${{ steps.package-version.outputs.version }}
             ```
