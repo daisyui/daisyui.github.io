@@ -13,6 +13,8 @@
 [![][discord]](https://daisyui.com/discord/)
 [![][opencollectivebadge]](https://opencollective.com/daisyui)
 
+
+
 </div>
 
 # daisyUI 5
