@@ -58,7 +58,7 @@ jobs:
 
       - name: Publish package to NPM
         # if: github.repository == 'saadeghi/daisyui'
-        run: bun publish
+        run: cd packages/daisyui && bun publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
