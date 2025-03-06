@@ -41,6 +41,8 @@ jobs:
       - name: Run release command
         # if: github.repository == 'saadeghi/daisyui'
         run: |
+          git config --local user.email "pouya.saadeghi@gmail.com"
+          git config --local user.name "Pouya Saadeghi"
           cd packages/daisyui
           bunx commit-and-tag-version --infile ../../CHANGELOG.md ${{ inputs.release-type }}
 
