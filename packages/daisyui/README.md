@@ -19,7 +19,6 @@
 
 
 
-
 </div>
 
 # daisyUI 5
