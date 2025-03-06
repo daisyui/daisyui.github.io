@@ -29,8 +29,13 @@ jobs:
           fetch-depth: 1
           clean: false
 
-      - name: Fetch tags
-        run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+      - name: Fetch last tag
+        run: |
+          git fetch --tags --depth=1
+          LAST_TAG=$(git describe --tags --abbrev=0 || echo "none")
+          if [ "$LAST_TAG" != "none" ]; then
+            git fetch --shallow-since=$(git log -1 --format=%ai $LAST_TAG)
+          fi
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
