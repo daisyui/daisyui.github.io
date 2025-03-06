@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.99.6](https://github.com/saadeghi/daisyui/compare/v2.0.1...v2.99.6) (2025-03-06)
+
+
+### Bug Fixes
+
+* [#1](https://github.com/saadeghi/daisyui/issues/1) ([8134cb2](https://github.com/saadeghi/daisyui/commit/8134cb28d82708a195aca26771fd1385689e499f))
+* [#1](https://github.com/saadeghi/daisyui/issues/1) ([0219a60](https://github.com/saadeghi/daisyui/commit/0219a60a4dfc66991f9cd88db24b84d914792d0d))
+* [#2](https://github.com/saadeghi/daisyui/issues/2) ([69164a4](https://github.com/saadeghi/daisyui/commit/69164a4ddf9fb84b59f10e9e5887729da302fb57))
+* [#2](https://github.com/saadeghi/daisyui/issues/2) ([954c965](https://github.com/saadeghi/daisyui/commit/954c965de5d8333fd7eb64265ade9f74385fc153))
+* [#3](https://github.com/saadeghi/daisyui/issues/3) ([49656fb](https://github.com/saadeghi/daisyui/commit/49656fbb20fd79af27c6d872d203f91362d3961d))
+* [#3](https://github.com/saadeghi/daisyui/issues/3) ([ae279e4](https://github.com/saadeghi/daisyui/commit/ae279e44632f330fc1928272118fe26d3866662f))
+* 1 ([c4a9db8](https://github.com/saadeghi/daisyui/commit/c4a9db8ce359d9a70f137564bbd57deceef13a76))
+* test ([f86033e](https://github.com/saadeghi/daisyui/commit/f86033e75d0bee85bc7b661127582c5a3f2c9d21))
+* test ([a285a7e](https://github.com/saadeghi/daisyui/commit/a285a7e6add913713054b6e9baf05f447c843325))
+* translations ([4132c00](https://github.com/saadeghi/daisyui/commit/4132c00e4a9e179dd898b4f1033d68cf99caa4a5))
+
 ## 2.0.4 (2025-03-06)
 
 
