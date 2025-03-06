@@ -43,7 +43,7 @@ jobs:
         run: |
           git config --local user.email "pouya.saadeghi@gmail.com"
           git config --local user.name "Pouya Saadeghi"
-          bunx commit-and-tag-version -- --release-as ${{ inputs.release-type }} --bumpFiles  --header --packageFiles packages/daisyui/package.json
+          bunx commit-and-tag-version -- --release-as ${{ inputs.release-type }} --header --packageFiles packages/daisyui/package.json
 
       - name: Read package version from package.json
         id: package-version
@@ -56,13 +56,13 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup NPM authentication
+      - name: Setup .npmrc
         run: |
           echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
 
       - name: Publish package to NPM
         # if: github.repository == 'saadeghi/daisyui'
-        run: cd packages/daisyui && npm publish
+        run: cd packages/daisyui && bun publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           NPM_CONFIG_LOGLEVEL: verbose
