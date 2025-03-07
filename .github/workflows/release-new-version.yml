@@ -25,6 +25,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          clean: false
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -37,15 +40,11 @@ jobs:
 
       - name: Run release command
         # if: github.repository == 'saadeghi/daisyui'
-        id: release
-        uses: google-github-actions/release-please-action@v3
-        with:
-          release-type: node
-          package-name: d4ui-test
-          path: packages/daisyui
-          monorepo-tags: true
-          release-as: ${{ inputs.release-type }}
-          changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false}]'
+        run: |
+          git config --local user.email "pouya.saadeghi@gmail.com"
+          git config --local user.name "Pouya Saadeghi"
+          cd packages/daisyui
+          bunx commit-and-tag-version --infile ../../CHANGELOG.md ${{ inputs.release-type }}
 
       - name: Read package version from package.json
         id: package-version
