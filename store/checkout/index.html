@@ -8,7 +8,27 @@
         document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"))
       } catch (e) {}
     </script>
-    <!--[--><meta name="robots" content="noindex"> <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> <script src="https://lmsqueezy.com/affiliate.js" defer></script> <style>
+    <!--[--><meta name="robots" content="noindex"> <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> <script>
+    console.log(
+      "If this page is not loading, please disable ad blockers or software that blocks scripts. We do not track your IP address or personal information. This script is required to assigne affiliate ID required for the purchase.",
+    )
+    const urlParams = new URLSearchParams(window.location.search)
+    const productId = urlParams.get("product")
+    const desc = urlParams.get("desc") === "0" ? "&desc=0" : ""
+    const baseUrl = `https://daisyui.lemonsqueezy.com/checkout/buy/${productId}`
+    window.lemonSqueezyAffiliateConfig = {
+      store: "daisyui",
+      onTrack: (e) => {
+        window.location.href = `${baseUrl}?aff_ref=${e.click}${desc}`
+      },
+    }
+    setTimeout(() => {
+      if (typeof window.createLemonSqueezyAffiliate === "undefined") {
+        console.log("script not loaded. refreshing...")
+        window.location.reload()
+      }
+    }, 10000)
+  </script> <script src="https://lmsqueezy.com/affiliate.js" defer></script> <style>
     html,
     body {
       color-scheme: light dark;
