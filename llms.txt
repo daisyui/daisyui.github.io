@@ -1,3 +1,11 @@
+---
+description: daisyUI 5
+alwaysApply: true
+applyTo: "**"
+downloadedFrom: https://daisyui.com/llms.txt
+version: 5.2.x
+---
+
 # daisyUI 5
 daisyUI 5 is a CSS library for Tailwind CSS 4
 daisyUI 5 provides class names for common UI components
@@ -36,7 +44,7 @@ daisyUI 5 provides class names for common UI components
 10. don't add `bg-base-100 text-base-content` to body unless it's necessary
 11. For design decisions, use Refactoring UI book best practices
 
-daisyUI 5 class names are one of the following categories. these type names are only for reference and are not used in the actual code
+daisyUI 5 class names are one of the following categories. These type names are only for reference and are not used in the actual code
 - `component`: the required component class
 - `part`: a child part of a component
 - `style`: sets a specific style to component or part
@@ -46,6 +54,7 @@ daisyUI 5 class names are one of the following categories. these type names are 
 - `placement`: sets a specific placement to component or part
 - `direction`: sets a specific direction to component or part
 - `modifier`: modifies the component or part in a specific way
+- `variant`: prefixes for utility classes that conditionally apply styles. syntax is `variant:utility-class`
 
 ## Config
 daisyUI 5 config docs: https://daisyui.com/docs/config/
@@ -155,21 +164,23 @@ A CSS file with Tailwind CSS, daisyUI and a custom daisyUI theme looks like this
   --radius-selector: 1rem; /* border radius of selectors (checkbox, toggle, badge) */
   --radius-field: 0.25rem; /* border radius of fields (button, input, select, tab) */
   --radius-box: 0.5rem; /* border radius of boxes (card, modal, alert) */
+  /* preferred values for --radius-* : 0rem, 0.25rem, 0.5rem, 1rem, 2rem */
 
-  --size-selector: 0.25rem; /* base size of selectors (checkbox, toggle, badge) */
-  --size-field: 0.25rem; /* base size of fields (button, input, select, tab) */
+  --size-selector: 0.25rem; /* base size of selectors (checkbox, toggle, badge). Value must be 0.25rem unless we intentionally want bigger selectors. In so it can be 0.28125 or 0.3125. If we intentionally want smaller selectors, it can be 0.21875 or 0.1875 */
+  --size-field: 0.25rem; /* base size of fields (button, input, select, tab). Value must be 0.25rem unless we intentionally want bigger fields. In so it can be 0.28125 or 0.3125. If we intentionally want smaller fields, it can be 0.21875 or 0.1875 */
 
-  --border: 1px; /* border size */
+  --border: 1px; /* border size. Value must be 1px unless we intentionally want thicker borders. In so it can be 1.5px or 2px. If we intentionally want thinner borders, it can be 0.5px */
 
-  --depth: 1; /* only 0 or 1 – Adds a shadow and subtle 3D effect to components */
-  --noise: 0; /* only 0 or 1 - Adds a subtle noise effect to components */
+  --depth: 1; /* only 0 or 1 – Adds a shadow and subtle 3D depth effect to components */
+  --noise: 0; /* only 0 or 1 - Adds a subtle noise (grain) effect to components */
 }
 ```
 #### Rules
 - All CSS variables above are required
 - Colors can be OKLCH or hex or other formats
+- If you're generating a custom theme, do not include the comments from the example above. Just provide the code.
 
-You can use https://daisyui.com/theme-generator/ to create your own theme
+People can use https://daisyui.com/theme-generator/ visual tool to create their own theme.
 
 ## daisyUI 5 components
 
@@ -456,7 +467,7 @@ Collapse is used for showing and hiding content
 - Can also be a details/summary tag
 
 ### countdown
-Countdown gives you a transition effect when you change a number between 0 to 99
+Countdown gives you a transition effect when you change a number between 0 to 999
 
 [countdown docs](https://daisyui.com/components/countdown/)
 
@@ -471,7 +482,7 @@ Countdown gives you a transition effect when you change a number between 0 to 99
 ```
 
 #### Rules
-- The `--value` CSS variable and text must be a number between 0 and 99
+- The `--value` CSS variable and text must be a number between 0 and 999
 - you need to change the span text and the `--value` CSS variable using JS
 - you need to add `aria-live="polite"` and `aria-label="{number}"` so screen readers can properly read changes
 
@@ -554,6 +565,7 @@ Drawer is a grid layout that can show/hide a sidebar on the left or right side o
 - part: `drawer-toggle`, `drawer-content`, `drawer-side`, `drawer-overlay`
 - placement: `drawer-end`
 - modifier: `drawer-open`
+- variant: `is-drawer-open:`, `is-drawer-close:`
 
 #### Syntax
 ```html
@@ -570,6 +582,68 @@ and {SIDEBAR} can be a menu like:
   <li><a>Item 1</a></li>
   <li><a>Item 2</a></li>
 </ul>
+```
+To open/close the drawer, use a label that points to the `drawer-toggle` input:
+```html
+<label for="my-drawer" class="btn drawer-button">Open/close drawer</label>
+```
+Example: This sidebar is always visible on large screen, can be toggled on small screen:
+```html
+<div class="drawer lg:drawer-open">
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col items-center justify-center">
+    <!-- Page content here -->
+    <label for="my-drawer-3" class="btn drawer-button lg:hidden">
+      Open drawer
+    </label>
+  </div>
+  <div class="drawer-side">
+    <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu bg-base-200 min-h-full w-80 p-4">
+      <!-- Sidebar content here -->
+      <li><button>Sidebar Item 1</button></li>
+      <li><button>Sidebar Item 2</button></li>
+    </ul>
+  </div>
+</div>
+```
+
+Example: This sidebar is always visible. When it's close we only see iocns, when it's open we see icons and text
+```html
+<div class="drawer lg:drawer-open">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <!-- Page content here -->
+  </div>
+  <div class="drawer-side is-drawer-close:overflow-visible">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="is-drawer-close:w-17 is-drawer-open:w-64 bg-base-200 flex flex-col items-start min-h-full">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow p-4">
+        <!-- list item -->
+        <li>
+          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Homepage">
+            🏠
+            <span class="is-drawer-close:hidden">Homepage</span>
+          </button>
+        </li>
+        <!-- list item -->
+        <li>
+          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Settings">
+            ⚙️
+            <span class="is-drawer-close:hidden">Settings</span>
+          </button>
+        </li>
+      </ul>
+      <!-- button to open/close drawer -->
+      <div class="m-3.5 is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Open">
+        <label for="my-drawer-4" class="btn btn-ghost btn-circle drawer-button is-drawer-open:rotate-y-180">
+          ↔️
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
 ```
 
 #### Rules
@@ -610,7 +684,7 @@ Using CSS focus
 ```html
 <div class="dropdown">
   <div tabindex="0" role="button">Button</div>
-  <ul tabindex="0" class="dropdown-content">{CONTENT}</ul>
+  <ul tabindex="-1" class="dropdown-content">{CONTENT}</ul>
 </div>
 ```
 
@@ -619,6 +693,105 @@ Using CSS focus
 - replace `{id}` and `{anchor}` with a unique name
 - For CSS focus dropdowns, use `tabindex="0"` and `role="button"` on the button
 - The content can be any HTML element (not just `<ul>`)
+
+### fab
+FAB (Floating Action Button) stays in the bottom corner of screen. It includes a focusable and accessible element with button role. Clicking or focusing it shows additional buttons (known as Speed Dial buttons) in a vertical arrangement or a flower shape (quarter circle)
+
+[fab docs](https://daisyui.com/components/fab/)
+
+#### Class names
+- component: `fab`
+- part: `fab-close`, `fab-main-action`
+- modifier: `fab-flower`
+
+#### Syntax
+A single FAB in the corder of screen
+```html
+<div class="fab">
+  <button class="btn btn-lg btn-circle">{IconOriginal}</button>
+</div>
+```
+A FAB that opens a 3 other buttons in the corner of page vertically
+```html
+<div class="fab">
+  <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-primary">{IconOriginal}</div>
+  <button class="btn btn-lg btn-circle">{Icon1}</button>
+  <button class="btn btn-lg btn-circle">{Icon2}</button>
+  <button class="btn btn-lg btn-circle">{Icon3}</button>
+</div>
+```
+A FAB that opens a 3 other buttons in the corner of page vertically and they have label text
+```html
+<div class="fab">
+  <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-primary">{IconOriginal}</div>
+  <div>{Label1}<button class="btn btn-lg btn-circle">{Icon1}</button></div>
+  <div>{Label2}<button class="btn btn-lg btn-circle">{Icon2}</button></div>
+  <div>{Label3}<button class="btn btn-lg btn-circle">{Icon3}</button></div>
+</div>
+```
+FAB with rectangle buttons. These are not circular buttons so they can have more content.
+```html
+<div class="fab">
+  <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-primary">{IconOriginal}</div>
+  <button class="btn btn-lg">{Label1}</button>
+  <button class="btn btn-lg">{Label2}</button>
+  <button class="btn btn-lg">{Label3}</button>
+</div>
+```
+FAB with close button. When FAB is open, the original button is replaced with a close button
+```html
+<div class="fab">
+  <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-primary">{IconOriginal}</div>
+  <div class="fab-close">Close <span class="btn btn-circle btn-lg btn-error">✕</span></div>
+  <div>{Label1}<button class="btn btn-lg btn-circle">{Icon1}</button></div>
+  <div>{Label2}<button class="btn btn-lg btn-circle">{Icon2}</button></div>
+  <div>{Label3}<button class="btn btn-lg btn-circle">{Icon3}</button></div>
+</div>
+```
+FAB with Main Action button. When FAB is open, the original button is replaced with a main action button
+```html
+<div class="fab">
+  <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-primary">{IconOriginal}</div>
+  <div class="fab-main-action">
+    {LabelMainAction}<button class="btn btn-circle btn-secondary btn-lg">{IconMainAction}</button>
+  </div>
+  <div>{Label1}<button class="btn btn-lg btn-circle">{Icon1}</button></div>
+  <div>{Label2}<button class="btn btn-lg btn-circle">{Icon2}</button></div>
+  <div>{Label3}<button class="btn btn-lg btn-circle">{Icon3}</button></div>
+</div>
+```
+FAB Flower. It opens the buttons in a flower shape (quarter circle) arrangement instead of vertical
+```html
+<div class="fab fab-flower">
+  <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-primary">{IconOriginal}</div>
+  <button class="fab-main-action btn btn-circle btn-lg">{IconMainAction}</button>
+  <button class="btn btn-lg btn-circle">{Icon1}</button>
+  <button class="btn btn-lg btn-circle">{Icon2}</button>
+  <button class="btn btn-lg btn-circle">{Icon3}</button>
+</div>
+```
+FAB Flower with tooltips. There's no space for a text label in a quarter circle, so tooltips are used to indicate the button's function
+```html
+<div class="fab fab-flower">
+  <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-primary">{IconOriginal}</div>
+  <button class="fab-main-action btn btn-circle btn-lg">{IconMainAction}</button>
+  <div class="tooltip tooltip-left" data-tip="{Label1}">
+    <button class="btn btn-lg btn-circle">{Icon1}</button>
+  </div>
+  <div class="tooltip tooltip-left" data-tip="{Label2}">
+    <button class="btn btn-lg btn-circle">{Icon2}</button>
+  </div>
+  <div class="tooltip tooltip-left" data-tip="{Label3}">
+    <button class="btn btn-lg btn-circle">{Icon3}</button>
+  </div>
+</div>
+```
+#### Rules
+- {Icon*} should be replaced with the appropriate icon for each button. SVG icons are recommended
+- {IconOriginal} is the icon that we see before opening the FAB
+- {IconMainAction} is the icon we see after opening the FAB
+- {Icon1}, {Icon2}, {Icon3} are the icons for the additional buttons
+- {Label*} is the label text for each button
 
 ### fieldset
 Fieldset is a container for grouping related form elements. It includes fieldset-legend as a title and label as a description
@@ -735,6 +908,30 @@ Hero is a component for displaying a large box or image with a title and descrip
 - Use `hero-overlay` inside the hero to overlay the background image with a color
 - Content can contain a figure
 
+### hover-gallery
+Hover Gallery is container of images. The first image is visible be default and when we hover it horizontally, other images show up. Hover Gallery is useful for product cards in ecommerce sites, portfoilios or in image galleries. Hover Gallery can include up to 10 images.
+
+[indicator docs](https://daisyui.com/components/hover-gallery/)
+
+#### Class names
+- component: `hover-gallery`
+
+#### Syntax
+```html
+<figure class="hover-gallery max-w-60">
+  <img src="https://img.daisyui.com/images/stock/daisyui-hat-1.webp" />
+  <img src="https://img.daisyui.com/images/stock/daisyui-hat-2.webp" />
+  <img src="https://img.daisyui.com/images/stock/daisyui-hat-3.webp" />
+  <img src="https://img.daisyui.com/images/stock/daisyui-hat-4.webp" />
+</figure>
+```
+
+#### Rules
+- hover-gallery can be a `<div>` or a `<figure>`
+- hover-gallery can include up to 10 images
+- hover-gallery needs a max width otherwise if fills the container width
+- images must be same dimensions for a proper alignment
+
 ### indicator
 Indicators are used to place an element on the corner of another element
 
@@ -755,7 +952,7 @@ Indicators are used to place an element on the corner of another element
 
 #### Rules
 - Add all indicator elements (with `indicator-item` class) before the main content
-- {placement} is optional and can have one of each horizonal/vertical class names. default is `indicator-end indicator-top`
+- {placement} is optional and can have one of each horizontal/vertical class names. default is `indicator-end indicator-top`
 
 ### input
 Text Input is a simple input field
@@ -1545,3 +1742,4 @@ Validator class changes the color of form elements to error or success based on 
 
 #### Rules
 - Use with `input`, `select`, `textarea`
+
