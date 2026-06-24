@@ -118,6 +118,9 @@
     <loc>https://daisyui.com/components/alert/</loc>
   </url>
   <url>
+    <loc>https://daisyui.com/components/aura/</loc>
+  </url>
+  <url>
     <loc>https://daisyui.com/components/avatar/</loc>
   </url>
   <url>
@@ -217,6 +220,9 @@
     <loc>https://daisyui.com/components/mask/</loc>
   </url>
   <url>
+    <loc>https://daisyui.com/components/megamenu/</loc>
+  </url>
+  <url>
     <loc>https://daisyui.com/components/menu/</loc>
   </url>
   <url>
@@ -236,6 +242,9 @@
   </url>
   <url>
     <loc>https://daisyui.com/components/navbar/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/components/otp/</loc>
   </url>
   <url>
     <loc>https://daisyui.com/components/pagination/</loc>

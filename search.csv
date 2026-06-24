@@ -25,7 +25,7 @@ Blink template,/store/blink/
 Auth template 2.0,/store/auth-template/
 Mobile app landing page,/store/mobile-app-landingpage/
 Use daisyUI from CDN,/docs/cdn/,
-Utility classes and CSS variables,/docs/utilities/,bg-primary to-primary via-primary from-primary text-primary ring-primary fill-primary caret-primary stroke-primary border-primary divide-primary accent-primary shadow-primary outline-primary decoration-primary placeholder-primary ring-offset-primary rounded-box rounded-field rounded-selector var(--radius-box) var(--radius-field) var(--radius-selector) --color-primary --color-primary-content --color-secondary --color-secondary-content --color-accent --color-accent-content --color-neutral --color-neutral-content --color-base-100 --color-base-200 --color-base-300 --color-base-content --color-info --color-info-content --color-success --color-success-content --color-warning --color-warning-content --color-error --color-error-content --radius-selector --radius-field --radius-box --size-selector --size-field --border --depth --noise --alert-color --badge-color --btn-color --card-p --size --value --divider-m --anchor-v --input-color --ease --items --indicator-t --input-color --size --list-grid-cols --menu-active-fg --modal-tl --value --size --range-bg --input-color --tabs-height --items --input-color --timeline-row-start --toast-x --toggle-p --tt-bg --glass-blur --join-ss --size --btn-fg --btn-shadow --btn-noise --btn-p --size --card-fs --cardtitle-fs --digits --anchor-h --size --shadow --shine --transform --indicator-b --indicator-s --indicator-e --indicator-y --indicator-x --size --font-size --menu-active-bg --modal-tr --modal-bl --modal-br --size --thickness --radialprogress --range-thumb --range-thumb-size --range-progress --range-fill --range-p --size --size --tabs-direction --tab-p --tab-bg --tab-border-color --tab-radius-ss --tab-radius-se --tab-radius-es --tab-radius-ee --tab-order --tab-radius-min --tab-paddings --tab-border-colors --tab-corner-width --tab-corner-height --tab-corner-width --tab-corner-position --tab-inset --radius-start --radius-end --tabcontent-margin --tabcontent-radius-ss --tabcontent-radius-se --tabcontent-radius-es --tabcontent-radius-ee --tabcontent-order --duration --first-item-position --size --font-size --timeline-row-end --timeline-col-start --timeline-col-end --toast-y --size --tt-off --tt-tailw --glass-opacity --glass-reflect-degree --glass-reflect-opacity --glass-border-opacity --glass-text-shadow-opacity --join-se --join-es --join-ee
+Utility classes and CSS variables,/docs/utilities/,bg-primary to-primary via-primary from-primary text-primary ring-primary fill-primary caret-primary stroke-primary border-primary divide-primary accent-primary shadow-primary outline-primary decoration-primary placeholder-primary ring-offset-primary rounded-box rounded-field rounded-selector var(--radius-box) var(--radius-field) var(--radius-selector) --color-primary --color-primary-content --color-secondary --color-secondary-content --color-accent --color-accent-content --color-neutral --color-neutral-content --color-base-100 --color-base-200 --color-base-300 --color-base-content --color-info --color-info-content --color-success --color-success-content --color-warning --color-warning-content --color-error --color-error-content --radius-selector --radius-field --radius-box --size-selector --size-field --border --depth --noise --alert-color --badge-color --btn-color --card-p --size --value --divider-m --anchor-v --input-color --ease --items --indicator-t --input-color --size --list-grid-cols --menu-active-fg --modal-tl --value --size --range-bg --size --input-color --tabs-height --items --input-color --timeline-row-start --toast-x --toggle-p --tt-bg --glass-blur --join-ss --size --btn-fg --btn-rest-fg --btn-shadow --btn-noise --btn-p --size --card-fs --cardtitle-fs --digits --anchor-h --size --shadow --shine --transform --indicator-b --indicator-s --indicator-e --indicator-y --indicator-x --size --font-size --menu-active-bg --modal-tr --modal-bl --modal-br --size --thickness --radialprogress --range-thumb --range-thumb-size --range-progress --range-fill --range-p --size --size --tabs-direction --tab-p --tab-bg --tab-border-color --tab-radius-ss --tab-radius-se --tab-radius-es --tab-radius-ee --tab-order --tab-radius-min --tab-paddings --tab-border-colors --tab-corner-width --tab-corner-height --tab-corner-width --tab-corner-position --tab-inset --radius-start --radius-end --tabcontent-margin --tabcontent-radius-ss --tabcontent-radius-se --tabcontent-radius-es --tabcontent-radius-ee --tabcontent-order --duration --first-item-position --size --font-size --timeline-row-end --timeline-col-start --timeline-col-end --toast-y --size --tt-off --tt-tail --tt-tail-off --glass-opacity --glass-reflect-degree --glass-reflect-opacity --glass-border-opacity --glass-text-shadow-opacity --join-se --join-es --join-ee
 Untitled,/docs/mcp/openclaw/,
 Untitled,/docs/mcp/cline/,
 Untitled,/docs/mcp/opencode/,
@@ -104,6 +104,7 @@ Collapse,/components/collapse/,collapse collapse-title collapse-content collapse
 Theme Controller,/components/theme-controller/,theme-controller
 Dropdown,/components/dropdown/,dropdown dropdown-content dropdown-start dropdown-center dropdown-end dropdown-top dropdown-bottom dropdown-left dropdown-right dropdown-hover dropdown-open dropdown-close
 Avatar,/components/avatar/,avatar avatar-group avatar-online avatar-offline avatar-placeholder
+OTP,/components/otp/,otp otp-joined otp-xs otp-sm otp-md otp-lg otp-xl otp-neutral otp-primary otp-secondary otp-accent otp-success otp-info otp-warning otp-error
 Hover 3D Card,/components/hover-3d/,hover-3d
 Chat bubble,/components/chat/,chat chat-image chat-header chat-footer chat-bubble chat-start chat-end chat-bubble-neutral chat-bubble-primary chat-bubble-secondary chat-bubble-accent chat-bubble-info chat-bubble-success chat-bubble-warning chat-bubble-error
 Alert,/components/alert/,alert alert-outline alert-dash alert-soft alert-info alert-success alert-warning alert-error alert-vertical alert-horizontal
@@ -134,14 +135,16 @@ Progress,/components/progress/,progress progress-neutral progress-primary progre
 Table,/components/table/,table table-zebra table-pin-rows table-pin-cols table-xs table-sm table-md table-lg table-xl
 Indicator,/components/indicator/,indicator indicator-item indicator-start indicator-center indicator-end indicator-top indicator-middle indicator-bottom
 List,/components/list/,list list-row list-col-wrap list-col-grow
-Rating,/components/rating/,rating rating-half rating-hidden rating-xs rating-sm rating-md rating-lg rating-xl
+Megamenu,/components/megamenu/,megamenu megamenu-wide megamenu-full megamenu-vertical megamenu-xs megamenu-sm megamenu-md megamenu-lg megamenu-xl
+Rating,/components/rating/,rating rating-half rating-full rating-hidden rating-xs rating-sm rating-md rating-lg rating-xl
 Kbd,/components/kbd/,kbd kbd-xs kbd-sm kbd-md kbd-lg kbd-xl
 Modal,/components/modal/,modal modal-box modal-action modal-backdrop modal-toggle modal-open modal-top modal-middle modal-bottom modal-start modal-end
-Range slider,/components/range/,range range-neutral range-primary range-secondary range-accent range-success range-warning range-info range-error range-xs range-sm range-md range-lg range-xl
+Range slider,/components/range/,range range-neutral range-primary range-secondary range-accent range-success range-warning range-info range-error range-xs range-sm range-md range-lg range-xl range-vertical
+Aura,/components/aura/,aura aura-dual aura-rainbow aura-holo aura-gold aura-silver aura-glow aura-xs aura-sm aura-md aura-lg aura-xl
 Stack,/components/stack/,stack stack-top stack-bottom stack-start stack-end
 Stat,/components/stat/,stats stat stat-title stat-value stat-desc stat-figure stat-actions stats-horizontal stats-vertical
 Hover Gallery,/components/hover-gallery/,hover-gallery
-Tooltip,/components/tooltip/,tooltip tooltip-content tooltip-top tooltip-bottom tooltip-left tooltip-right tooltip-open tooltip-neutral tooltip-primary tooltip-secondary tooltip-accent tooltip-info tooltip-success tooltip-warning tooltip-error
+Tooltip,/components/tooltip/,tooltip tooltip-content tooltip-top tooltip-bottom tooltip-left tooltip-right tooltip-start tooltip-center tooltip-end tooltip-open tooltip-primary tooltip-secondary tooltip-accent tooltip-info tooltip-success tooltip-warning tooltip-error
 File Input,/components/file-input/,file-input file-input-ghost file-input-neutral file-input-primary file-input-secondary file-input-accent file-input-info file-input-success file-input-warning file-input-error file-input-xs file-input-sm file-input-md file-input-lg file-input-xl
 Breadcrumbs,/components/breadcrumbs/,breadcrumbs
 Card,/components/card/,card card-title card-body card-actions card-border card-dash card-side image-full card-xs card-sm card-md card-lg card-xl
@@ -295,6 +298,7 @@ Create a new Phoenix project,/docs/install/phoenix/#create-a-new-phoenix-project
 Run your project,/docs/install/phoenix/#run-your-project,
 Create a new Angular project,/docs/install/angular/#create-a-new-angular-project,
 "Install Tailwind CSS, PostCSS, and daisyUI",/docs/install/angular/#install-tailwind-css-postcss-and-daisyui,
+Note about modern CSS support,/docs/install/angular/#note-about-modern-css-support,
 Create a new Zola project,/docs/install/zola/#create-a-new-zola-project,
 Get Tailwind CSS executable,/docs/install/zola/#get-tailwind-css-executable,
 Get daisyUI bundled JS file,/docs/install/zola/#get-daisyui-bundled-js-file,
@@ -464,6 +468,11 @@ Avatar group with counter,/components/avatar/#avatar-group-with-counter,
 Avatar with ring,/components/avatar/#avatar-with-ring,
 Avatar with presence indicator,/components/avatar/#avatar-with-presence-indicator,
 Avatar placeholder,/components/avatar/#avatar-placeholder,
+OTP,/components/otp/#otp,
+OTP with 6 digits,/components/otp/#otp-with-6-digits,
+OTP joined,/components/otp/#otp-joined,
+OTP with different sizes,/components/otp/#otp-with-different-sizes,
+OTP with different colors,/components/otp/#otp-with-different-colors,
 3D image hover effect,/components/hover-3d/#3d-image-hover-effect,
 3D card hover effect,/components/hover-3d/#3d-card-hover-effect,
 3D hover effect for image gallery,/components/hover-3d/#3d-hover-effect-for-image-gallery,
@@ -563,6 +572,7 @@ Label for select,/components/label/#label-for-select,
 Label for date input,/components/label/#label-for-date-input,
 Floating Label,/components/label/#floating-label,
 Floating Label with Different Sizes,/components/label/#floating-label-with-different-sizes,
+Responsive Size Floating Label,/components/label/#responsive-size-floating-label,
 Toggle (switch),/components/toggle/#toggle-switch,
 With fieldset and label,/components/toggle/#with-fieldset-and-label,
 Sizes,/components/toggle/#sizes,
@@ -648,6 +658,7 @@ Error color,/components/select/#error-color,
 Sizes,/components/select/#sizes,
 Disabled,/components/select/#disabled,
 Using OS native style for the options dropdown,/components/select/#using-os-native-style-for-the-options-dropdown,
+Select with custom dropdown height,/components/select/#select-with-custom-dropdown-height,
 Squircle,/components/mask/#squircle,
 Heart,/components/mask/#heart,
 Hexagon,/components/mask/#hexagon,
@@ -704,6 +715,13 @@ Responsive,/components/indicator/#responsive,
 List (second column grows - default),/components/list/#list-second-column-grows-default,
 List (third column grows),/components/list/#list-third-column-grows,
 List (third column wraps to next row),/components/list/#list-third-column-wraps-to-next-row,
+Structure,/components/megamenu/#structure,
+Responsive megamenu with small vertical menus,/components/megamenu/#responsive-megamenu-with-small-vertical-menus,
+Megamenu with wide popovers and horizontal menus,/components/megamenu/#megamenu-with-wide-popovers-and-horizontal-menus,
+Megamenu with a menus and lots of links,/components/megamenu/#megamenu-with-a-menus-and-lots-of-links,
+Megamenu in a navbar,/components/megamenu/#megamenu-in-a-navbar,
+megamenu without arrows,/components/megamenu/#megamenu-without-arrows,
+Megamenu in different sizes,/components/megamenu/#megamenu-in-different-sizes,
 Rating,/components/rating/#rating,
 Read-only Rating,/components/rating/#read-only-rating,
 mask-star-2 with warning color,/components/rating/#mask-star-2-with-warning-color,
@@ -719,17 +737,20 @@ Key combination,/components/kbd/#key-combination,
 Function Keys,/components/kbd/#function-keys,
 A full keyboard,/components/kbd/#a-full-keyboard,
 Arrow Keys,/components/kbd/#arrow-keys,
-There are 3 methods to use modals,/components/modal/#there-are-3-methods-to-use-modals,
+There are 4 methods to use modals,/components/modal/#there-are-4-methods-to-use-modals,
 Method 1. HTML dialog element `recommended`,/components/modal/#method-1-html-dialog-element-recommended,
 Dialog modal,/components/modal/#dialog-modal,
 "Dialog modal, closes when clicked outside",/components/modal/#dialog-modal-closes-when-clicked-outside,
 Dialog modal with a close button at corner,/components/modal/#dialog-modal-with-a-close-button-at-corner,
 Dialog modal with custom width,/components/modal/#dialog-modal-with-custom-width,
 Responsive,/components/modal/#responsive,
-Method 2. checkbox `legacy`,/components/modal/#method-2-checkbox-legacy,
+Method 2. HTML popover,/components/modal/#method-2-html-popover,
+Popover modal,/components/modal/#popover-modal,
+Popover modal closes when clicked outside,/components/modal/#popover-modal-closes-when-clicked-outside,
+Method 3. checkbox `legacy`,/components/modal/#method-3-checkbox-legacy,
 Modal using checkbox,/components/modal/#modal-using-checkbox,
 Modal that closes when clicked outside,/components/modal/#modal-that-closes-when-clicked-outside,
-Method 3. using anchor links `legacy`,/components/modal/#method-3-using-anchor-links-legacy,
+Method 4. using anchor links `legacy`,/components/modal/#method-4-using-anchor-links-legacy,
 Modal using anchor link,/components/modal/#modal-using-anchor-link,
 Range,/components/range/#range,
 With steps and measure,/components/range/#with-steps-and-measure,
@@ -743,6 +764,20 @@ Info color,/components/range/#info-color,
 Error color,/components/range/#error-color,
 Sizes,/components/range/#sizes,
 Range with custom color and no fill,/components/range/#range-with-custom-color-and-no-fill,
+Vertical,/components/range/#vertical,
+Aura,/components/aura/#aura,
+Aura around a button,/components/aura/#aura-around-a-button,
+Aura dual,/components/aura/#aura-dual,
+Aura rainbow,/components/aura/#aura-rainbow,
+Aura holo,/components/aura/#aura-holo,
+Aura glow,/components/aura/#aura-glow,
+Aura gold,/components/aura/#aura-gold,
+Aura silver,/components/aura/#aura-silver,
+Aura with custom color,/components/aura/#aura-with-custom-color,
+Aura with custom color and custom background color,/components/aura/#aura-with-custom-color-and-custom-background-color,
+Aura rainbow around a pricing card,/components/aura/#aura-rainbow-around-a-pricing-card,
+Aura sizes,/components/aura/#aura-sizes,
+Aura with custom animation duration,/components/aura/#aura-with-custom-animation-duration,
 3 divs in a stack,/components/stack/#3-divs-in-a-stack,
 stacked images,/components/stack/#stacked-images,
 stacked cards,/components/stack/#stacked-cards,
@@ -768,7 +803,6 @@ Top,/components/tooltip/#top,
 Bottom,/components/tooltip/#bottom,
 Left,/components/tooltip/#left,
 Right,/components/tooltip/#right,
-Neutral color,/components/tooltip/#neutral-color,
 Primary color,/components/tooltip/#primary-color,
 Secondary color,/components/tooltip/#secondary-color,
 Accent color,/components/tooltip/#accent-color,
@@ -777,6 +811,7 @@ Success color,/components/tooltip/#success-color,
 Warning color,/components/tooltip/#warning-color,
 Error color,/components/tooltip/#error-color,
 Responsive tooltip. only show for large screen,/components/tooltip/#responsive-tooltip-only-show-for-large-screen,
+Responsive tooltip position,/components/tooltip/#responsive-tooltip-position,
 File input,/components/file-input/#file-input,
 File input ghost,/components/file-input/#file-input-ghost,
 With fieldset and label,/components/file-input/#with-fieldset-and-label,
@@ -801,6 +836,7 @@ Centered card with neutral color,/components/card/#centered-card-with-neutral-co
 Card with action on top,/components/card/#card-with-action-on-top,
 Card with image on side,/components/card/#card-with-image-on-side,
 "Responsive card (vertical on small screen, horizontal on large screen)",/components/card/#responsive-card-vertical-on-small-screen-horizontal-on-large-screen,
+Selectable cards,/components/card/#selectable-cards,
 Loading spinner,/components/loading/#loading-spinner,
 Loading dots,/components/loading/#loading-dots,
 Loading ring,/components/loading/#loading-ring,
@@ -928,6 +964,7 @@ FAB and Speed Dial with labels and fab-close button,/components/fab/#fab-and-spe
 FAB and Speed Dial with labels and fab-main-action Button,/components/fab/#fab-and-speed-dial-with-labels-and-fab-main-action-button,
 A single FAB (Floating Action Button),/components/fab/#a-single-fab-floating-action-button,
 FAB Flower and Speed Dial,/components/fab/#fab-flower-and-speed-dial,
+FAB Flower without a main action button,/components/fab/#fab-flower-without-a-main-action-button,
 FAB and Flower Speed Dial with SVG icons,/components/fab/#fab-and-flower-speed-dial-with-svg-icons,
 FAB and Flower Speed Dial with tooltip,/components/fab/#fab-and-flower-speed-dial-with-tooltip,
 Menu,/components/menu/#menu,
