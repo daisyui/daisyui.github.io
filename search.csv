@@ -116,7 +116,7 @@ Drawer sidebar,/components/drawer/,drawer drawer-toggle drawer-content drawer-si
 Checkbox,/components/checkbox/,checkbox checkbox-primary checkbox-secondary checkbox-accent checkbox-neutral checkbox-success checkbox-warning checkbox-info checkbox-error checkbox-xs checkbox-sm checkbox-md checkbox-lg checkbox-xl
 Diff,/components/diff/,diff diff-item-1 diff-item-2 diff-resizer
 Swap,/components/swap/,swap swap-on swap-off swap-indeterminate swap-active swap-rotate swap-flip
-Calendar,/components/calendar/,cally pika-single react-day-picker
+Calendar,/components/calendar/,cally react-day-picker
 Label,/components/label/,label floating-label
 Toggle,/components/toggle/,toggle toggle-primary toggle-secondary toggle-accent toggle-neutral toggle-success toggle-warning toggle-info toggle-error toggle-xs toggle-sm toggle-md toggle-lg toggle-xl
 Validator,/components/validator/,validator validator-hint
@@ -555,15 +555,10 @@ Swap icons with rotate effect,/components/swap/#swap-icons-with-rotate-effect,
 Hamburger button,/components/swap/#hamburger-button,
 Swap icons with flip effect,/components/swap/#swap-icons-with-flip-effect,
 Activate using class name instead of checkbox,/components/swap/#activate-using-class-name-instead-of-checkbox,
-daisyUI supports 3 calendar libraries,/components/calendar/#daisyui-supports-3-calendar-libraries,
+daisyUI supports 2 calendar libraries,/components/calendar/#daisyui-supports-2-calendar-libraries,
 Cally Calendar,/components/calendar/#cally-calendar,
 Cally calendar example,/components/calendar/#cally-calendar-example,
 Cally date picker example,/components/calendar/#cally-date-picker-example,
-Pikaday Calendar,/components/calendar/#pikaday-calendar,
-Pikaday CDN Example,/components/calendar/#pikaday-cdn-example,
-Pikaday Svelte Example,/components/calendar/#pikaday-svelte-example,
-Pikaday Vue Example,/components/calendar/#pikaday-vue-example,
-Pikaday React Example,/components/calendar/#pikaday-react-example,
 React Day Picker calendar,/components/calendar/#react-day-picker-calendar,
 React Day Picker Example,/components/calendar/#react-day-picker-example,
 Label for input,/components/label/#label-for-input,
