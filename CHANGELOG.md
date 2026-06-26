@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 5.6.1 (2026-06-26)
+
+
+### Bug Fixes
+
+* package versions ([1852842](https://github.com/saadeghi/daisyui/commit/1852842b436d81553f7b57e13d57d26fdc1daaba))
+
 ## 5.6.0 (2026-06-25)
 
 
