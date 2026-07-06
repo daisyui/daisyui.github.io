@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [5.7.1](https://github.com/saadeghi/daisyui/compare/v5.7.0...v5.7.1) (2026-07-06)
+
+
+### Bug Fixes
+
+* CI ([5ed4fee](https://github.com/saadeghi/daisyui/commit/5ed4feeafd9d0264cdbaf776262c18b79794f60f))
+* test 3 ([2643c9b](https://github.com/saadeghi/daisyui/commit/2643c9be1c45b9733e00bbcda4de9c82c0625d29))
+
 ## [5.7.0](https://github.com/saadeghi/daisyui/compare/v5.5.23...v5.7.0) (2026-07-06)
 
 
