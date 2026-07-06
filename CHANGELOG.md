@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [5.7.0](https://github.com/saadeghi/daisyui/compare/v5.5.23...v5.7.0) (2026-07-06)
+
+
+### Features
+
+* daisyUI 5.6 ([e37aa03](https://github.com/saadeghi/daisyui/commit/e37aa0362ac8cdc10c1ad20af88a5a0db4da31b0)), closes [#4229](https://github.com/saadeghi/daisyui/issues/4229) [#4367](https://github.com/saadeghi/daisyui/issues/4367) [#4370](https://github.com/saadeghi/daisyui/issues/4370) [#4419](https://github.com/saadeghi/daisyui/issues/4419) [#4506](https://github.com/saadeghi/daisyui/issues/4506) [#4298](https://github.com/saadeghi/daisyui/issues/4298) [#4343](https://github.com/saadeghi/daisyui/issues/4343) [#4381](https://github.com/saadeghi/daisyui/issues/4381) [#4372](https://github.com/saadeghi/daisyui/issues/4372) [#4408](https://github.com/saadeghi/daisyui/issues/4408) [#4421](https://github.com/saadeghi/daisyui/issues/4421) [#4515](https://github.com/saadeghi/daisyui/issues/4515) [#4528](https://github.com/saadeghi/daisyui/issues/4528) [#4542](https://github.com/saadeghi/daisyui/issues/4542) [#4455](https://github.com/saadeghi/daisyui/issues/4455) [#4496](https://github.com/saadeghi/daisyui/issues/4496) [#4353](https://github.com/saadeghi/daisyui/issues/4353) [#4471](https://github.com/saadeghi/daisyui/issues/4471) [#4531](https://github.com/saadeghi/daisyui/issues/4531) [#4574](https://github.com/saadeghi/daisyui/issues/4574) [#4553](https://github.com/saadeghi/daisyui/issues/4553) [#4521](https://github.com/saadeghi/daisyui/issues/4521) [#4416](https://github.com/saadeghi/daisyui/issues/4416) [#4474](https://github.com/saadeghi/daisyui/issues/4474) [#4536](https://github.com/saadeghi/daisyui/issues/4536) [#4440](https://github.com/saadeghi/daisyui/issues/4440) [#4424](https://github.com/saadeghi/daisyui/issues/4424) [#4479](https://github.com/saadeghi/daisyui/issues/4479) [#4430](https://github.com/saadeghi/daisyui/issues/4430) [#4549](https://github.com/saadeghi/daisyui/issues/4549)
+
+
+### Bug Fixes
+
+* `<button disabled>` style in menu. closes: [#4600](https://github.com/saadeghi/daisyui/issues/4600) ([1f07963](https://github.com/saadeghi/daisyui/commit/1f07963399bf9c545f6df1b3e0f52614c592e1d9))
+* `tabs-border` line size ([539a61c](https://github.com/saadeghi/daisyui/commit/539a61cb360970a0086835bbb5a4e46973741978))
+* active button inset ([3565674](https://github.com/saadeghi/daisyui/commit/35656742d05b8cc98d79a2acc9c3bc49fc9c0724))
+* allow wrapper elements for options in filter ([#4592](https://github.com/saadeghi/daisyui/issues/4592)). closes: [#4589](https://github.com/saadeghi/daisyui/issues/4589) ([e678dcb](https://github.com/saadeghi/daisyui/commit/e678dcbf79805af67f630978588bb05e0fa46616))
+* disabled select style in fieldset. closes: [#4604](https://github.com/saadeghi/daisyui/issues/4604) ([c816a51](https://github.com/saadeghi/daisyui/commit/c816a514ad6f5ef3465923a3b093a99f6ca9764f))
+* email input RTL style in join ([76148f7](https://github.com/saadeghi/daisyui/commit/76148f77a9ea7953280e8a80d25d51bdc4ec8cc1))
+* expose `btn-active` as a utility class. closes: [#4584](https://github.com/saadeghi/daisyui/issues/4584) ([99316ff](https://github.com/saadeghi/daisyui/commit/99316ff10dd5d7b6bb96935306cb754f8b871564))
+* indicator center and middle misalign when item is a child. closes: [#4602](https://github.com/saadeghi/daisyui/issues/4602) ([6ceb65b](https://github.com/saadeghi/daisyui/commit/6ceb65bfcfc6f3d8f622679d24c339b357639a85))
+* loading in prefers-reduced-motion now has slow animation instead of no animation. closes: [#4599](https://github.com/saadeghi/daisyui/issues/4599) ([f25acfd](https://github.com/saadeghi/daisyui/commit/f25acfdcbfad15a9a3908247641602d1b2ef2c08))
+* Missing outline and separators for joined buttons. closes: [#4586](https://github.com/saadeghi/daisyui/issues/4586) ([3f94950](https://github.com/saadeghi/daisyui/commit/3f949508e7f828a7e472f3c0d90b1ec2891ad4eb))
+* modal-start and modal-end RTL ([0958416](https://github.com/saadeghi/daisyui/commit/095841602b95ba35aadc60120d0057110bfe3b65))
+* number input spinner position adjustment ([#4593](https://github.com/saadeghi/daisyui/issues/4593)) closes: [#4590](https://github.com/saadeghi/daisyui/issues/4590) ([1ae1ea4](https://github.com/saadeghi/daisyui/commit/1ae1ea4a57556e241b96445fd63fa139fc484d5b))
+* OTP alignment. closes: [#4587](https://github.com/saadeghi/daisyui/issues/4587) ([cc9bcf8](https://github.com/saadeghi/daisyui/commit/cc9bcf8a291d81e26fe8549a89f5d87c7d49c8b4))
+* package versions ([958633c](https://github.com/saadeghi/daisyui/commit/958633c05b02c375881ad8bc4c4c9a5b65f7b279))
+* prevent --join-* propagation to children of .join-item ([#4615](https://github.com/saadeghi/daisyui/issues/4615)). closes: [#4597](https://github.com/saadeghi/daisyui/issues/4597) ([6fd6ccb](https://github.com/saadeghi/daisyui/commit/6fd6ccbb90379523eebcb08f9ef452b8535b78ba))
+* prevent tab conflict with Tailwind's new optional `tab` class ([1b6f11a](https://github.com/saadeghi/daisyui/commit/1b6f11a1c7e21f2294128d278ea19b53da35580a)), closes [#4595](https://github.com/saadeghi/daisyui/issues/4595)
+* show open collapse ::details-content when prefers-reduced-motion ([#4613](https://github.com/saadeghi/daisyui/issues/4613)) ([b338aad](https://github.com/saadeghi/daisyui/commit/b338aad3f322077e52893a2bedc20eaeaa2772cc)), closes [#4612](https://github.com/saadeghi/daisyui/issues/4612) [#4598](https://github.com/saadeghi/daisyui/issues/4598)
+* test ([14c7470](https://github.com/saadeghi/daisyui/commit/14c747014ba60eb33f762b9f270a827ff4556403))
+* test2 ([535b4fa](https://github.com/saadeghi/daisyui/commit/535b4fa724a4912b6c5e6c73a5475f8e02c514a0))
+* tooltip position in RTL ([e7f8a4f](https://github.com/saadeghi/daisyui/commit/e7f8a4fea1cb50a149625008bcc7ad39241bbe80))
+
 ## 5.6.14 (2026-07-06)
 
 
