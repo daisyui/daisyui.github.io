@@ -32,7 +32,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          fetch-depth: 0
+          fetch-depth: 100
+          fetch-tags: true
           clean: false
           ref: master
 
