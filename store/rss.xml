@@ -15,8 +15,8 @@ xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01
       <![CDATA[ Professional templates made by daisyUI ]]>
     </description>
     <link>https://daisyui.com/store//</link>
-    <lastBuildDate>Fri, 26 Jun 2026 00:47:14 GMT</lastBuildDate>
-    <pubDate>Fri, 26 Jun 2026 00:47:14 GMT</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2026 19:28:35 GMT</lastBuildDate>
+    <pubDate>Mon, 06 Jul 2026 19:28:35 GMT</pubDate>
     <language>en-us</language>
     <atom:link href="https://daisyui.com/store//rss.xml" rel="self" type="application/rss+xml"/>
 
@@ -153,26 +153,44 @@ daisyUI Charts is a collection of chart integrations for daisyUI.
       
         <item>
           <title>
-            <![CDATA[ HTML Dashboard template ]]>
+            <![CDATA[ HTML Dashboard template 2.0 ]]>
           </title>
           <description>
-            <![CDATA[ Production-ready admin dashboard template to use in your project right now.
+            <![CDATA[ HTML Admin dashboard template to use in your project right now.
 
 Features:
-  - HTML admin dashboard layout made with daisyUI 5
+  - HTML admin dashboard UI made with daisyUI 5
+  - 90 pages, with every possible UI blocks needed for a dashboard
   - Web component charts
   - Framework agnostic. Can be used everywhere
-  - No dependencies
+  - No dependencies. No JS file in production. Uses CDN links for charts
 
 
 Including:
-  - 2 exclusive daisyUI themes (dark/light) + Compatible with all 32 daisyUI themes
-  - Responsive grid layout
-  - 14 blocks of useful sections for dashboard
-  - Sidebar with collapsible submenus
-  - Tables and Item lists
-  - Dropdown menus
-  - Charts and forms ]]>
+  - 90 pages, with tables, forms, charts, cards and other daisyUI UI blocks
+    - Dashboard main page
+    - 9 Product management pages: list, new, detail, edit, categories, inventory,
+      stats, performance, logs, tags
+    - 10 User management pages: list, new, detail, edit, roles, role new, role edit,
+      permissions, payments, products, stats, logs
+    - 5 Order management pages: list, detail, fulfillment, returns, abandoned
+      checkouts
+    - 4 Customer management pages: list, detail, segments, notes
+    - 4 Transaction pages: list, detail, refunds, logs
+    - 7 Analytics pages: overview, products, reports, sales, support, traffic, users
+    - 6 Message/support pages: inbox, detail, agents, agent new, agent edit,
+      departments, canned replies
+    - 5 Media pages: library, upload, edit, folders, settings
+    - 5 Blog pages: posts, new post, edit post, categories, tags, comments
+    - 4 Content pages: list, new, edit, revisions
+    - 4 Marketing pages: campaigns, audiences, automations, email
+    - 4 Promotions pages: campaigns, coupons, discounts, gift cards
+    - 8 Settings pages: general, commerce, integrations, notifications, payments,
+      security, shipping, taxes
+    - 4 Plugin pages: list, add, logs, settings
+    - 5 Tools pages: import, export, scheduled jobs, system health, audit logs
+    - daisyUI Skill
+    - AGENTS.md file ]]>
           </description>
           <link>https://www.creem.io/payment/prod_1b0GJj59ORMjGvf2G1Czjh/</link>
           <pubDate>Thu, 12 Oct 2023 00:00:00 GMT</pubDate>
