@@ -7,6 +7,30 @@
     <loc>https://daisyui.com/</loc>
   </url>
   <url>
+    <loc>https://daisyui.com/ai/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/ai/design-website/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/ai/frontend-code-generation/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/ai/generate-ui-from-text/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/ai/generate-ui-with-llm/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/ai/llm-ui-generation/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/ai/prompt-to-ui/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/ai/ui-code-generation/</loc>
+  </url>
+  <url>
     <loc>https://daisyui.com/angular-component-library/</loc>
   </url>
   <url>
@@ -32,6 +56,9 @@
   </url>
   <url>
     <loc>https://daisyui.com/blog/bidirectional/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/blog/blueprint-1.5/</loc>
   </url>
   <url>
     <loc>https://daisyui.com/blog/code-ownership-and-maintainability-cost/</loc>
@@ -127,6 +154,9 @@
     <loc>https://daisyui.com/blueprint/antigravity/</loc>
   </url>
   <url>
+    <loc>https://daisyui.com/blueprint/changelog/</loc>
+  </url>
+  <url>
     <loc>https://daisyui.com/blueprint/claude/</loc>
   </url>
   <url>
@@ -145,6 +175,9 @@
     <loc>https://daisyui.com/blueprint/figma/</loc>
   </url>
   <url>
+    <loc>https://daisyui.com/blueprint/grok/</loc>
+  </url>
+  <url>
     <loc>https://daisyui.com/blueprint/openclaw/</loc>
   </url>
   <url>
@@ -157,10 +190,121 @@
     <loc>https://daisyui.com/blueprint/windsurf/</loc>
   </url>
   <url>
+    <loc>https://daisyui.com/blueprint/workflow/</loc>
+  </url>
+  <url>
     <loc>https://daisyui.com/blueprint/zed/</loc>
   </url>
   <url>
     <loc>https://daisyui.com/brand/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/best-design-skill-2026/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/best-free-component-library/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/free-design-skill/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/frontend-design-plugin/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/frontend-skill/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/how-to-design-ui/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/ui-design-mcp-server/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/ui-design-plugin/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/ui-design-skill/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/ui-design-skill-guide/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/use-less-tokens/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude-code/web-design-skill/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude/generate-ui/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/claude/ui-design-prompt/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/codex/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/codex/best-design-skill-2026/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/codex/best-free-component-library/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/codex/free-design-skill/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/codex/generate-ui/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/codex/how-to-design-ui/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/codex/ui-design-mcp-server/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/codex/ui-design-plugin/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/codex/ui-design-skill/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/codex/use-less-tokens/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/component-library/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/component-library/best-for-2026/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/component-library/css-library-for-html/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/component-library/easy/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/component-library/easy-css-library/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/component-library/for-beginners/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/component-library/for-hackathons/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/component-library/for-school-projects/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/component-library/minimal-css-framework/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/component-library/scalable/</loc>
   </url>
   <url>
     <loc>https://daisyui.com/components/</loc>
@@ -370,6 +514,42 @@
     <loc>https://daisyui.com/components/validator/</loc>
   </url>
   <url>
+    <loc>https://daisyui.com/cursor/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/best-design-skill-2026/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/best-free-component-library/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/free-design-skill/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/frontend-skill/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/how-to-design-ui/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/reduce-token-usage/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/ui-design-mcp-server/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/ui-design-plugin/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/ui-design-skill/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/ui-design-skill-guide/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/cursor/use-less-tokens/</loc>
+  </url>
+  <url>
     <loc>https://daisyui.com/django-component-library/</loc>
   </url>
   <url>
@@ -571,6 +751,9 @@
     <loc>https://daisyui.com/docs/mcp/cursor/</loc>
   </url>
   <url>
+    <loc>https://daisyui.com/docs/mcp/grok/</loc>
+  </url>
+  <url>
     <loc>https://daisyui.com/docs/mcp/openclaw/</loc>
   </url>
   <url>
@@ -598,10 +781,16 @@
     <loc>https://daisyui.com/docs/plugin/cursor/</loc>
   </url>
   <url>
+    <loc>https://daisyui.com/docs/plugin/grok/</loc>
+  </url>
+  <url>
     <loc>https://daisyui.com/docs/roadmap/</loc>
   </url>
   <url>
     <loc>https://daisyui.com/docs/skill/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/docs/skill/grok/</loc>
   </url>
   <url>
     <loc>https://daisyui.com/docs/themes/</loc>
@@ -673,180 +862,6 @@
     <loc>https://daisyui.com/nuxt-ui-library/</loc>
   </url>
   <url>
-    <loc>https://daisyui.com/pages/ai-frontend-code-generation/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ai-tailwind-code-generator/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ai-ui-code-generation/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/best-claude-code-design-skill-2026/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/best-codex-design-skill-2026/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/best-component-library-for-2026/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/best-component-library-for-beginners/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/best-cursor-design-skill-2026/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/best-free-component-library-for-claude-code/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/best-free-component-library-for-codex/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/best-free-component-library-for-cursor/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/claude-code-free-design-skill/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/claude-code-frontend-design-plugin/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/claude-code-frontend-skill/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/claude-code-ui-design-skill/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/claude-code-web-design-skill/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/claude-ui-design-prompt/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/codex-free-design-skill/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/css-framework-for-school-project/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/css-library-for-html/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/cursor-free-design-skill/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/cursor-frontend-skill/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/cursor-ui-design-skill/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/cursor-use-less-tokens/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/design-website-with-ai/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/easy-component-library/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/easy-css-library/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/generate-ui-from-text/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/generate-ui-with-claude/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/generate-ui-with-codex/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/generate-ui-with-llm/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/how-to-design-ui-with-claude-code/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/how-to-design-ui-with-codex/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/how-to-design-ui-with-cursor/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/install-tailwind-css-vite/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/llm-ui-generation/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/minimal-css-framework/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/prompt-to-ui/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/scalable-component-library/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/tailwind-agent/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/tailwind-css/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/tailwind-css-alternative/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/tailwind-css-without-node/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/tailwind-ui-components/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ui-design-mcp-server-for-claude-code/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ui-design-mcp-server-for-codex/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ui-design-mcp-server-for-cursor/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ui-design-plugin-for-claude-code/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ui-design-plugin-for-codex/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ui-design-plugin-for-cursor/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ui-design-skill-for-claude-code/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ui-design-skill-for-codex/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ui-design-skill-for-cursor/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/ui-library-for-hackaton/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/use-less-token-claude-code/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/use-less-token-codex/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/use-less-token-cursor/</loc>
-  </url>
-  <url>
-    <loc>https://daisyui.com/pages/what-is-tailwind-css-used-for/</loc>
-  </url>
-  <url>
     <loc>https://daisyui.com/qwik-component-library/</loc>
   </url>
   <url>
@@ -914,6 +929,30 @@
   </url>
   <url>
     <loc>https://daisyui.com/svelte-ui-library/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/tailwind-css/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/tailwind-css/agent/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/tailwind-css/ai-code-generator/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/tailwind-css/alternative/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/tailwind-css/install-with-vite/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/tailwind-css/ui-components/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/tailwind-css/what-is-it-used-for/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/tailwind-css/without-node/</loc>
   </url>
   <url>
     <loc>https://daisyui.com/theme-generator/</loc>
@@ -1403,6 +1442,15 @@
   </url>
   <url>
     <loc>https://daisyui.com/docs/skill/antigravity/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/skills/daisyui/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/skills/daisyui-dashboard/</loc>
+  </url>
+  <url>
+    <loc>https://daisyui.com/skills/daisyui-charts/</loc>
   </url>
 <url>
   <loc>https://daisyui.com/llms.txt</loc>
