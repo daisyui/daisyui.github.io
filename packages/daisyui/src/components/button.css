@@ -11,7 +11,7 @@
 .btn {
   @layer daisyui.l1.l2.l3 {
     --size: calc(var(--size-field, 0.25rem) * 10);
-    --btn-p: 1rem;
+    --btn-p: 10rem;
     --btn-fg: var(--color-base-content);
 
     @apply inline-flex shrink-0 cursor-pointer flex-nowrap items-center justify-center gap-1.5 text-center align-middle outline-offset-2 select-none;
