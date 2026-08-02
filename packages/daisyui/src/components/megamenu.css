@@ -2,7 +2,7 @@
   @layer daisyui.l1.l2.l3 {
     @apply relative flex items-center overflow-visible;
     width: unset;
-    background-color: transparent;
+    background-color: red;
     border-radius: calc(var(--radius-field) + var(--border));
     --mm-anchor: --mm1;
     --size: calc(var(--size-field, 0.25rem) * 10);
