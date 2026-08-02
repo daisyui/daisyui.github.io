@@ -1,7 +1,7 @@
 .hover-3d {
   @layer daisyui.l1.l2.l3 {
     display: inline-grid;
-    perspective: 75rem;
+    perspective: 76rem;
     --transform: 0, 0;
     --shine: 100% 100%;
     --shadow: 0rem 0rem 0rem;
